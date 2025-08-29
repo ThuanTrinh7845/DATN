@@ -113,11 +113,8 @@ void Finalization(bit64 state[5], bit64 key[2])
     p(state, 12);
 }
 
-int main() {
-    bit64 nonce[2] = {0};
-    bit64 key[2] = {0};
-    bit64 IV = 0x80400c0600000000;
-    bit64 plaintext[] = {0x1234567980abcdef, 0x82187}, ciphertext[10] = {0};
+void ascon(bit64 nonce[2], bit64 key[2], bit64 IV, bit64 plaintext[], bit64 ciphertext[], bit64 state[5])
+{
     state[0] = IV;
     state[1] = key[0];
     state[2] = key[1];
@@ -129,5 +126,14 @@ int main() {
     printf("Ciphertext: %016I64x %016I64x\n", ciphertext[0], ciphertext[1]);
     Finalization(state, key);
     printf("Tag: %016I64x %016I64x\n", state[3], state[4]);
+}
+
+int main() {
+    bit64 nonce[2] = {0};
+    bit64 key[2] = {0};
+    bit64 IV = 0x80400c0600000000;
+    bit64 plaintext[] = {0x1234567980abcdef, 0x82187}, ciphertext[] = {0};
+    ascon(nonce, key, IV, plaintext, ciphertext, state);
+    ascon(nonce, key, IV, ciphertext, ciphertext, state);
     return 0;
 }
