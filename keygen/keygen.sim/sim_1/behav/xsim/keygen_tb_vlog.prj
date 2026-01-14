@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/THUAN/Downloads/keygen/control_path.v" \
+"C:/Users/THUAN/Downloads/keygen/data_path.v" \
+"C:/Users/THUAN/Downloads/keygen/fixed_weight.v" \
+"C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v" \
+"C:/Users/THUAN/Downloads/keygen/hqc_barrett_red.v" \
+"C:/Users/THUAN/Downloads/keygen/keccak_top.v" \
+"C:/Users/THUAN/Downloads/keygen/keygen.v" \
+"C:/Users/THUAN/Downloads/keygen/loc_based_adder.v" \
+"C:/Users/THUAN/Downloads/keygen/mem_dual.v" \
+"C:/Users/THUAN/Downloads/keygen/mem_single.v" \
+"C:/Users/THUAN/Downloads/keygen/onegen.v" \
+"C:/Users/THUAN/Downloads/keygen/onegen_ct.v" \
+"C:/Users/THUAN/Downloads/keygen/poly_mult.v" \
+"C:/Users/THUAN/Downloads/keygen/rc.v" \
+"C:/Users/THUAN/Downloads/keygen/state_ram.v" \
+"C:/Users/THUAN/Downloads/keygen/stateram_inference.v" \
+"C:/Users/THUAN/Downloads/keygen/transform.v" \
+"C:/Users/THUAN/Downloads/keygen/vect_set_random.v" \
+"C:/Users/THUAN/Downloads/keygen/keygen_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

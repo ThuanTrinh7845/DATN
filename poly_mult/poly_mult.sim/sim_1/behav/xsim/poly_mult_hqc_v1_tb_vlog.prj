@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/THUAN/Downloads/poly_mult/clog2.v" \
+"C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" \
+"C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" \
+"C:/Users/THUAN/Downloads/poly_mult/mem_single.v" \
+"C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

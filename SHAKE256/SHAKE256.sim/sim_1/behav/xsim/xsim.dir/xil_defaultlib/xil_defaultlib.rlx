@@ -1,0 +1,16 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/THUAN/Downloads/shake256/clog2.v,1762432611,verilog,,,,,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/control_path.v,1766579858,verilog,,C:/Users/THUAN/Downloads/shake256/data_path.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v,control_path,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/data_path.v,1762432625,verilog,,C:/Users/THUAN/Downloads/shake256/keccak_top.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v;C:/Users/THUAN/Downloads/shake256/keccak_math.v,data_path,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/keccak_math.v,1762432632,verilog,,,,,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/keccak_pkg.v,1762432651,verilog,,,,,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/keccak_top.v,1762432662,verilog,,C:/Users/THUAN/Downloads/shake256/rc.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v,keccak_top,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/rc.v,1762432672,verilog,,C:/Users/THUAN/Downloads/shake256/state_ram.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v,rc,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/state_ram.v,1762432680,verilog,,C:/Users/THUAN/Downloads/shake256/stateram_inference.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v;C:/Users/THUAN/Downloads/shake256/keccak_math.v,state_ram,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/stateram_inference.v,1762432714,verilog,,C:/Users/THUAN/Downloads/shake256/transform.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v;C:/Users/THUAN/Downloads/shake256/keccak_math.v,stateram_inference,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/tb.v,1767961925,verilog,,,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v,cshake_tb,,,,,,,,
+C:/Users/THUAN/Downloads/shake256/transform.v,1762432726,verilog,,C:/Users/THUAN/Downloads/shake256/tb.v,C:/Users/THUAN/Downloads/shake256/clog2.v;C:/Users/THUAN/Downloads/shake256/keccak_pkg.v,transform,,,,,,,,
+D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

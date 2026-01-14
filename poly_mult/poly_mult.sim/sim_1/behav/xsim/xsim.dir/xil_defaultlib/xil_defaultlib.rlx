@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/THUAN/Downloads/poly_mult/clog2.v,1766975268,verilog,,C:/Users/THUAN/Downloads/poly_mult/mem_dual.v,,,,,,,,,,
+C:/Users/THUAN/Downloads/poly_mult/mem_dual.v,1766979031,verilog,,C:/Users/THUAN/Downloads/poly_mult/poly_mult.v,C:/Users/THUAN/Downloads/poly_mult/clog2.v,mem_dual,,,,,,,,
+C:/Users/THUAN/Downloads/poly_mult/mem_single.v,1766975039,verilog,,C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v,,mem_single,,,,,,,,
+C:/Users/THUAN/Downloads/poly_mult/poly_mult.v,1766991447,verilog,,C:/Users/THUAN/Downloads/poly_mult/mem_single.v,C:/Users/THUAN/Downloads/poly_mult/clog2.v,poly_mult,,,,,,,,
+C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v,1766998581,verilog,,,C:/Users/THUAN/Downloads/poly_mult/clog2.v,poly_mult_hqc_v1_tb,,,,,,,,
+D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

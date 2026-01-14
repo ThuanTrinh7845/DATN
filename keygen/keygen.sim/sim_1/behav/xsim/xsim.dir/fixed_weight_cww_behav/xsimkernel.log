@@ -1,0 +1,7 @@
+Running: xsim.dir/fixed_weight_cww_behav/xsimk.exe -simmode gui -wdb fixed_weight_cww_behav.wdb -simrunnum 0 -socket 51938
+Design successfully loaded
+Design Loading Memory Usage: 10064 KB (Peak: 10064 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 10840 KB (Peak: 10840 KB)
+Simulation CPU Usage: 46 ms

@@ -1,0 +1,41 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encap_tb_behav xil_defaultlib.encap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'u_v_in_wen' [C:/Users/THUAN/Downloads/encap/encap_tb.v:171]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'u_v_in_addr' [C:/Users/THUAN/Downloads/encap/encap_tb.v:172]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'u_v_in' [C:/Users/THUAN/Downloads/encap/encap_tb.v:173]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'resume_encap' [C:/Users/THUAN/Downloads/encap/encap_tb.v:174]
+WARNING: [VRFC 10-3091] actual bit length 368 differs from formal bit length 240 for port 'cdw_in' [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:121]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:80]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/encap/encrypt.v:383]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'loc_addr' [C:/Users/THUAN/Downloads/encap/encrypt.v:466]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/encap/encrypt.v:468]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'add_wr_en' [C:/Users/THUAN/Downloads/encap/encrypt.v:483]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/poly_mult.v:230]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/poly_mult.v:231]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 24 for port 'data_1' [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:242]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:246]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:322]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:323]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:324]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:325]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:326]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:327]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:336]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:337]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:338]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:339]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:340]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:341]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/encap/encap_tb.v:357]
+WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/encap/encap_tb.v:141]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:246]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:247]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:544]
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:77]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

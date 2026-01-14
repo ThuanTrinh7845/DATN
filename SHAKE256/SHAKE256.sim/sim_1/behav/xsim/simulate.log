@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+
+=== DIEN TAP CUONG BUC (FORCE PUSH) ===
+[He thong] Da cuong buc nap xong. Dang doi ket qua...
+[Out 0] Raw: 68e60e22
+
+=== KET THUC MO PHONG ===
+$finish called at time : 10230 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 70

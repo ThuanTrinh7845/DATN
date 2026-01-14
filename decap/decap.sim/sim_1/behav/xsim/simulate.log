@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Decode Clock Cycles:       4611
+Total Clock Cycles:      45599
+$finish called at time : 459675 ns : File "C:/Users/THUAN/Downloads/decap/decap_tb.v" Line 332

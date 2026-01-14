@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/THUAN/Downloads/shake256/control_path.v" \
+"C:/Users/THUAN/Downloads/shake256/data_path.v" \
+"C:/Users/THUAN/Downloads/shake256/keccak_top.v" \
+"C:/Users/THUAN/Downloads/shake256/rc.v" \
+"C:/Users/THUAN/Downloads/shake256/state_ram.v" \
+"C:/Users/THUAN/Downloads/shake256/stateram_inference.v" \
+"C:/Users/THUAN/Downloads/shake256/transform.v" \
+"C:/Users/THUAN/Downloads/shake256/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

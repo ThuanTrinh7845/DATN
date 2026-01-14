@@ -1,0 +1,61 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/THUAN/Downloads/decap/add_fft.v" \
+"C:/Users/THUAN/Downloads/decap/barrett_red_gen.v" \
+"C:/Users/THUAN/Downloads/decap/cdw_xor_tmp.v" \
+"C:/Users/THUAN/Downloads/decap/concat_code.v" \
+"C:/Users/THUAN/Downloads/decap/control_path.v" \
+"C:/Users/THUAN/Downloads/decap/data_path.v" \
+"C:/Users/THUAN/Downloads/decap/decap.v" \
+"C:/Users/THUAN/Downloads/decap/decrypt.v" \
+"C:/Users/THUAN/Downloads/decap/encap.v" \
+"C:/Users/THUAN/Downloads/decap/encrypt.v" \
+"C:/Users/THUAN/Downloads/decap/encrypt_parallel.v" \
+"C:/Users/THUAN/Downloads/decap/fft_leaves_butterfly.v" \
+"C:/Users/THUAN/Downloads/decap/fft_part1.v" \
+"C:/Users/THUAN/Downloads/decap/fft_part2.v" \
+"C:/Users/THUAN/Downloads/decap/fft_retrieve_error_poly.v" \
+"C:/Users/THUAN/Downloads/decap/fixed_weight.v" \
+"C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v" \
+"C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v" \
+"C:/Users/THUAN/Downloads/decap/gf_mul.v" \
+"C:/Users/THUAN/Downloads/decap/gfmul.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_barrett_red.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_decod_top.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rmdecod_ctrl.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rmdecod_expnsum.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rmdecod_findpeaks.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rmdecod_hadamard.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rmdecod_top.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rsdecod_elp.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rsdecod_err_val.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rsdecod_roots.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rsdecod_syndromes.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rsdecod_top.v" \
+"C:/Users/THUAN/Downloads/decap/hqc_rsdecod_zpoly.v" \
+"C:/Users/THUAN/Downloads/decap/karatsuba_small.v" \
+"C:/Users/THUAN/Downloads/decap/keccak_top.v" \
+"C:/Users/THUAN/Downloads/decap/loc_based_adder.v" \
+"C:/Users/THUAN/Downloads/decap/mem_dual.v" \
+"C:/Users/THUAN/Downloads/decap/mem_single.v" \
+"C:/Users/THUAN/Downloads/decap/mod34.v" \
+"C:/Users/THUAN/Downloads/decap/onegen.v" \
+"C:/Users/THUAN/Downloads/decap/onegen_ct.v" \
+"C:/Users/THUAN/Downloads/decap/poly_mult.v" \
+"C:/Users/THUAN/Downloads/decap/rc.v" \
+"C:/Users/THUAN/Downloads/decap/reed_muller_encode.v" \
+"C:/Users/THUAN/Downloads/decap/reed_solomon_encode.v" \
+"C:/Users/THUAN/Downloads/decap/rm_encoder.v" \
+"C:/Users/THUAN/Downloads/decap/state_ram.v" \
+"C:/Users/THUAN/Downloads/decap/stateram_inference.v" \
+"C:/Users/THUAN/Downloads/decap/syncfifo.v" \
+"C:/Users/THUAN/Downloads/decap/transform.v" \
+"C:/Users/THUAN/Downloads/decap/v_minus_uy.v" \
+"C:/Users/THUAN/Downloads/decap/xor_based_adder.v" \
+"C:/Users/THUAN/Downloads/decap/decap_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out
+========================================
+STARTING TESTCASE 2
+Loading: dense_2.mem and sparse_2.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_2.out
+========================================
+STARTING TESTCASE 3
+Loading: dense_3.mem and sparse_3.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_3.out
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 580325 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 155
