@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Jan 14 19:54:41 2026
-# Process ID: 2240
+# Start of session at: Sat Jan 24 15:35:33 2026
+# Process ID: 19552
 # Current directory: D:/University/251/DA/decap
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent496 D:\University\251\DA\decap\decap.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5900 D:\University\251\DA\decap\decap.xpr
 # Log file: D:/University/251/DA/decap/vivado.log
 # Journal file: D:/University/251/DA/decap\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
@@ -14,3 +14,9 @@ start_gui
 open_project D:/University/251/DA/decap/decap.xpr
 update_compile_order -fileset sources_1
 launch_simulation
+source decap_tb.tcl
+run all
+close_sim
+launch_simulation
+source decap_tb.tcl
+close_sim

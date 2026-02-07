@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sat Jan 10 11:57:27 2026
+# Start of session at: Thu Jan 15 19:30:11 2026
 # Process ID: 26320
 # Current directory: D:/University/251/DA/encap
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2540 D:\University\251\DA\encap\encap.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9208 D:\University\251\DA\encap\encap.xpr
 # Log file: D:/University/251/DA/encap/vivado.log
 # Journal file: D:/University/251/DA/encap\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
@@ -63,7 +63,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 1131.090 ; gain = 328.828
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1257.984 ; gain = 424.898
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
@@ -82,262 +82,7 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/encap/encap.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj encap_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/barrett_red_gen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module barrett_red_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/cdw_xor_tmp.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cdw_xor_tmp
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/concat_code.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module concat_code
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/control_path.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module control_path
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/data_path.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module data_path
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/encap.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module encap
-WARNING: [VRFC 10-2938] 'count_hash_inputs' is already implicitly declared on line 537 [C:/Users/THUAN/Downloads/encap/encap.v:555]
-WARNING: [VRFC 10-3380] identifier 'd_out' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:247]
-WARNING: [VRFC 10-3380] identifier 'u_v_int' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:248]
-WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:246]
-WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:247]
-WARNING: [VRFC 10-3380] identifier 'sel_uv' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:326]
-WARNING: [VRFC 10-3380] identifier 'u_v_reg' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:504]
-WARNING: [VRFC 10-3380] identifier 'u_v_reg' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:505]
-WARNING: [VRFC 10-3380] identifier 'last_block_capture' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:513]
-WARNING: [VRFC 10-3380] identifier 'block_capture' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:516]
-WARNING: [VRFC 10-3380] identifier 'count_hash_inputs_test' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:525]
-WARNING: [VRFC 10-3380] identifier 'count_hash_inputs_test' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:528]
-WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:544]
-WARNING: [VRFC 10-3380] identifier 'total_shake_input_count' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:595]
-WARNING: [VRFC 10-3380] identifier 'total_shake_input_count' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:624]
-WARNING: [VRFC 10-3380] identifier 'total_shake_input_count' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:845]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1100]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1116]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1131]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1171]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1184]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1211]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1221]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1238]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1250]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1262]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1279]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1308]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1331]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1351]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1398]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1420]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1442]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1469]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1474]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1485]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1501]
-WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/encap/encap.v:1511]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/encrypt.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module encrypt
-WARNING: [VRFC 10-2938] 'r1_internal' is already implicitly declared on line 365 [C:/Users/THUAN/Downloads/encap/encrypt.v:392]
-WARNING: [VRFC 10-2938] 'r2_internal' is already implicitly declared on line 374 [C:/Users/THUAN/Downloads/encap/encrypt.v:393]
-WARNING: [VRFC 10-2938] 'loc_addr' is already implicitly declared on line 372 [C:/Users/THUAN/Downloads/encap/encrypt.v:395]
-WARNING: [VRFC 10-2938] 'pm_out' is already implicitly declared on line 381 [C:/Users/THUAN/Downloads/encap/encrypt.v:396]
-WARNING: [VRFC 10-3248] data object 'pm_out' is already declared [C:/Users/THUAN/Downloads/encap/encrypt.v:487]
-WARNING: [VRFC 10-9364] second declaration of 'pm_out' is ignored [C:/Users/THUAN/Downloads/encap/encrypt.v:487]
-WARNING: [VRFC 10-2938] 'pm_rd_addr' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/encap/encrypt.v:488]
-WARNING: [VRFC 10-2938] 'pm_rd_en' is already implicitly declared on line 478 [C:/Users/THUAN/Downloads/encap/encrypt.v:489]
-WARNING: [VRFC 10-2938] 'add_out' is already implicitly declared on line 481 [C:/Users/THUAN/Downloads/encap/encrypt.v:491]
-WARNING: [VRFC 10-2938] 'add_out_addr' is already implicitly declared on line 482 [C:/Users/THUAN/Downloads/encap/encrypt.v:492]
-WARNING: [VRFC 10-2938] 'add_out_valid' is already implicitly declared on line 483 [C:/Users/THUAN/Downloads/encap/encrypt.v:493]
-WARNING: [VRFC 10-2938] 'xor_add_en' is already implicitly declared on line 353 [C:/Users/THUAN/Downloads/encap/encrypt.v:527]
-WARNING: [VRFC 10-2938] 'xor_add_addr' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/encap/encrypt.v:528]
-WARNING: [VRFC 10-2938] 'xor_add_out' is already implicitly declared on line 481 [C:/Users/THUAN/Downloads/encap/encrypt.v:530]
-WARNING: [VRFC 10-2938] 'xor_add_out_addr' is already implicitly declared on line 482 [C:/Users/THUAN/Downloads/encap/encrypt.v:531]
-WARNING: [VRFC 10-2938] 'xor_add_out_valid' is already implicitly declared on line 483 [C:/Users/THUAN/Downloads/encap/encrypt.v:532]
-WARNING: [VRFC 10-2938] 'en_r1' is already implicitly declared on line 364 [C:/Users/THUAN/Downloads/encap/encrypt.v:568]
-WARNING: [VRFC 10-2938] 'en_r2' is already implicitly declared on line 373 [C:/Users/THUAN/Downloads/encap/encrypt.v:569]
-WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/THUAN/Downloads/encap/encrypt.v:742]
-WARNING: [VRFC 10-2938] 'wen_fw' is already implicitly declared on line 364 [C:/Users/THUAN/Downloads/encap/encrypt.v:924]
-WARNING: [VRFC 10-3248] data object 'sel_fw' is already declared [C:/Users/THUAN/Downloads/encap/encrypt.v:924]
-WARNING: [VRFC 10-9364] second declaration of 'sel_fw' is ignored [C:/Users/THUAN/Downloads/encap/encrypt.v:924]
-WARNING: [VRFC 10-2938] 'fw_addr_reg' is already implicitly declared on line 363 [C:/Users/THUAN/Downloads/encap/encrypt.v:931]
-WARNING: [VRFC 10-2938] 'u_cpy_addr' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/encap/encrypt.v:1030]
-WARNING: [VRFC 10-2938] 'wen_u' is already implicitly declared on line 383 [C:/Users/THUAN/Downloads/encap/encrypt.v:1031]
-WARNING: [VRFC 10-2938] 'copy_u' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/encap/encrypt.v:1032]
-WARNING: [VRFC 10-2938] 'sel_r1_hr2' is already implicitly declared on line 510 [C:/Users/THUAN/Downloads/encap/encrypt.v:1033]
-WARNING: [VRFC 10-3380] identifier 'rd_fw' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:212]
-WARNING: [VRFC 10-3380] identifier 'fw_addr' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:214]
-WARNING: [VRFC 10-3380] identifier 'sel_e' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:215]
-WARNING: [VRFC 10-3380] identifier 'pm_out' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:338]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:737]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:745]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:757]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:779]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:787]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:789]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:813]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:817]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:824]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:826]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:829]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:846]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:858]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:874]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:877]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:883]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:891]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:894]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:900]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:907]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt.v:917]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/encrypt_parallel.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module encrypt_parallel
-WARNING: [VRFC 10-2938] 'r1_internal' is already implicitly declared on line 362 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:406]
-WARNING: [VRFC 10-2938] 'r2_internal_hr2' is already implicitly declared on line 384 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:408]
-WARNING: [VRFC 10-2938] 'r2_internal_sr2' is already implicitly declared on line 385 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:409]
-WARNING: [VRFC 10-2938] 'loc_addr_hr2' is already implicitly declared on line 380 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:411]
-WARNING: [VRFC 10-2938] 'loc_addr_sr2' is already implicitly declared on line 381 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:412]
-WARNING: [VRFC 10-3248] data object 'pm_out' is already declared [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:549]
-WARNING: [VRFC 10-9364] second declaration of 'pm_out' is ignored [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:549]
-WARNING: [VRFC 10-2938] 'pm_rd_addr' is already implicitly declared on line 500 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:550]
-WARNING: [VRFC 10-2938] 'pm_rd_en' is already implicitly declared on line 501 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:551]
-WARNING: [VRFC 10-2938] 'add_out' is already implicitly declared on line 504 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:553]
-WARNING: [VRFC 10-2938] 'add_out_addr' is already implicitly declared on line 505 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:554]
-WARNING: [VRFC 10-2938] 'add_out_valid' is already implicitly declared on line 506 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:555]
-WARNING: [VRFC 10-2938] 'xor_add_en' is already implicitly declared on line 350 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:613]
-WARNING: [VRFC 10-2938] 'xor_add_addr' is already implicitly declared on line 539 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:614]
-WARNING: [VRFC 10-2938] 'xor_add_out' is already implicitly declared on line 543 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:616]
-WARNING: [VRFC 10-2938] 'xor_add_out_addr' is already implicitly declared on line 544 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:617]
-WARNING: [VRFC 10-2938] 'xor_add_out_valid' is already implicitly declared on line 545 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:618]
-WARNING: [VRFC 10-2938] 'en_r1' is already implicitly declared on line 361 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:654]
-WARNING: [VRFC 10-2938] 'en_r2' is already implicitly declared on line 382 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:655]
-WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:673]
-WARNING: [VRFC 10-2938] 'wen_fw' is already implicitly declared on line 361 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:856]
-WARNING: [VRFC 10-3248] data object 'sel_fw' is already declared [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:856]
-WARNING: [VRFC 10-9364] second declaration of 'sel_fw' is ignored [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:856]
-WARNING: [VRFC 10-2938] 'fw_addr_reg' is already implicitly declared on line 360 [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:863]
-WARNING: [VRFC 10-3380] identifier 'rd_fw' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:209]
-WARNING: [VRFC 10-3380] identifier 'fw_addr' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:211]
-WARNING: [VRFC 10-3380] identifier 'sel_e' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:212]
-WARNING: [VRFC 10-3380] identifier 'pm_out_sr2' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:335]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:668]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:676]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:688]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:710]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:718]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:720]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:744]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:748]
-WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:755]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:757]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:760]
-WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:777]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:789]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:805]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:808]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:814]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:822]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:825]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:831]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:838]
-WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/encap/encrypt_parallel.v:848]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/fixed_weight.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fixed_weight
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/encap/fixed_weight.v:161]
-WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:233]
-WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:234]
-WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:235]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:506]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:518]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:529]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:540]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:546]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight.v:552]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fixed_weight_ct
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:153]
-WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:222]
-WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:223]
-WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:224]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:462]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:475]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:493]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:512]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:519]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:526]
-WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:533]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fixed_weight_cww
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:141]
-WARNING: [VRFC 10-2938] 'dout_shake_reduced' is already implicitly declared on line 245 [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:270]
-WARNING: [VRFC 10-2938] 'n_minus_i' is already implicitly declared on line 244 [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:309]
-WARNING: [VRFC 10-2938] 'dout_reduced_valid' is already implicitly declared on line 241 [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:322]
-WARNING: [VRFC 10-3380] identifier 'n_minus_i' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:229]
-WARNING: [VRFC 10-3380] identifier 'n_minus_i' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:232]
-WARNING: [VRFC 10-3380] identifier 'count' is used before its declaration [C:/Users/THUAN/Downloads/encap/fixed_weight_cww.v:272]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/gf_mul.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gf_mul
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/hqc_barrett_red.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hqc_barrett_red
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/karatsuba_small.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module karatsuba_small
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/keccak_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/loc_based_adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module loc_based_adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/mem_dual.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mem_dual
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/mem_single.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mem_single
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/mod34.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mod34
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/onegen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module onegen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/onegen_ct.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module onegen_ct
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/poly_mult.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module poly_mult
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'mux_word_0' is not allowed [C:/Users/THUAN/Downloads/encap/poly_mult.v:103]
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'mux_word_1' is not allowed [C:/Users/THUAN/Downloads/encap/poly_mult.v:104]
-WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/encap/poly_mult.v:203]
-WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/encap/poly_mult.v:212]
-WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/encap/poly_mult.v:213]
-WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/THUAN/Downloads/encap/poly_mult.v:216]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/rc.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rc
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/reed_muller_encode.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module reed_muller_encode
-WARNING: [VRFC 10-2938] 'wr_en' is already implicitly declared on line 93 [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:101]
-WARNING: [VRFC 10-3380] identifier 'init' is used before its declaration [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:67]
-WARNING: [VRFC 10-3380] identifier 'shift_cdw' is used before its declaration [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:70]
-WARNING: [VRFC 10-3380] identifier 'count_cdw_bytes' is used before its declaration [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:86]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module reed_solomon_encode
-WARNING: [VRFC 10-3380] identifier 'init_msg' is used before its declaration [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:75]
-WARNING: [VRFC 10-3380] identifier 'shift_msg' is used before its declaration [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:78]
-WARNING: [VRFC 10-3380] identifier 'init_msg' is used before its declaration [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:88]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/rm_encoder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rm_encoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/state_ram.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module state_ram
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/encap/state_ram.v:122]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/encap/state_ram.v:228]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/encap/state_ram.v:278]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/encap/state_ram.v:379]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/stateram_inference.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module stateram_inference
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/transform.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module transform
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/xor_based_adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module xor_based_adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/encap/encap_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module encap_tb
-WARNING: [VRFC 10-3248] data object 'h_0' is already declared [C:/Users/THUAN/Downloads/encap/encap_tb.v:319]
-WARNING: [VRFC 10-9364] second declaration of 'h_0' is ignored [C:/Users/THUAN/Downloads/encap/encap_tb.v:319]
-WARNING: [VRFC 10-3248] data object 'h_1' is already declared [C:/Users/THUAN/Downloads/encap/encap_tb.v:320]
-WARNING: [VRFC 10-9364] second declaration of 'h_1' is ignored [C:/Users/THUAN/Downloads/encap/encap_tb.v:320]
-WARNING: [VRFC 10-3248] data object 's_0' is already declared [C:/Users/THUAN/Downloads/encap/encap_tb.v:344]
-WARNING: [VRFC 10-9364] second declaration of 's_0' is ignored [C:/Users/THUAN/Downloads/encap/encap_tb.v:344]
-WARNING: [VRFC 10-3248] data object 's_1' is already declared [C:/Users/THUAN/Downloads/encap/encap_tb.v:345]
-WARNING: [VRFC 10-9364] second declaration of 's_1' is ignored [C:/Users/THUAN/Downloads/encap/encap_tb.v:345]
-run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1148.496 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/encap/encap.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encap_tb_behav xil_defaultlib.encap_tb xil_defaultlib.glbl -log elaborate.log"
@@ -347,10 +92,10 @@ Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --d
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'u_v_in_wen' [C:/Users/THUAN/Downloads/encap/encap_tb.v:183]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'u_v_in_addr' [C:/Users/THUAN/Downloads/encap/encap_tb.v:184]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'u_v_in' [C:/Users/THUAN/Downloads/encap/encap_tb.v:185]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'resume_encap' [C:/Users/THUAN/Downloads/encap/encap_tb.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'u_v_in_wen' [C:/Users/THUAN/Downloads/encap/encap_tb.v:171]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'u_v_in_addr' [C:/Users/THUAN/Downloads/encap/encap_tb.v:172]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'u_v_in' [C:/Users/THUAN/Downloads/encap/encap_tb.v:173]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'resume_encap' [C:/Users/THUAN/Downloads/encap/encap_tb.v:174]
 WARNING: [VRFC 10-3091] actual bit length 368 differs from formal bit length 240 for port 'cdw_in' [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:121]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/encap/reed_solomon_encode.v:108]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:80]
@@ -362,92 +107,28 @@ WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for
 WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/poly_mult.v:231]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 24 for port 'data_1' [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:242]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/fixed_weight_ct.v:246]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:334]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:335]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:336]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:337]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:338]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:339]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:348]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:349]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:350]
-WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:351]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:352]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:353]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/encap/encap_tb.v:369]
-WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/encap/encap_tb.v:153]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:322]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:323]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:324]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:325]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:326]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:327]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:336]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:337]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:338]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:339]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/encap/encap_tb.v:340]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/encap/encap_tb.v:341]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/encap/encap_tb.v:357]
+WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/encap/encap_tb.v:141]
 WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:246]
 WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:247]
 WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/encap/encap.v:544]
 WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/THUAN/Downloads/encap/reed_muller_encode.v:77]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=4)
-Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=16)
-Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=10)
-Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=450)
-Compiling module xil_defaultlib.hqc_barrett_red_default
-Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=75)
-Compiling module xil_defaultlib.mem_dual(WIDTH=32,DEPTH=553)
-Compiling module xil_defaultlib.onegen_ct(E0_DEPTH=553,DEPTH=553...
-Compiling module xil_defaultlib.fixed_weight_ct(parameter_set="h...
-Compiling module xil_defaultlib.gf_mul_default
-Compiling module xil_defaultlib.cdw_xor_tmp_default
-Compiling module xil_defaultlib.reed_solomon_encode_default
-Compiling module xil_defaultlib.rm_encoder
-Compiling module xil_defaultlib.mem_single(WIDTH=128,DEPTH=46)
-Compiling module xil_defaultlib.reed_muller_encode_default
-Compiling module xil_defaultlib.concat_code(parameter_set="hqc12...
-Compiling module xil_defaultlib.mem_single(WIDTH=128,DEPTH=139)
-Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139)
-Compiling module xil_defaultlib.poly_mult(MAX_WEIGHT=75,N=17669,...
-Compiling module xil_defaultlib.loc_based_adder(N=17669,WEIGHT=7...
-Compiling module xil_defaultlib.xor_based_adder(parameter_set="h...
-Compiling module xil_defaultlib.encrypt(parameter_set="hqc128",C...
-Compiling module xil_defaultlib.mod34
-Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=1143)
-Compiling module xil_defaultlib.encap(FILE_THETA="shake_test.in"...
-Compiling module xil_defaultlib.control_path
-Compiling module xil_defaultlib.rc
-Compiling module xil_defaultlib.transform
-Compiling module xil_defaultlib.stateram_inference_default
-Compiling module xil_defaultlib.stateram_inference(i=1)
-Compiling module xil_defaultlib.stateram_inference(i=2)
-Compiling module xil_defaultlib.stateram_inference(i=3)
-Compiling module xil_defaultlib.stateram_inference(i=4)
-Compiling module xil_defaultlib.stateram_inference(i=5)
-Compiling module xil_defaultlib.stateram_inference(i=6)
-Compiling module xil_defaultlib.stateram_inference(i=7)
-Compiling module xil_defaultlib.stateram_inference(i=8)
-Compiling module xil_defaultlib.stateram_inference(i=9)
-Compiling module xil_defaultlib.stateram_inference(i=10)
-Compiling module xil_defaultlib.stateram_inference(i=11)
-Compiling module xil_defaultlib.stateram_inference(i=12)
-Compiling module xil_defaultlib.stateram_inference(i=13)
-Compiling module xil_defaultlib.stateram_inference(i=14)
-Compiling module xil_defaultlib.stateram_inference(i=15)
-Compiling module xil_defaultlib.stateram_inference(i=16)
-Compiling module xil_defaultlib.stateram_inference(i=17)
-Compiling module xil_defaultlib.stateram_inference(i=18)
-Compiling module xil_defaultlib.stateram_inference(i=19)
-Compiling module xil_defaultlib.stateram_inference(i=20)
-Compiling module xil_defaultlib.stateram_inference(i=21)
-Compiling module xil_defaultlib.stateram_inference(i=22)
-Compiling module xil_defaultlib.stateram_inference(i=23)
-Compiling module xil_defaultlib.stateram_inference(i=24)
-Compiling module xil_defaultlib.state_ram_default
-Compiling module xil_defaultlib.data_path_default
-Compiling module xil_defaultlib.keccak_top
-Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139,FIL...
-Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139,FIL...
-Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=4,FILE...
-Compiling module xil_defaultlib.encap_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot encap_tb_behav
-run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 1148.496 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1298.195 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/encap/encap.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -465,14 +146,24 @@ source encap_tb.tcl
 #   }
 # }
 # run 1000ns
-xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1203.188 ; gain = 52.414
+[ENCAP STATE] Time: 0 | State changed to: 0
+[ENCAP STATE] Time: 175000 | State changed to: 2
+[ENCAP STATE] Time: 185000 | State changed to: 1
+[ENCAP STATE] Time: 195000 | State changed to: 3
+[ENCAP STATE] Time: 225000 | State changed to: 4
+[ENCAP STATE] Time: 235000 | State changed to: 5
+[ENCAP STATE] Time: 245000 | State changed to: 6
+[SHAKE256 INPUT] Time: 265000 | Data: 40000140
+[SHAKE256 INPUT] Time: 275000 | Data: 80000088
+[SHAKE256 INPUT] Time: 295000 | Data: 010000f0
+[SHAKE256 INPUT] Time: 315000 | Data: 02000000
+[SHAKE256 INPUT] Time: 335000 | Data: 03000000
+[SHAKE256 INPUT] Time: 355000 | Data: 07000000
+[SHAKE256 INPUT] Time: 375000 | Data: 00000003
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'encap_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:48 . Memory (MB): peak = 1203.188 ; gain = 54.691
-run all
-Total Clock Cycles:      30834
-$finish called at time : 315015 ns : File "C:/Users/THUAN/Downloads/encap/encap_tb.v" Line 305
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1298.195 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 10 12:13:47 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 15 19:41:07 2026...

@@ -1,0 +1,7 @@
+Running: xsim.dir/hqc_joint_design_decap_tb_behav/xsimk.exe -simmode gui -wdb hqc_joint_design_decap_tb_behav.wdb -simrunnum 0 -socket 52831
+Design successfully loaded
+Design Loading Memory Usage: 12324 KB (Peak: 12324 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 25108 KB (Peak: 25108 KB)
+Simulation CPU Usage: 5046 ms

@@ -12,4 +12,57 @@ WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 24 for port 'data_1' [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:242]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:246]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/keygen/control_path.v" Line 35. Module control_path doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/keygen/data_path.v" Line 36. Module data_path_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/keygen/control_path.v" Line 35. Module control_path doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/keygen/data_path.v" Line 36. Module data_path_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=10,FIL...
+Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=264)
+Compiling module xil_defaultlib.hqc_barrett_red_default
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.mem_dual(WIDTH=32,DEPTH=553)
+Compiling module xil_defaultlib.onegen_ct(E0_DEPTH=553,DEPTH=553...
+Compiling module xil_defaultlib.fixed_weight_ct(parameter_set="h...
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=10,FIL...
+Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139)
+Compiling module xil_defaultlib.vect_set_random(N=17669,FILE_PKS...
+Compiling module xil_defaultlib.poly_mult(MAX_WEIGHT=75,N=17669,...
+Compiling module xil_defaultlib.loc_based_adder(WIDTH=128)
+Compiling module xil_defaultlib.keygen(N=17669,FILE_PKSEED="pk_s...
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.keygen_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keygen_tb_behav

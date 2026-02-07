@@ -1,0 +1,189 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hqc_joint_design_encap_tb_behav xil_defaultlib.hqc_joint_design_encap_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'operation' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:168]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'sk_seed_wen' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:173]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'sk_seed_addr' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:174]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'pk_seed_wen' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:176]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'pk_seed_addr' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:177]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'keygen_out_en' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:179]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 128 for port 'keygen_out' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:181]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'keygen_out_type' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:182]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:376]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/joint/vect_set_random.v:156]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'loc_addr' [C:/Users/THUAN/Downloads/joint/keygen.v:376]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/joint/keygen.v:378]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/joint/poly_mult.v:247]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/joint/poly_mult.v:248]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 24 for port 'data_1' [C:/Users/THUAN/Downloads/joint/fixed_weight_ct.v:242]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/joint/fixed_weight_ct.v:246]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:419]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'u_v_in_wen' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:443]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'u_v_in_addr' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:444]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'resume_encap' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:446]
+WARNING: [VRFC 10-3091] actual bit length 368 differs from formal bit length 240 for port 'cdw_in' [C:/Users/THUAN/Downloads/joint/reed_solomon_encode.v:121]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/reed_solomon_encode.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/reed_muller_encode.v:80]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/joint/encrypt.v:343]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'loc_addr' [C:/Users/THUAN/Downloads/joint/encrypt.v:426]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/joint/encrypt.v:428]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'add_wr_en' [C:/Users/THUAN/Downloads/joint/encrypt.v:443]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:487]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dout_ready_i' [C:/Users/THUAN/Downloads/joint/hqc_rmdecod_top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_rsdecod_elp.v:92]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_rsdecod_elp.v:156]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_rsdecod_zpoly.v:101]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'dout_o' [C:/Users/THUAN/Downloads/joint/add_fft.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/fft_part1.v:143]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/fft_leaves_butterfly.v:70]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/fft_part2.v:147]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_rsdecod_err_val.v:176]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/joint/hqc_rsdecod_err_val.v:187]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'encap_out_type' [C:/Users/THUAN/Downloads/joint/decap.v:528]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'encap_out_en' [C:/Users/THUAN/Downloads/joint/decap.v:530]
+WARNING: [VRFC 10-3091] actual bit length 40 differs from formal bit length 8 for port 'encap_out_addr' [C:/Users/THUAN/Downloads/joint/decap.v:531]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:350]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:351]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:352]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:353]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:354]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:355]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_0' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:364]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'data_1' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:365]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:366]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:367]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_0' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:368]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:369]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:385]
+WARNING: [VRFC 10-5021] port 'decap_in_type' is not connected on this instance [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design_encap_tb.v:163]
+WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/joint/hqc_kem_joint_design.v:414]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/joint/encap.v:249]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/joint/encap.v:250]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/joint/encap.v:546]
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/THUAN/Downloads/joint/reed_muller_encode.v:77]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/joint/decap.v:531]
+WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/joint/decap.v:502]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/joint/add_fft.v" Line 15. Module add_fft doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/joint/add_fft.v" Line 15. Module add_fft doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=10)
+Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=264)
+Compiling module xil_defaultlib.hqc_barrett_red_default
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.mem_dual(WIDTH=32,DEPTH=553)
+Compiling module xil_defaultlib.onegen_ct(E0_DEPTH=553,DEPTH=553...
+Compiling module xil_defaultlib.fixed_weight_ct(N=17669,M=15,WEI...
+Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139)
+Compiling module xil_defaultlib.vect_set_random(N=17669)
+Compiling module xil_defaultlib.poly_mult(MAX_WEIGHT=75,N=17669,...
+Compiling module xil_defaultlib.loc_based_adder(WIDTH=128)
+Compiling module xil_defaultlib.keygen(N=17669,CT_DESIGN=2'b01)
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=4)
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=16)
+Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=450)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=75)
+Compiling module xil_defaultlib.onegen_ct(E0_DEPTH=553,DEPTH=553...
+Compiling module xil_defaultlib.fixed_weight_ct(N=17669,M=15,WEI...
+Compiling module xil_defaultlib.gf_mul_default
+Compiling module xil_defaultlib.cdw_xor_tmp_default
+Compiling module xil_defaultlib.reed_solomon_encode_default
+Compiling module xil_defaultlib.rm_encoder
+Compiling module xil_defaultlib.mem_single(WIDTH=128,DEPTH=46)
+Compiling module xil_defaultlib.reed_muller_encode_default
+Compiling module xil_defaultlib.concat_code(parameter_set="hqc12...
+Compiling module xil_defaultlib.mem_single(WIDTH=128,DEPTH=139)
+Compiling module xil_defaultlib.loc_based_adder(N=17669,WEIGHT=7...
+Compiling module xil_defaultlib.xor_based_adder(parameter_set="h...
+Compiling module xil_defaultlib.encrypt(parameter_set="hqc128",C...
+Compiling module xil_defaultlib.mod34
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=1143)
+Compiling module xil_defaultlib.encap(FILE_THETA="shake_test.in"...
+Compiling module xil_defaultlib.v_minus_uy(parameter_set="hqc128...
+Compiling module xil_defaultlib.hqc_rmdecod_expnsum_default
+Compiling module xil_defaultlib.syncfifo(DW=4,AW=5)
+Compiling module xil_defaultlib.hadamard_layer_default
+Compiling module xil_defaultlib.syncfifo(DW=5,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=4)
+Compiling module xil_defaultlib.syncfifo(DW=6,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=5)
+Compiling module xil_defaultlib.syncfifo(DW=7,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=6)
+Compiling module xil_defaultlib.syncfifo(DW=8,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=7)
+Compiling module xil_defaultlib.syncfifo(DW=9,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=8)
+Compiling module xil_defaultlib.syncfifo(DW=10,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=9)
+Compiling module xil_defaultlib.hqc_rmdecod_hadamard_default
+Compiling module xil_defaultlib.findpeaks_core(DOUT_W=7)
+Compiling module xil_defaultlib.hqc_rmdecod_findpeaks_default
+Compiling module xil_defaultlib.hqc_rmdecod_ctrl_default
+Compiling module xil_defaultlib.hqc_rmdecod_top_default
+Compiling module xil_defaultlib.gfmul(REG_IN=0)
+Compiling module xil_defaultlib.hqc_rsdecod_syndromes_default
+Compiling module xil_defaultlib.gfmul(REG_IN=0,REG_OUT=0)
+Compiling module xil_defaultlib.hqc_rsdecod_elp_default
+Compiling module xil_defaultlib.hqc_rsdecod_zpoly_default
+Compiling module xil_defaultlib.fft_part1(DIN_W=256)
+Compiling module xil_defaultlib.fft_leaves_butterfly
+Compiling module xil_defaultlib.syncfifo(DW=8,AW=4)
+Compiling module xil_defaultlib.fft_part2_round_default
+Compiling module xil_defaultlib.fft_part2_round(ROUND=1)
+Compiling module xil_defaultlib.syncfifo(DW=8,AW=6)
+Compiling module xil_defaultlib.fft_part2_round(ROUND=2)
+Compiling module xil_defaultlib.syncfifo(DW=8)
+Compiling module xil_defaultlib.fft_part2_round(ROUND=3)
+Compiling module xil_defaultlib.fft_part2_default
+Compiling module xil_defaultlib.add_fft
+Compiling module xil_defaultlib.fft_retrieve_error_poly_default
+Compiling module xil_defaultlib.hqc_rsdecod_roots_default
+Compiling module xil_defaultlib.hqc_rsdecod_err_val_default
+Compiling module xil_defaultlib.hqc_rsdecod_top_default
+Compiling module xil_defaultlib.hqc_decod_top_default
+Compiling module xil_defaultlib.decrypt_default
+Compiling module xil_defaultlib.encap_default
+Compiling module xil_defaultlib.decap_default
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.hqc_kem_joint_design(FILE_THETA=...
+Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139,FIL...
+Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139,FIL...
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=4,FILE...
+Compiling module xil_defaultlib.hqc_joint_design_encap_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hqc_joint_design_encap_tb_behav

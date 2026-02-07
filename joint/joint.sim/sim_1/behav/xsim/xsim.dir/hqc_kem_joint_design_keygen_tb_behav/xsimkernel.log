@@ -1,0 +1,7 @@
+Running: xsim.dir/hqc_kem_joint_design_keygen_tb_behav/xsimk.exe -simmode gui -wdb hqc_kem_joint_design_keygen_tb_behav.wdb -simrunnum 0 -socket 57099
+Design successfully loaded
+Design Loading Memory Usage: 11612 KB (Peak: 11612 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 20588 KB (Peak: 20588 KB)
+Simulation CPU Usage: 1624 ms

@@ -1,0 +1,65 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v" \
+"C:/Users/THUAN/Downloads/wrapper/add_fft.v" \
+"C:/Users/THUAN/Downloads/wrapper/barrett_red_gen.v" \
+"C:/Users/THUAN/Downloads/wrapper/cdw_xor_tmp.v" \
+"C:/Users/THUAN/Downloads/wrapper/concat_code.v" \
+"C:/Users/THUAN/Downloads/wrapper/control_path.v" \
+"C:/Users/THUAN/Downloads/wrapper/data_path.v" \
+"C:/Users/THUAN/Downloads/wrapper/decap.v" \
+"C:/Users/THUAN/Downloads/wrapper/decrypt.v" \
+"C:/Users/THUAN/Downloads/wrapper/encap.v" \
+"C:/Users/THUAN/Downloads/wrapper/encrypt.v" \
+"C:/Users/THUAN/Downloads/wrapper/encrypt_parallel.v" \
+"C:/Users/THUAN/Downloads/wrapper/fft_leaves_butterfly.v" \
+"C:/Users/THUAN/Downloads/wrapper/fft_part1.v" \
+"C:/Users/THUAN/Downloads/wrapper/fft_part2.v" \
+"C:/Users/THUAN/Downloads/wrapper/fft_retrieve_error_poly.v" \
+"C:/Users/THUAN/Downloads/wrapper/fixed_weight.v" \
+"C:/Users/THUAN/Downloads/wrapper/fixed_weight_ct.v" \
+"C:/Users/THUAN/Downloads/wrapper/fixed_weight_cww.v" \
+"C:/Users/THUAN/Downloads/wrapper/gf_mul.v" \
+"C:/Users/THUAN/Downloads/wrapper/gfmul.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_barrett_red.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_decod_top.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rmdecod_ctrl.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rmdecod_expnsum.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rmdecod_findpeaks.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rmdecod_hadamard.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rmdecod_top.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_elp.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_err_val.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_roots.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_syndromes.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_top.v" \
+"C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_zpoly.v" \
+"C:/Users/THUAN/Downloads/wrapper/karatsuba_small.v" \
+"C:/Users/THUAN/Downloads/wrapper/keccak_top.v" \
+"C:/Users/THUAN/Downloads/wrapper/keygen.v" \
+"C:/Users/THUAN/Downloads/wrapper/loc_based_adder.v" \
+"C:/Users/THUAN/Downloads/wrapper/mem_dual.v" \
+"C:/Users/THUAN/Downloads/wrapper/mem_single.v" \
+"C:/Users/THUAN/Downloads/wrapper/mod34.v" \
+"C:/Users/THUAN/Downloads/wrapper/onegen.v" \
+"C:/Users/THUAN/Downloads/wrapper/onegen_ct.v" \
+"C:/Users/THUAN/Downloads/wrapper/poly_mult.v" \
+"C:/Users/THUAN/Downloads/wrapper/rc.v" \
+"C:/Users/THUAN/Downloads/wrapper/reed_muller_encode.v" \
+"C:/Users/THUAN/Downloads/wrapper/reed_solomon_encode.v" \
+"C:/Users/THUAN/Downloads/wrapper/rm_encoder.v" \
+"C:/Users/THUAN/Downloads/wrapper/state_ram.v" \
+"C:/Users/THUAN/Downloads/wrapper/stateram_inference.v" \
+"C:/Users/THUAN/Downloads/wrapper/syncfifo.v" \
+"C:/Users/THUAN/Downloads/wrapper/transform.v" \
+"C:/Users/THUAN/Downloads/wrapper/v_minus_uy.v" \
+"C:/Users/THUAN/Downloads/wrapper/vect_set_random.v" \
+"C:/Users/THUAN/Downloads/wrapper/xor_based_adder.v" \
+"C:/Users/THUAN/Downloads/wrapper/decap_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

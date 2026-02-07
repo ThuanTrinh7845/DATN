@@ -1,0 +1,1872 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jan 21 19:07:39 2026
+# Process ID: 10796
+# Current directory: D:/University/251/DA/poly_mult
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12448 D:\University\251\DA\poly_mult\poly_mult.xpr
+# Log file: D:/University/251/DA/poly_mult/vivado.log
+# Journal file: D:/University/251/DA/poly_mult\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/University/251/DA/poly_mult/poly_mult.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/University/251/DA/poly_mult/poly_mult.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 1123.680 ; gain = 325.656
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1151.113 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+----------------------------------------
+ [DEBUG] VERIFYING MEMORY CONTENT 
+ -> Content of RANDOM_BITS_MEM (First 10 words & Last word):
+    ADDR[000] = 0000000000000001
+    ADDR[001] = 0000000000000000
+    ADDR[002] = 0000000000000000
+    ADDR[003] = 0000000000000000
+    ADDR[004] = 0000000000000000
+    ADDR[005] = 0000000000000000
+    ADDR[006] = 0000000000000000
+    ADDR[007] = 0000000000000000
+    ADDR[008] = 0000000000000000
+    ADDR[009] = 0000000000000000
+    ADDR[553] = xxxxxxxxxxxxxxxx
+ -> Content of POSITION_RAM (All weights):
+    ADDR[00] = 17668
+    ADDR[01] =     0
+    ADDR[02] =     0
+    ADDR[03] =     0
+    ADDR[04] =     0
+    ADDR[05] =     0
+    ADDR[06] =     0
+    ADDR[07] =     0
+    ADDR[08] =     0
+    ADDR[09] =     0
+    ADDR[10] =     0
+    ADDR[11] =     0
+    ADDR[12] =     0
+    ADDR[13] =     0
+    ADDR[14] =     0
+    ADDR[15] =     0
+    ADDR[16] =     0
+    ADDR[17] =     0
+    ADDR[18] =     0
+    ADDR[19] =     0
+    ADDR[20] =     0
+    ADDR[21] =     0
+    ADDR[22] =     0
+    ADDR[23] =     0
+    ADDR[24] =     0
+    ADDR[25] =     0
+    ADDR[26] =     0
+    ADDR[27] =     0
+    ADDR[28] =     0
+    ADDR[29] =     0
+    ADDR[30] =     0
+    ADDR[31] =     0
+    ADDR[32] =     0
+    ADDR[33] =     0
+    ADDR[34] =     0
+    ADDR[35] =     0
+    ADDR[36] =     0
+    ADDR[37] =     0
+    ADDR[38] =     0
+    ADDR[39] =     0
+    ADDR[40] =     0
+    ADDR[41] =     0
+    ADDR[42] =     0
+    ADDR[43] =     0
+    ADDR[44] =     0
+    ADDR[45] =     0
+    ADDR[46] =     0
+    ADDR[47] =     0
+    ADDR[48] =     0
+    ADDR[49] =     0
+    ADDR[50] =     0
+    ADDR[51] =     0
+    ADDR[52] =     0
+    ADDR[53] =     0
+    ADDR[54] =     0
+    ADDR[55] =     0
+    ADDR[56] =     0
+    ADDR[57] =     0
+    ADDR[58] =     0
+    ADDR[59] =     0
+    ADDR[60] =     0
+    ADDR[61] =     0
+    ADDR[62] =     0
+    ADDR[63] =     0
+    ADDR[64] =     0
+    ADDR[65] =     0
+----------------------------------------
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1218.852 ; gain = 28.496
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.852 ; gain = 72.152
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 193445 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 176
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+----------------------------------------
+ [DEBUG] VERIFYING MEMORY CONTENT 
+ -> Content of RANDOM_BITS_MEM (First 10 words & Last word):
+    ADDR[000] = 0000000000000001
+    ADDR[001] = 0000000000000000
+    ADDR[002] = 0000000000000000
+    ADDR[003] = 0000000000000000
+    ADDR[004] = 0000000000000000
+    ADDR[005] = 0000000000000000
+    ADDR[006] = 0000000000000000
+    ADDR[007] = 0000000000000000
+    ADDR[008] = 0000000000000000
+    ADDR[009] = 0000000000000000
+    ADDR[010] = 0000000000000000
+    ADDR[011] = 0000000000000000
+    ADDR[012] = 0000000000000000
+    ADDR[013] = 0000000000000000
+    ADDR[014] = 0000000000000000
+    ADDR[015] = 0000000000000000
+    ADDR[016] = 0000000000000000
+    ADDR[017] = 0000000000000000
+    ADDR[018] = 0000000000000000
+    ADDR[019] = 0000000000000000
+    ADDR[020] = 0000000000000000
+    ADDR[021] = 0000000000000000
+    ADDR[022] = 0000000000000000
+    ADDR[023] = 0000000000000000
+    ADDR[024] = 0000000000000000
+    ADDR[025] = 0000000000000000
+    ADDR[026] = 0000000000000000
+    ADDR[027] = 0000000000000000
+    ADDR[028] = 0000000000000000
+    ADDR[029] = 0000000000000000
+    ADDR[030] = 0000000000000000
+    ADDR[031] = 0000000000000000
+    ADDR[032] = 0000000000000000
+    ADDR[033] = 0000000000000000
+    ADDR[034] = 0000000000000000
+    ADDR[035] = 0000000000000000
+    ADDR[036] = 0000000000000000
+    ADDR[037] = 0000000000000000
+    ADDR[038] = 0000000000000000
+    ADDR[039] = 0000000000000000
+    ADDR[040] = 0000000000000000
+    ADDR[041] = 0000000000000000
+    ADDR[042] = 0000000000000000
+    ADDR[043] = 0000000000000000
+    ADDR[044] = 0000000000000000
+    ADDR[045] = 0000000000000000
+    ADDR[046] = 0000000000000000
+    ADDR[047] = 0000000000000000
+    ADDR[048] = 0000000000000000
+    ADDR[049] = 0000000000000000
+    ADDR[050] = 0000000000000000
+    ADDR[051] = 0000000000000000
+    ADDR[052] = 0000000000000000
+    ADDR[053] = 0000000000000000
+    ADDR[054] = 0000000000000000
+    ADDR[055] = 0000000000000000
+    ADDR[056] = 0000000000000000
+    ADDR[057] = 0000000000000000
+    ADDR[058] = 0000000000000000
+    ADDR[059] = 0000000000000000
+    ADDR[060] = 0000000000000000
+    ADDR[061] = 0000000000000000
+    ADDR[062] = 0000000000000000
+    ADDR[063] = 0000000000000000
+    ADDR[064] = 0000000000000000
+    ADDR[065] = 0000000000000000
+    ADDR[066] = 0000000000000000
+    ADDR[067] = 0000000000000000
+    ADDR[068] = 0000000000000000
+    ADDR[069] = 0000000000000000
+    ADDR[070] = 0000000000000000
+    ADDR[071] = 0000000000000000
+    ADDR[072] = 0000000000000000
+    ADDR[073] = 0000000000000000
+    ADDR[074] = 0000000000000000
+    ADDR[075] = 0000000000000000
+    ADDR[076] = 0000000000000000
+    ADDR[077] = 0000000000000000
+    ADDR[078] = 0000000000000000
+    ADDR[079] = 0000000000000000
+    ADDR[080] = 0000000000000000
+    ADDR[081] = 0000000000000000
+    ADDR[082] = 0000000000000000
+    ADDR[083] = 0000000000000000
+    ADDR[084] = 0000000000000000
+    ADDR[085] = 0000000000000000
+    ADDR[086] = 0000000000000000
+    ADDR[087] = 0000000000000000
+    ADDR[088] = 0000000000000000
+    ADDR[089] = 0000000000000000
+    ADDR[090] = 0000000000000000
+    ADDR[091] = 0000000000000000
+    ADDR[092] = 0000000000000000
+    ADDR[093] = 0000000000000000
+    ADDR[094] = 0000000000000000
+    ADDR[095] = 0000000000000000
+    ADDR[096] = 0000000000000000
+    ADDR[097] = 0000000000000000
+    ADDR[098] = 0000000000000000
+    ADDR[099] = 0000000000000000
+    ADDR[100] = 0000000000000000
+    ADDR[101] = 0000000000000000
+    ADDR[102] = 0000000000000000
+    ADDR[103] = 0000000000000000
+    ADDR[104] = 0000000000000000
+    ADDR[105] = 0000000000000000
+    ADDR[106] = 0000000000000000
+    ADDR[107] = 0000000000000000
+    ADDR[108] = 0000000000000000
+    ADDR[109] = 0000000000000000
+    ADDR[110] = 0000000000000000
+    ADDR[111] = 0000000000000000
+    ADDR[112] = 0000000000000000
+    ADDR[113] = 0000000000000000
+    ADDR[114] = 0000000000000000
+    ADDR[115] = 0000000000000000
+    ADDR[116] = 0000000000000000
+    ADDR[117] = 0000000000000000
+    ADDR[118] = 0000000000000000
+    ADDR[119] = 0000000000000000
+    ADDR[120] = 0000000000000000
+    ADDR[121] = 0000000000000000
+    ADDR[122] = 0000000000000000
+    ADDR[123] = 0000000000000000
+    ADDR[124] = 0000000000000000
+    ADDR[125] = 0000000000000000
+    ADDR[126] = 0000000000000000
+    ADDR[127] = 0000000000000000
+    ADDR[128] = 0000000000000000
+    ADDR[129] = 0000000000000000
+    ADDR[130] = 0000000000000000
+    ADDR[131] = 0000000000000000
+    ADDR[132] = 0000000000000000
+    ADDR[133] = 0000000000000000
+    ADDR[134] = 0000000000000000
+    ADDR[135] = 0000000000000000
+    ADDR[136] = 0000000000000000
+    ADDR[137] = 0000000000000000
+    ADDR[138] = 0000000000000000
+    ADDR[139] = 0000000000000000
+    ADDR[140] = 0000000000000000
+    ADDR[141] = 0000000000000000
+    ADDR[142] = 0000000000000000
+    ADDR[143] = 0000000000000000
+    ADDR[144] = 0000000000000000
+    ADDR[145] = 0000000000000000
+    ADDR[146] = 0000000000000000
+    ADDR[147] = 0000000000000000
+    ADDR[148] = 0000000000000000
+    ADDR[149] = 0000000000000000
+    ADDR[150] = 0000000000000000
+    ADDR[151] = 0000000000000000
+    ADDR[152] = 0000000000000000
+    ADDR[153] = 0000000000000000
+    ADDR[154] = 0000000000000000
+    ADDR[155] = 0000000000000000
+    ADDR[156] = 0000000000000000
+    ADDR[157] = 0000000000000000
+    ADDR[158] = 0000000000000000
+    ADDR[159] = 0000000000000000
+    ADDR[160] = 0000000000000000
+    ADDR[161] = 0000000000000000
+    ADDR[162] = 0000000000000000
+    ADDR[163] = 0000000000000000
+    ADDR[164] = 0000000000000000
+    ADDR[165] = 0000000000000000
+    ADDR[166] = 0000000000000000
+    ADDR[167] = 0000000000000000
+    ADDR[168] = 0000000000000000
+    ADDR[169] = 0000000000000000
+    ADDR[170] = 0000000000000000
+    ADDR[171] = 0000000000000000
+    ADDR[172] = 0000000000000000
+    ADDR[173] = 0000000000000000
+    ADDR[174] = 0000000000000000
+    ADDR[175] = 0000000000000000
+    ADDR[176] = 0000000000000000
+    ADDR[177] = 0000000000000000
+    ADDR[178] = 0000000000000000
+    ADDR[179] = 0000000000000000
+    ADDR[180] = 0000000000000000
+    ADDR[181] = 0000000000000000
+    ADDR[182] = 0000000000000000
+    ADDR[183] = 0000000000000000
+    ADDR[184] = 0000000000000000
+    ADDR[185] = 0000000000000000
+    ADDR[186] = 0000000000000000
+    ADDR[187] = 0000000000000000
+    ADDR[188] = 0000000000000000
+    ADDR[189] = 0000000000000000
+    ADDR[190] = 0000000000000000
+    ADDR[191] = 0000000000000000
+    ADDR[192] = 0000000000000000
+    ADDR[193] = 0000000000000000
+    ADDR[194] = 0000000000000000
+    ADDR[195] = 0000000000000000
+    ADDR[196] = 0000000000000000
+    ADDR[197] = 0000000000000000
+    ADDR[198] = 0000000000000000
+    ADDR[199] = 0000000000000000
+    ADDR[200] = 0000000000000000
+    ADDR[201] = 0000000000000000
+    ADDR[202] = 0000000000000000
+    ADDR[203] = 0000000000000000
+    ADDR[204] = 0000000000000000
+    ADDR[205] = 0000000000000000
+    ADDR[206] = 0000000000000000
+    ADDR[207] = 0000000000000000
+    ADDR[208] = 0000000000000000
+    ADDR[209] = 0000000000000000
+    ADDR[210] = 0000000000000000
+    ADDR[211] = 0000000000000000
+    ADDR[212] = 0000000000000000
+    ADDR[213] = 0000000000000000
+    ADDR[214] = 0000000000000000
+    ADDR[215] = 0000000000000000
+    ADDR[216] = 0000000000000000
+    ADDR[217] = 0000000000000000
+    ADDR[218] = 0000000000000000
+    ADDR[219] = 0000000000000000
+    ADDR[220] = 0000000000000000
+    ADDR[221] = 0000000000000000
+    ADDR[222] = 0000000000000000
+    ADDR[223] = 0000000000000000
+    ADDR[224] = 0000000000000000
+    ADDR[225] = 0000000000000000
+    ADDR[226] = 0000000000000000
+    ADDR[227] = 0000000000000000
+    ADDR[228] = 0000000000000000
+    ADDR[229] = 0000000000000000
+    ADDR[230] = 0000000000000000
+    ADDR[231] = 0000000000000000
+    ADDR[232] = 0000000000000000
+    ADDR[233] = 0000000000000000
+    ADDR[234] = 0000000000000000
+    ADDR[235] = 0000000000000000
+    ADDR[236] = 0000000000000000
+    ADDR[237] = 0000000000000000
+    ADDR[238] = 0000000000000000
+    ADDR[239] = 0000000000000000
+    ADDR[240] = 0000000000000000
+    ADDR[241] = 0000000000000000
+    ADDR[242] = 0000000000000000
+    ADDR[243] = 0000000000000000
+    ADDR[244] = 0000000000000000
+    ADDR[245] = 0000000000000000
+    ADDR[246] = 0000000000000000
+    ADDR[247] = 0000000000000000
+    ADDR[248] = 0000000000000000
+    ADDR[249] = 0000000000000000
+    ADDR[250] = 0000000000000000
+    ADDR[251] = 0000000000000000
+    ADDR[252] = 0000000000000000
+    ADDR[253] = 0000000000000000
+    ADDR[254] = 0000000000000000
+    ADDR[255] = 0000000000000000
+    ADDR[256] = 0000000000000000
+    ADDR[257] = 0000000000000000
+    ADDR[258] = 0000000000000000
+    ADDR[259] = 0000000000000000
+    ADDR[260] = 0000000000000000
+    ADDR[261] = 0000000000000000
+    ADDR[262] = 0000000000000000
+    ADDR[263] = 0000000000000000
+    ADDR[264] = 0000000000000000
+    ADDR[265] = 0000000000000000
+    ADDR[266] = 0000000000000000
+    ADDR[267] = 0000000000000000
+    ADDR[268] = 0000000000000000
+    ADDR[269] = 0000000000000000
+    ADDR[270] = 0000000000000000
+    ADDR[271] = 0000000000000000
+    ADDR[272] = 0000000000000000
+    ADDR[273] = 0000000000000000
+    ADDR[274] = 0000000000000000
+    ADDR[275] = 0000000000000000
+    ADDR[276] = 0000000000000000
+    ADDR[277] = xxxxxxxxxxxxxxxx
+    ADDR[278] = xxxxxxxxxxxxxxxx
+    ADDR[279] = xxxxxxxxxxxxxxxx
+    ADDR[280] = xxxxxxxxxxxxxxxx
+    ADDR[281] = xxxxxxxxxxxxxxxx
+    ADDR[282] = xxxxxxxxxxxxxxxx
+    ADDR[283] = xxxxxxxxxxxxxxxx
+    ADDR[284] = xxxxxxxxxxxxxxxx
+    ADDR[285] = xxxxxxxxxxxxxxxx
+    ADDR[286] = xxxxxxxxxxxxxxxx
+    ADDR[287] = xxxxxxxxxxxxxxxx
+    ADDR[288] = xxxxxxxxxxxxxxxx
+    ADDR[289] = xxxxxxxxxxxxxxxx
+    ADDR[290] = xxxxxxxxxxxxxxxx
+    ADDR[291] = xxxxxxxxxxxxxxxx
+    ADDR[292] = xxxxxxxxxxxxxxxx
+    ADDR[293] = xxxxxxxxxxxxxxxx
+    ADDR[294] = xxxxxxxxxxxxxxxx
+    ADDR[295] = xxxxxxxxxxxxxxxx
+    ADDR[296] = xxxxxxxxxxxxxxxx
+    ADDR[297] = xxxxxxxxxxxxxxxx
+    ADDR[298] = xxxxxxxxxxxxxxxx
+    ADDR[299] = xxxxxxxxxxxxxxxx
+    ADDR[300] = xxxxxxxxxxxxxxxx
+    ADDR[301] = xxxxxxxxxxxxxxxx
+    ADDR[302] = xxxxxxxxxxxxxxxx
+    ADDR[303] = xxxxxxxxxxxxxxxx
+    ADDR[304] = xxxxxxxxxxxxxxxx
+    ADDR[305] = xxxxxxxxxxxxxxxx
+    ADDR[306] = xxxxxxxxxxxxxxxx
+    ADDR[307] = xxxxxxxxxxxxxxxx
+    ADDR[308] = xxxxxxxxxxxxxxxx
+    ADDR[309] = xxxxxxxxxxxxxxxx
+    ADDR[310] = xxxxxxxxxxxxxxxx
+    ADDR[311] = xxxxxxxxxxxxxxxx
+    ADDR[312] = xxxxxxxxxxxxxxxx
+    ADDR[313] = xxxxxxxxxxxxxxxx
+    ADDR[314] = xxxxxxxxxxxxxxxx
+    ADDR[315] = xxxxxxxxxxxxxxxx
+    ADDR[316] = xxxxxxxxxxxxxxxx
+    ADDR[317] = xxxxxxxxxxxxxxxx
+    ADDR[318] = xxxxxxxxxxxxxxxx
+    ADDR[319] = xxxxxxxxxxxxxxxx
+    ADDR[320] = xxxxxxxxxxxxxxxx
+    ADDR[321] = xxxxxxxxxxxxxxxx
+    ADDR[322] = xxxxxxxxxxxxxxxx
+    ADDR[323] = xxxxxxxxxxxxxxxx
+    ADDR[324] = xxxxxxxxxxxxxxxx
+    ADDR[325] = xxxxxxxxxxxxxxxx
+    ADDR[326] = xxxxxxxxxxxxxxxx
+    ADDR[327] = xxxxxxxxxxxxxxxx
+    ADDR[328] = xxxxxxxxxxxxxxxx
+    ADDR[329] = xxxxxxxxxxxxxxxx
+    ADDR[330] = xxxxxxxxxxxxxxxx
+    ADDR[331] = xxxxxxxxxxxxxxxx
+    ADDR[332] = xxxxxxxxxxxxxxxx
+    ADDR[333] = xxxxxxxxxxxxxxxx
+    ADDR[334] = xxxxxxxxxxxxxxxx
+    ADDR[335] = xxxxxxxxxxxxxxxx
+    ADDR[336] = xxxxxxxxxxxxxxxx
+    ADDR[337] = xxxxxxxxxxxxxxxx
+    ADDR[338] = xxxxxxxxxxxxxxxx
+    ADDR[339] = xxxxxxxxxxxxxxxx
+    ADDR[340] = xxxxxxxxxxxxxxxx
+    ADDR[341] = xxxxxxxxxxxxxxxx
+    ADDR[342] = xxxxxxxxxxxxxxxx
+    ADDR[343] = xxxxxxxxxxxxxxxx
+    ADDR[344] = xxxxxxxxxxxxxxxx
+    ADDR[345] = xxxxxxxxxxxxxxxx
+    ADDR[346] = xxxxxxxxxxxxxxxx
+    ADDR[347] = xxxxxxxxxxxxxxxx
+    ADDR[348] = xxxxxxxxxxxxxxxx
+    ADDR[349] = xxxxxxxxxxxxxxxx
+    ADDR[350] = xxxxxxxxxxxxxxxx
+    ADDR[351] = xxxxxxxxxxxxxxxx
+    ADDR[352] = xxxxxxxxxxxxxxxx
+    ADDR[353] = xxxxxxxxxxxxxxxx
+    ADDR[354] = xxxxxxxxxxxxxxxx
+    ADDR[355] = xxxxxxxxxxxxxxxx
+    ADDR[356] = xxxxxxxxxxxxxxxx
+    ADDR[357] = xxxxxxxxxxxxxxxx
+    ADDR[358] = xxxxxxxxxxxxxxxx
+    ADDR[359] = xxxxxxxxxxxxxxxx
+    ADDR[360] = xxxxxxxxxxxxxxxx
+    ADDR[361] = xxxxxxxxxxxxxxxx
+    ADDR[362] = xxxxxxxxxxxxxxxx
+    ADDR[363] = xxxxxxxxxxxxxxxx
+    ADDR[364] = xxxxxxxxxxxxxxxx
+    ADDR[365] = xxxxxxxxxxxxxxxx
+    ADDR[366] = xxxxxxxxxxxxxxxx
+    ADDR[367] = xxxxxxxxxxxxxxxx
+    ADDR[368] = xxxxxxxxxxxxxxxx
+    ADDR[369] = xxxxxxxxxxxxxxxx
+    ADDR[370] = xxxxxxxxxxxxxxxx
+    ADDR[371] = xxxxxxxxxxxxxxxx
+    ADDR[372] = xxxxxxxxxxxxxxxx
+    ADDR[373] = xxxxxxxxxxxxxxxx
+    ADDR[374] = xxxxxxxxxxxxxxxx
+    ADDR[375] = xxxxxxxxxxxxxxxx
+    ADDR[376] = xxxxxxxxxxxxxxxx
+    ADDR[377] = xxxxxxxxxxxxxxxx
+    ADDR[378] = xxxxxxxxxxxxxxxx
+    ADDR[379] = xxxxxxxxxxxxxxxx
+    ADDR[380] = xxxxxxxxxxxxxxxx
+    ADDR[381] = xxxxxxxxxxxxxxxx
+    ADDR[382] = xxxxxxxxxxxxxxxx
+    ADDR[383] = xxxxxxxxxxxxxxxx
+    ADDR[384] = xxxxxxxxxxxxxxxx
+    ADDR[385] = xxxxxxxxxxxxxxxx
+    ADDR[386] = xxxxxxxxxxxxxxxx
+    ADDR[387] = xxxxxxxxxxxxxxxx
+    ADDR[388] = xxxxxxxxxxxxxxxx
+    ADDR[389] = xxxxxxxxxxxxxxxx
+    ADDR[390] = xxxxxxxxxxxxxxxx
+    ADDR[391] = xxxxxxxxxxxxxxxx
+    ADDR[392] = xxxxxxxxxxxxxxxx
+    ADDR[393] = xxxxxxxxxxxxxxxx
+    ADDR[394] = xxxxxxxxxxxxxxxx
+    ADDR[395] = xxxxxxxxxxxxxxxx
+    ADDR[396] = xxxxxxxxxxxxxxxx
+    ADDR[397] = xxxxxxxxxxxxxxxx
+    ADDR[398] = xxxxxxxxxxxxxxxx
+    ADDR[399] = xxxxxxxxxxxxxxxx
+    ADDR[400] = xxxxxxxxxxxxxxxx
+    ADDR[401] = xxxxxxxxxxxxxxxx
+    ADDR[402] = xxxxxxxxxxxxxxxx
+    ADDR[403] = xxxxxxxxxxxxxxxx
+    ADDR[404] = xxxxxxxxxxxxxxxx
+    ADDR[405] = xxxxxxxxxxxxxxxx
+    ADDR[406] = xxxxxxxxxxxxxxxx
+    ADDR[407] = xxxxxxxxxxxxxxxx
+    ADDR[408] = xxxxxxxxxxxxxxxx
+    ADDR[409] = xxxxxxxxxxxxxxxx
+    ADDR[410] = xxxxxxxxxxxxxxxx
+    ADDR[411] = xxxxxxxxxxxxxxxx
+    ADDR[412] = xxxxxxxxxxxxxxxx
+    ADDR[413] = xxxxxxxxxxxxxxxx
+    ADDR[414] = xxxxxxxxxxxxxxxx
+    ADDR[415] = xxxxxxxxxxxxxxxx
+    ADDR[416] = xxxxxxxxxxxxxxxx
+    ADDR[417] = xxxxxxxxxxxxxxxx
+    ADDR[418] = xxxxxxxxxxxxxxxx
+    ADDR[419] = xxxxxxxxxxxxxxxx
+    ADDR[420] = xxxxxxxxxxxxxxxx
+    ADDR[421] = xxxxxxxxxxxxxxxx
+    ADDR[422] = xxxxxxxxxxxxxxxx
+    ADDR[423] = xxxxxxxxxxxxxxxx
+    ADDR[424] = xxxxxxxxxxxxxxxx
+    ADDR[425] = xxxxxxxxxxxxxxxx
+    ADDR[426] = xxxxxxxxxxxxxxxx
+    ADDR[427] = xxxxxxxxxxxxxxxx
+    ADDR[428] = xxxxxxxxxxxxxxxx
+    ADDR[429] = xxxxxxxxxxxxxxxx
+    ADDR[430] = xxxxxxxxxxxxxxxx
+    ADDR[431] = xxxxxxxxxxxxxxxx
+    ADDR[432] = xxxxxxxxxxxxxxxx
+    ADDR[433] = xxxxxxxxxxxxxxxx
+    ADDR[434] = xxxxxxxxxxxxxxxx
+    ADDR[435] = xxxxxxxxxxxxxxxx
+    ADDR[436] = xxxxxxxxxxxxxxxx
+    ADDR[437] = xxxxxxxxxxxxxxxx
+    ADDR[438] = xxxxxxxxxxxxxxxx
+    ADDR[439] = xxxxxxxxxxxxxxxx
+    ADDR[440] = xxxxxxxxxxxxxxxx
+    ADDR[441] = xxxxxxxxxxxxxxxx
+    ADDR[442] = xxxxxxxxxxxxxxxx
+    ADDR[443] = xxxxxxxxxxxxxxxx
+    ADDR[444] = xxxxxxxxxxxxxxxx
+    ADDR[445] = xxxxxxxxxxxxxxxx
+    ADDR[446] = xxxxxxxxxxxxxxxx
+    ADDR[447] = xxxxxxxxxxxxxxxx
+    ADDR[448] = xxxxxxxxxxxxxxxx
+    ADDR[449] = xxxxxxxxxxxxxxxx
+    ADDR[450] = xxxxxxxxxxxxxxxx
+    ADDR[451] = xxxxxxxxxxxxxxxx
+    ADDR[452] = xxxxxxxxxxxxxxxx
+    ADDR[453] = xxxxxxxxxxxxxxxx
+    ADDR[454] = xxxxxxxxxxxxxxxx
+    ADDR[455] = xxxxxxxxxxxxxxxx
+    ADDR[456] = xxxxxxxxxxxxxxxx
+    ADDR[457] = xxxxxxxxxxxxxxxx
+    ADDR[458] = xxxxxxxxxxxxxxxx
+    ADDR[459] = xxxxxxxxxxxxxxxx
+    ADDR[460] = xxxxxxxxxxxxxxxx
+    ADDR[461] = xxxxxxxxxxxxxxxx
+    ADDR[462] = xxxxxxxxxxxxxxxx
+    ADDR[463] = xxxxxxxxxxxxxxxx
+    ADDR[464] = xxxxxxxxxxxxxxxx
+    ADDR[465] = xxxxxxxxxxxxxxxx
+    ADDR[466] = xxxxxxxxxxxxxxxx
+    ADDR[467] = xxxxxxxxxxxxxxxx
+    ADDR[468] = xxxxxxxxxxxxxxxx
+    ADDR[469] = xxxxxxxxxxxxxxxx
+    ADDR[470] = xxxxxxxxxxxxxxxx
+    ADDR[471] = xxxxxxxxxxxxxxxx
+    ADDR[472] = xxxxxxxxxxxxxxxx
+    ADDR[473] = xxxxxxxxxxxxxxxx
+    ADDR[474] = xxxxxxxxxxxxxxxx
+    ADDR[475] = xxxxxxxxxxxxxxxx
+    ADDR[476] = xxxxxxxxxxxxxxxx
+    ADDR[477] = xxxxxxxxxxxxxxxx
+    ADDR[478] = xxxxxxxxxxxxxxxx
+    ADDR[479] = xxxxxxxxxxxxxxxx
+    ADDR[480] = xxxxxxxxxxxxxxxx
+    ADDR[481] = xxxxxxxxxxxxxxxx
+    ADDR[482] = xxxxxxxxxxxxxxxx
+    ADDR[483] = xxxxxxxxxxxxxxxx
+    ADDR[484] = xxxxxxxxxxxxxxxx
+    ADDR[485] = xxxxxxxxxxxxxxxx
+    ADDR[486] = xxxxxxxxxxxxxxxx
+    ADDR[487] = xxxxxxxxxxxxxxxx
+    ADDR[488] = xxxxxxxxxxxxxxxx
+    ADDR[489] = xxxxxxxxxxxxxxxx
+    ADDR[490] = xxxxxxxxxxxxxxxx
+    ADDR[491] = xxxxxxxxxxxxxxxx
+    ADDR[492] = xxxxxxxxxxxxxxxx
+    ADDR[493] = xxxxxxxxxxxxxxxx
+    ADDR[494] = xxxxxxxxxxxxxxxx
+    ADDR[495] = xxxxxxxxxxxxxxxx
+    ADDR[496] = xxxxxxxxxxxxxxxx
+    ADDR[497] = xxxxxxxxxxxxxxxx
+    ADDR[498] = xxxxxxxxxxxxxxxx
+    ADDR[499] = xxxxxxxxxxxxxxxx
+    ADDR[500] = xxxxxxxxxxxxxxxx
+    ADDR[501] = xxxxxxxxxxxxxxxx
+    ADDR[502] = xxxxxxxxxxxxxxxx
+    ADDR[503] = xxxxxxxxxxxxxxxx
+    ADDR[504] = xxxxxxxxxxxxxxxx
+    ADDR[505] = xxxxxxxxxxxxxxxx
+    ADDR[506] = xxxxxxxxxxxxxxxx
+    ADDR[507] = xxxxxxxxxxxxxxxx
+    ADDR[508] = xxxxxxxxxxxxxxxx
+    ADDR[509] = xxxxxxxxxxxxxxxx
+    ADDR[510] = xxxxxxxxxxxxxxxx
+    ADDR[511] = xxxxxxxxxxxxxxxx
+    ADDR[512] = xxxxxxxxxxxxxxxx
+    ADDR[513] = xxxxxxxxxxxxxxxx
+    ADDR[514] = xxxxxxxxxxxxxxxx
+    ADDR[515] = xxxxxxxxxxxxxxxx
+    ADDR[516] = xxxxxxxxxxxxxxxx
+    ADDR[517] = xxxxxxxxxxxxxxxx
+    ADDR[518] = xxxxxxxxxxxxxxxx
+    ADDR[519] = xxxxxxxxxxxxxxxx
+    ADDR[520] = xxxxxxxxxxxxxxxx
+    ADDR[521] = xxxxxxxxxxxxxxxx
+    ADDR[522] = xxxxxxxxxxxxxxxx
+    ADDR[523] = xxxxxxxxxxxxxxxx
+    ADDR[524] = xxxxxxxxxxxxxxxx
+    ADDR[525] = xxxxxxxxxxxxxxxx
+    ADDR[526] = xxxxxxxxxxxxxxxx
+    ADDR[527] = xxxxxxxxxxxxxxxx
+    ADDR[528] = xxxxxxxxxxxxxxxx
+    ADDR[529] = xxxxxxxxxxxxxxxx
+    ADDR[530] = xxxxxxxxxxxxxxxx
+    ADDR[531] = xxxxxxxxxxxxxxxx
+    ADDR[532] = xxxxxxxxxxxxxxxx
+    ADDR[533] = xxxxxxxxxxxxxxxx
+    ADDR[534] = xxxxxxxxxxxxxxxx
+    ADDR[535] = xxxxxxxxxxxxxxxx
+    ADDR[536] = xxxxxxxxxxxxxxxx
+    ADDR[537] = xxxxxxxxxxxxxxxx
+    ADDR[538] = xxxxxxxxxxxxxxxx
+    ADDR[539] = xxxxxxxxxxxxxxxx
+    ADDR[540] = xxxxxxxxxxxxxxxx
+    ADDR[541] = xxxxxxxxxxxxxxxx
+    ADDR[542] = xxxxxxxxxxxxxxxx
+    ADDR[543] = xxxxxxxxxxxxxxxx
+    ADDR[544] = xxxxxxxxxxxxxxxx
+    ADDR[545] = xxxxxxxxxxxxxxxx
+    ADDR[546] = xxxxxxxxxxxxxxxx
+    ADDR[547] = xxxxxxxxxxxxxxxx
+    ADDR[548] = xxxxxxxxxxxxxxxx
+    ADDR[549] = xxxxxxxxxxxxxxxx
+    ADDR[550] = xxxxxxxxxxxxxxxx
+    ADDR[551] = xxxxxxxxxxxxxxxx
+    ADDR[552] = xxxxxxxxxxxxxxxx
+    ADDR[553] = xxxxxxxxxxxxxxxx
+ -> Content of POSITION_RAM (All weights):
+    ADDR[00] = 17668
+    ADDR[01] =     0
+    ADDR[02] =     0
+    ADDR[03] =     0
+    ADDR[04] =     0
+    ADDR[05] =     0
+    ADDR[06] =     0
+    ADDR[07] =     0
+    ADDR[08] =     0
+    ADDR[09] =     0
+    ADDR[10] =     0
+    ADDR[11] =     0
+    ADDR[12] =     0
+    ADDR[13] =     0
+    ADDR[14] =     0
+    ADDR[15] =     0
+    ADDR[16] =     0
+    ADDR[17] =     0
+    ADDR[18] =     0
+    ADDR[19] =     0
+    ADDR[20] =     0
+    ADDR[21] =     0
+    ADDR[22] =     0
+    ADDR[23] =     0
+    ADDR[24] =     0
+    ADDR[25] =     0
+    ADDR[26] =     0
+    ADDR[27] =     0
+    ADDR[28] =     0
+    ADDR[29] =     0
+    ADDR[30] =     0
+    ADDR[31] =     0
+    ADDR[32] =     0
+    ADDR[33] =     0
+    ADDR[34] =     0
+    ADDR[35] =     0
+    ADDR[36] =     0
+    ADDR[37] =     0
+    ADDR[38] =     0
+    ADDR[39] =     0
+    ADDR[40] =     0
+    ADDR[41] =     0
+    ADDR[42] =     0
+    ADDR[43] =     0
+    ADDR[44] =     0
+    ADDR[45] =     0
+    ADDR[46] =     0
+    ADDR[47] =     0
+    ADDR[48] =     0
+    ADDR[49] =     0
+    ADDR[50] =     0
+    ADDR[51] =     0
+    ADDR[52] =     0
+    ADDR[53] =     0
+    ADDR[54] =     0
+    ADDR[55] =     0
+    ADDR[56] =     0
+    ADDR[57] =     0
+    ADDR[58] =     0
+    ADDR[59] =     0
+    ADDR[60] =     0
+    ADDR[61] =     0
+    ADDR[62] =     0
+    ADDR[63] =     0
+    ADDR[64] =     0
+    ADDR[65] =     0
+----------------------------------------
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1224.938 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 193445 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 174
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1224.938 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 193445 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1224.938 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+dout: 1
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 0
+dout: 8000000000000000
+ -> Output saved to output_case_1.out
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 193445 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 157
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1224.938 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1224.938 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 193445 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1231.973 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out (Binary format)
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 193445 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/clog2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:162]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:171]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult_hqc_v1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=277) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/THUAN/Downloads/poly_mult/mem_dual.v" Line 8. Module mem_dual(WIDTH=64,DEPTH=554) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=277)
+Compiling module xil_defaultlib.poly_mult_default
+Compiling module xil_defaultlib.mem_dual(WIDTH=64,DEPTH=554)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.poly_mult_hqc_v1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot poly_mult_hqc_v1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1231.973 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out (Binary format)
+========================================
+STARTING TESTCASE 2
+Loading: dense_2.mem and sparse_2.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_2.out (Binary format)
+========================================
+STARTING TESTCASE 3
+Loading: dense_3.mem and sparse_3.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_3.out (Binary format)
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 580325 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1231.973 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out (Binary format)
+========================================
+STARTING TESTCASE 2
+Loading: dense_2.mem and sparse_2.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_2.out (Binary format)
+========================================
+STARTING TESTCASE 3
+Loading: dense_3.mem and sparse_3.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_3.out (Binary format)
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 580325 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'poly_mult_hqc_v1_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'poly_mult_hqc_v1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj poly_mult_hqc_v1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot poly_mult_hqc_v1_tb_behav xil_defaultlib.poly_mult_hqc_v1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_result' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:61]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'add_addr' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:62]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_0' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:185]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'address_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult.v:186]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'data_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:77]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'data' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:83]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v:84]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/poly_mult/poly_mult.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "poly_mult_hqc_v1_tb_behav -key {Behavioral:sim_1:Functional:poly_mult_hqc_v1_tb} -tclbatch {poly_mult_hqc_v1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source poly_mult_hqc_v1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+========================================
+STARTING TESTCASE 1
+Loading: dense_1.mem and sparse_1.mem
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'poly_mult_hqc_v1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1231.973 ; gain = 0.000
+run all
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_1.out (Binary format)
+========================================
+STARTING TESTCASE 2
+Loading: dense_2.mem and sparse_2.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_2.out (Binary format)
+========================================
+STARTING TESTCASE 3
+Loading: dense_3.mem and sparse_3.mem
+ -> DONE! Cycles: 18620
+ -> Output saved to output_case_3.out (Binary format)
+========================================
+ALL TESTCASES COMPLETED SUCCESSFULLY!
+$finish called at time : 580325 ns : File "C:/Users/THUAN/Downloads/poly_mult/poly_mult_hqc_v1_tb.v" Line 156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 21 22:01:19 2026...

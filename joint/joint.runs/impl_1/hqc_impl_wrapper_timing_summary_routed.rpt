@@ -1,0 +1,977 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Jan 26 20:42:35 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file hqc_impl_wrapper_timing_summary_routed.rpt -pb hqc_impl_wrapper_timing_summary_routed.pb -rpx hqc_impl_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : hqc_impl_wrapper
+| Device       : 7k70t-fbv676
+| Speed File   : -1  PRODUCTION 1.12 2017-02-17
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                              Violations  
+---------  ----------------  ---------------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell              1000        
+SYNTH-4    Warning           Shallow depth for a dedicated block RAM  7           
+TIMING-20  Warning           Non-clocked latch                        230         
+LATCH-1    Advisory          Existing latches in the design           1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (14360)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (25015)
+5. checking no_input_delay (1)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (14360)
+----------------------------
+ There are 9286 register/latch pins with no clock driven by root clock pin: sys_clk_p (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[0]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[1]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[2]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[3]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[4]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[5]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[6]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[7]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[2]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/count_steps_reg[0]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[0]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[1]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[2]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/red_state_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/red_state_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/red_state_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/red_state_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_h_state_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_h_state_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_h_state_reg[5]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[0]/Q (HIGH)
+
+ There are 169 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[10]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[11]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[12]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[13]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[16]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[17]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[18]/Q (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[19]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[1]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[20]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[21]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[22]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[23]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[24]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[25]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[26]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[2]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[3]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[4]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[5]/Q (HIGH)
+
+ There are 169 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[6]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[7]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[8]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/FSM_onehot_state_reg[9]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/count_hash_inputs_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_processing_reg/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_addr_reg[0]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_addr_reg[1]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_addr_reg[2]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_addr_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/FSM_onehot_state_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[0]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[1]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[2]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[3]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[4]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[5]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[6]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[7]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_onehot_state_shake_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[2]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/count_steps_reg[0]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[0]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[1]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[2]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/state_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/red_state_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/red_state_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/red_state_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/red_state_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_h_state_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_h_state_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_h_state_reg[5]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[0]/Q (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[10]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[11]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[12]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[13]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[16]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[17]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[18]/Q (HIGH)
+
+ There are 167 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[19]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[1]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[20]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[21]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[22]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[23]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[24]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[25]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[26]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[2]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[3]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[4]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[5]/Q (HIGH)
+
+ There are 168 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[6]/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[7]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[8]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/FSM_onehot_state_reg[9]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/ENCAP_MODULE/count_hash_inputs_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/hash_processing_reg/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/theta_addr_reg[0]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/theta_addr_reg[1]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/theta_addr_reg[2]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/ENCAP_MODULE/theta_addr_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[4]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[5]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[6]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[7]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_onehot_state_shake_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/FSM_sequential_ctx_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/count_steps_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/done_s_reg/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/state_reg[0]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/state_reg[1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/state_reg[2]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/state_reg[3]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/red_state_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/red_state_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/red_state_reg[2]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FIXEDWEIGHT/red_state_reg[3]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[0]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[1]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[3]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[4]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[5]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[6]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_state_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_trx_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_trx_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: dut/KEYGEN_MODULE/FSM_onehot_trx_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/VECTSETRAND/count_steps_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/VECTSETRAND/state_shake_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/VECTSETRAND/state_shake_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/VECTSETRAND/state_shake_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/shake_din_valid_reg/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: dut/KEYGEN_MODULE/shake_force_done_reg/Q (HIGH)
+
+ There are 156 register/latch pins with no clock driven by root clock pin: dut/SHAKE256/control_path_instance/FSM_sequential_current_state_reg[0]/Q (HIGH)
+
+ There are 156 register/latch pins with no clock driven by root clock pin: dut/SHAKE256/control_path_instance/FSM_sequential_current_state_reg[1]/Q (HIGH)
+
+ There are 156 register/latch pins with no clock driven by root clock pin: dut/SHAKE256/control_path_instance/FSM_sequential_current_state_reg[2]/Q (HIGH)
+
+ There are 156 register/latch pins with no clock driven by root clock pin: dut/SHAKE256/control_path_instance/FSM_sequential_current_state_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: dut/SHAKE256/control_path_instance/din_ready_internal_reg/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: operation_reg[0]/Q (HIGH)
+
+ There are 155 register/latch pins with no clock driven by root clock pin: operation_reg[1]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (25015)
+----------------------------------------------------
+ There are 25015 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                25016          inf        0.000                      0                25016           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay         25016 Endpoints
+Min Delay         25016 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[21].ram/ram_high_reg_0_1_18_18/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.588ns  (logic 0.495ns (2.663%)  route 18.093ns (97.337%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.524    16.913    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X41Y50         LUT5 (Prop_lut5_I1_O)        0.053    16.966 r  dut/SHAKE256/control_path_instance/ram_low_reg_0_1_14_14_i_2__7/O
+                         net (fo=2, routed)           1.205    18.171    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[283]
+    SLICE_X51Y42         LUT6 (Prop_lut6_I5_O)        0.053    18.224 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_18_18_i_1__7/O
+                         net (fo=1, routed)           0.363    18.588    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[21].ram/ram_high_reg_0_1_18_18/D
+    SLICE_X50Y42         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[21].ram/ram_high_reg_0_1_18_18/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_8_8/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.569ns  (logic 0.495ns (2.666%)  route 18.074ns (97.334%))
+  Logic Levels:           3  (LDCE=1 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 f  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.419    16.808    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/absorb_data
+    SLICE_X37Y53         LUT4 (Prop_lut4_I3_O)        0.053    16.861 r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_8_8_i_3__9/O
+                         net (fo=2, routed)           1.185    18.046    dut/SHAKE256/control_path_instance/ram_low_reg_0_1_29_29[97]
+    SLICE_X38Y31         LUT6 (Prop_lut6_I5_O)        0.053    18.099 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_8_8_i_1__8/O
+                         net (fo=1, routed)           0.470    18.569    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_8_8/D
+    SLICE_X38Y26         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_8_8/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[2].ram/ram_high_reg_0_1_6_6/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.556ns  (logic 0.495ns (2.668%)  route 18.061ns (97.332%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.886    17.275    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X36Y48         LUT5 (Prop_lut5_I1_O)        0.053    17.328 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_6_6_i_3__12/O
+                         net (fo=2, routed)           0.916    18.243    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[411]
+    SLICE_X47Y33         LUT6 (Prop_lut6_I5_O)        0.053    18.296 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_6_6_i_1__13/O
+                         net (fo=1, routed)           0.260    18.556    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[2].ram/ram_high_reg_0_1_6_6/D
+    SLICE_X46Y33         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[2].ram/ram_high_reg_0_1_6_6/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_9_9/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.527ns  (logic 0.495ns (2.672%)  route 18.032ns (97.328%))
+  Logic Levels:           3  (LDCE=1 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 f  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.770    17.159    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/absorb_data
+    SLICE_X37Y50         LUT4 (Prop_lut4_I3_O)        0.053    17.212 r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/ram_high_reg_0_1_9_9_i_3__7/O
+                         net (fo=2, routed)           0.756    17.968    dut/SHAKE256/control_path_instance/ram_low_reg_0_1_29_29[98]
+    SLICE_X37Y29         LUT6 (Prop_lut6_I5_O)        0.053    18.021 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_9_9_i_1__2/O
+                         net (fo=1, routed)           0.506    18.527    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_9_9/D
+    SLICE_X38Y26         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[4].ram/ram_high_reg_0_1_9_9/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[22].ram/ram_high_reg_0_1_1_1/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.414ns  (logic 0.495ns (2.688%)  route 17.919ns (97.312%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.414    16.803    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X37Y53         LUT5 (Prop_lut5_I1_O)        0.053    16.856 r  dut/SHAKE256/control_path_instance/ram_low_reg_0_1_8_8_i_2__3/O
+                         net (fo=2, routed)           0.958    17.814    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[474]
+    SLICE_X37Y41         LUT6 (Prop_lut6_I5_O)        0.053    17.867 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_1_1_i_1__8/O
+                         net (fo=1, routed)           0.546    18.414    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[22].ram/ram_high_reg_0_1_1_1/D
+    SLICE_X38Y35         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[22].ram/ram_high_reg_0_1_1_1/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[17].ram/ram_high_reg_0_1_5_5/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.409ns  (logic 0.495ns (2.689%)  route 17.914ns (97.311%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.526    16.915    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X40Y50         LUT5 (Prop_lut5_I1_O)        0.053    16.968 r  dut/SHAKE256/control_path_instance/ram_low_reg_0_1_21_21_i_2__0/O
+                         net (fo=2, routed)           0.992    17.960    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[379]
+    SLICE_X54Y36         LUT6 (Prop_lut6_I5_O)        0.053    18.013 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_5_5_i_1__14/O
+                         net (fo=1, routed)           0.396    18.409    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[17].ram/ram_high_reg_0_1_5_5/D
+    SLICE_X50Y36         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[17].ram/ram_high_reg_0_1_5_5/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[24].ram/ram_low_reg_0_1_25_25/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.335ns  (logic 0.495ns (2.700%)  route 17.840ns (97.300%))
+  Logic Levels:           3  (LDCE=1 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 f  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.770    17.159    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/absorb_data
+    SLICE_X37Y50         LUT4 (Prop_lut4_I3_O)        0.053    17.212 r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/ram_high_reg_0_1_9_9_i_3__7/O
+                         net (fo=2, routed)           0.701    17.913    dut/SHAKE256/control_path_instance/ram_low_reg_0_1_29_29[98]
+    SLICE_X40Y52         LUT6 (Prop_lut6_I3_O)        0.053    17.966 r  dut/SHAKE256/control_path_instance/ram_low_reg_0_1_25_25_i_1__0/O
+                         net (fo=1, routed)           0.368    18.335    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[24].ram/ram_low_reg_0_1_25_25/D
+    SLICE_X38Y52         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[24].ram/ram_low_reg_0_1_25_25/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[6].ram/ram_high_reg_0_1_15_15/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.327ns  (logic 0.495ns (2.701%)  route 17.832ns (97.299%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.753    17.142    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X37Y50         LUT5 (Prop_lut5_I1_O)        0.053    17.195 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_15_15_i_2__1/O
+                         net (fo=2, routed)           0.690    17.885    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[315]
+    SLICE_X41Y51         LUT6 (Prop_lut6_I5_O)        0.053    17.938 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_15_15_i_1__5/O
+                         net (fo=1, routed)           0.389    18.327    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[6].ram/ram_high_reg_0_1_15_15/D
+    SLICE_X42Y51         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[6].ram/ram_high_reg_0_1_15_15/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[14].ram/ram_low_reg_0_1_8_8/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.256ns  (logic 0.495ns (2.711%)  route 17.761ns (97.289%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.414    16.803    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X37Y53         LUT5 (Prop_lut5_I1_O)        0.053    16.856 r  dut/SHAKE256/control_path_instance/ram_low_reg_0_1_8_8_i_2__3/O
+                         net (fo=2, routed)           1.061    17.917    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[474]
+    SLICE_X38Y41         LUT6 (Prop_lut6_I3_O)        0.053    17.970 r  dut/SHAKE256/control_path_instance/ram_low_reg_0_1_8_8_i_1__4/O
+                         net (fo=1, routed)           0.287    18.256    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[14].ram/ram_low_reg_0_1_8_8/D
+    SLICE_X38Y41         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[14].ram/ram_low_reg_0_1_8_8/SP/I
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/SHAKE256/control_path_instance/absorb_data_reg/G
+                            (positive level-sensitive latch)
+  Destination:            dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/ram_high_reg_0_1_27_27/SP/I
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        18.169ns  (logic 0.495ns (2.724%)  route 17.674ns (97.276%))
+  Logic Levels:           3  (LDCE=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y39         LDCE                         0.000     0.000 r  dut/SHAKE256/control_path_instance/absorb_data_reg/G
+    SLICE_X14Y39         LDCE (EnToQ_ldce_G_Q)        0.389     0.389 r  dut/SHAKE256/control_path_instance/absorb_data_reg/Q
+                         net (fo=1658, routed)       16.753    17.142    dut/SHAKE256/control_path_instance/absorb_data
+    SLICE_X37Y50         LUT5 (Prop_lut5_I1_O)        0.053    17.195 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_15_15_i_2__1/O
+                         net (fo=2, routed)           0.552    17.747    dut/SHAKE256/control_path_instance/data_path_instance/din_ram[315]
+    SLICE_X40Y51         LUT6 (Prop_lut6_I3_O)        0.053    17.800 r  dut/SHAKE256/control_path_instance/ram_high_reg_0_1_27_27_i_1__1/O
+                         net (fo=1, routed)           0.369    18.169    dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/ram_high_reg_0_1_27_27/D
+    SLICE_X42Y52         RAMS32                                       r  dut/SHAKE256/data_path_instance/state_ram_instance/ram_generator[9].ram/ram_high_reg_0_1_27_27/SP/I
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[239]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[111]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.152ns  (logic 0.091ns (59.676%)  route 0.061ns (40.324%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y7          FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[239]/C
+    SLICE_X51Y7          FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[239]/Q
+                         net (fo=2, routed)           0.061     0.152    dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf[239]
+    SLICE_X51Y7          FDRE                                         r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[111]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[72]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[40]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.154ns  (logic 0.091ns (59.229%)  route 0.063ns (40.771%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y19         FDRE                         0.000     0.000 r  dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[72]/C
+    SLICE_X49Y19         FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[72]/Q
+                         net (fo=2, routed)           0.063     0.154    dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in[72]
+    SLICE_X49Y19         FDRE                                         r  dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[40]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[242]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[114]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.154ns  (logic 0.091ns (59.222%)  route 0.063ns (40.778%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y8          FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[242]/C
+    SLICE_X49Y8          FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[242]/Q
+                         net (fo=2, routed)           0.063     0.154    dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf[242]
+    SLICE_X49Y8          FDRE                                         r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[114]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[253]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[125]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.154ns  (logic 0.091ns (59.222%)  route 0.063ns (40.778%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y10         FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[253]/C
+    SLICE_X43Y10         FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[253]/Q
+                         net (fo=2, routed)           0.063     0.154    dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf[253]
+    SLICE_X43Y10         FDRE                                         r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[125]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[42]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.154ns  (logic 0.091ns (59.045%)  route 0.063ns (40.955%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y21         FDRE                         0.000     0.000 r  dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[42]/C
+    SLICE_X35Y21         FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[42]/Q
+                         net (fo=2, routed)           0.063     0.154    dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in[42]
+    SLICE_X35Y21         FDRE                                         r  dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/msg_in_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[233]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[105]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.155ns  (logic 0.091ns (58.664%)  route 0.064ns (41.336%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y7          FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[233]/C
+    SLICE_X51Y7          FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[233]/Q
+                         net (fo=2, routed)           0.064     0.155    dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf[233]
+    SLICE_X51Y7          FDRE                                         r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[105]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[236]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[108]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.155ns  (logic 0.091ns (58.664%)  route 0.064ns (41.336%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y8          FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[236]/C
+    SLICE_X49Y8          FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[236]/Q
+                         net (fo=2, routed)           0.064     0.155    dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf[236]
+    SLICE_X49Y8          FDRE                                         r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/EXPANSE_AND_SUM/din_buf_reg[108]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/ENCAP_MODULE/msg_in_reg[43]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/ENCAP_MODULE/msg_in_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.155ns  (logic 0.091ns (58.664%)  route 0.064ns (41.336%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y53          FDRE                         0.000     0.000 r  dut/ENCAP_MODULE/msg_in_reg[43]/C
+    SLICE_X1Y53          FDRE (Prop_fdre_C_Q)         0.091     0.091 r  dut/ENCAP_MODULE/msg_in_reg[43]/Q
+                         net (fo=2, routed)           0.064     0.155    dut/ENCAP_MODULE/msg_in[43]
+    SLICE_X1Y53          FDRE                                         r  dut/ENCAP_MODULE/msg_in_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/FIND_PEAKS/FIND_PEAKS_0/dout_valid_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/FIND_PEAKS/dout_valid_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.155ns  (logic 0.100ns (64.432%)  route 0.055ns (35.568%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y16         FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/FIND_PEAKS/FIND_PEAKS_0/dout_valid_reg/C
+    SLICE_X29Y16         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/FIND_PEAKS/FIND_PEAKS_0/dout_valid_reg/Q
+                         net (fo=1, routed)           0.055     0.155    dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/FIND_PEAKS/dout_valid
+    SLICE_X29Y16         FDRE                                         r  dut/DECAP_MODULE/DECRYPT/DECODE/RM_DECOD/FIND_PEAKS/dout_valid_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dut/DECAP_MODULE/DECRYPT/V_MINUS_UY/XOR_BASED_ADDER/add_out_valid_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            dut/DECAP_MODULE/DECRYPT/V_MINUS_UY/XOR_BASED_ADDER/add_out_valid_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.155ns  (logic 0.100ns (64.432%)  route 0.055ns (35.568%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y15         FDRE                         0.000     0.000 r  dut/DECAP_MODULE/DECRYPT/V_MINUS_UY/XOR_BASED_ADDER/add_out_valid_reg_reg/C
+    SLICE_X37Y15         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  dut/DECAP_MODULE/DECRYPT/V_MINUS_UY/XOR_BASED_ADDER/add_out_valid_reg_reg/Q
+                         net (fo=2, routed)           0.055     0.155    dut/DECAP_MODULE/DECRYPT/V_MINUS_UY/XOR_BASED_ADDER/add_out_valid_reg__0
+    SLICE_X37Y15         FDRE                                         r  dut/DECAP_MODULE/DECRYPT/V_MINUS_UY/XOR_BASED_ADDER/add_out_valid_reg/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

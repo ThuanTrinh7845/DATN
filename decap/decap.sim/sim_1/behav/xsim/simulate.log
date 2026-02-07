@@ -1,4 +1,39 @@
 Time resolution is 1 ps
-Decode Clock Cycles:       4611
-Total Clock Cycles:      45599
-$finish called at time : 459675 ns : File "C:/Users/THUAN/Downloads/decap/decap_tb.v" Line 332
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 1
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 4
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 7
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 8
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 10
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 12
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 15
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 17
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 25
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 30
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 33
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 37
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 38
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 41
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 43
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 46
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 50
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 51
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 57
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 58
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 64
+WARNING: Data truncated while reading Datafile: y_128.in, while loading at index: 65
+WARNING: Too many words specified in data file y_128.in
+
+================ [DEBUG PHASE 3: DEEP DIVE] ================
+>>> CHECK INTERNAL DECRYPT SIGNALS
+    DECAP.uv_addr_0_dec: 000000000
+>>> CHECK RESET & CLOCK
+    DECAP.rst: 0
+>>> CHECK MUX INPUTS
+    DECAP.u_v_in_addr: 00000000
+    DECAP.encap_out_addr: 00000000
+    DECAP.encap_out_en: 0
+>>> CHECK ENCAP INTERNAL
+    ENCAP.h_addr_0: 000000000
+[ERROR] Decrypted Message is X!
+================ [END REPORT] ================
+

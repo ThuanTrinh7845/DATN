@@ -1,0 +1,332 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/add_fft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_fft
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/barrett_red_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett_red_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/cdw_xor_tmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdw_xor_tmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/concat_code.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concat_code
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/decap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decap
+WARNING: [VRFC 10-2938] 'start_decrypt' is already implicitly declared on line 356 [C:/Users/THUAN/Downloads/decap/decap.v:862]
+WARNING: [VRFC 10-2938] 'done_decrypt' is already implicitly declared on line 358 [C:/Users/THUAN/Downloads/decap/decap.v:863]
+WARNING: [VRFC 10-2938] 'start_encap' is already implicitly declared on line 505 [C:/Users/THUAN/Downloads/decap/decap.v:864]
+WARNING: [VRFC 10-2938] 'done_encrypt' is already implicitly declared on line 536 [C:/Users/THUAN/Downloads/decap/decap.v:865]
+WARNING: [VRFC 10-3380] identifier 'dec_uv' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:332]
+WARNING: [VRFC 10-3380] identifier 'uv_addr_1_dec' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:333]
+WARNING: [VRFC 10-3380] identifier 'dec_uv' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:335]
+WARNING: [VRFC 10-3380] identifier 'uv_addr_1_dec' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:336]
+WARNING: [VRFC 10-3380] identifier 'verify_u_reg' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:395]
+WARNING: [VRFC 10-3380] identifier 'verify_v' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:409]
+WARNING: [VRFC 10-3380] identifier 'verify_d' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap.v:422]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/decrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decrypt
+WARNING: [VRFC 10-2938] 'ram_din_rd_o' is already implicitly declared on line 168 [C:/Users/THUAN/Downloads/decap/decrypt.v:191]
+WARNING: [VRFC 10-2938] 'ram_din_i' is already implicitly declared on line 170 [C:/Users/THUAN/Downloads/decap/decrypt.v:192]
+WARNING: [VRFC 10-2938] 'ram_din_addr_o' is already implicitly declared on line 169 [C:/Users/THUAN/Downloads/decap/decrypt.v:193]
+WARNING: [VRFC 10-2938] 'done_u_minus_vy' is already implicitly declared on line 157 [C:/Users/THUAN/Downloads/decap/decrypt.v:194]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/encap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encap
+WARNING: [VRFC 10-2938] 'count_hash_inputs' is already implicitly declared on line 537 [C:/Users/THUAN/Downloads/decap/encap.v:555]
+WARNING: [VRFC 10-3380] identifier 'd_out' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:247]
+WARNING: [VRFC 10-3380] identifier 'u_v_int' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:248]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/decap/encap.v:246]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/decap/encap.v:247]
+WARNING: [VRFC 10-3380] identifier 'sel_uv' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:326]
+WARNING: [VRFC 10-3380] identifier 'u_v_reg' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:504]
+WARNING: [VRFC 10-3380] identifier 'u_v_reg' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:505]
+WARNING: [VRFC 10-3380] identifier 'last_block_capture' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:513]
+WARNING: [VRFC 10-3380] identifier 'block_capture' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:516]
+WARNING: [VRFC 10-3380] identifier 'count_hash_inputs_test' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:525]
+WARNING: [VRFC 10-3380] identifier 'count_hash_inputs_test' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:528]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/decap/encap.v:544]
+WARNING: [VRFC 10-3380] identifier 'total_shake_input_count' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:595]
+WARNING: [VRFC 10-3380] identifier 'total_shake_input_count' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:624]
+WARNING: [VRFC 10-3380] identifier 'total_shake_input_count' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:845]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1100]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1116]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1131]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1171]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1184]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1211]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1221]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1238]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1250]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1262]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1279]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1308]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1331]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1351]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1398]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1420]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1442]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1469]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1474]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1485]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1501]
+WARNING: [VRFC 10-3380] identifier 'start_hash' is used before its declaration [C:/Users/THUAN/Downloads/decap/encap.v:1511]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+WARNING: [VRFC 10-2938] 'r1_internal' is already implicitly declared on line 365 [C:/Users/THUAN/Downloads/decap/encrypt.v:392]
+WARNING: [VRFC 10-2938] 'r2_internal' is already implicitly declared on line 374 [C:/Users/THUAN/Downloads/decap/encrypt.v:393]
+WARNING: [VRFC 10-2938] 'loc_addr' is already implicitly declared on line 372 [C:/Users/THUAN/Downloads/decap/encrypt.v:395]
+WARNING: [VRFC 10-2938] 'pm_out' is already implicitly declared on line 381 [C:/Users/THUAN/Downloads/decap/encrypt.v:396]
+WARNING: [VRFC 10-3248] data object 'pm_out' is already declared [C:/Users/THUAN/Downloads/decap/encrypt.v:487]
+WARNING: [VRFC 10-9364] second declaration of 'pm_out' is ignored [C:/Users/THUAN/Downloads/decap/encrypt.v:487]
+WARNING: [VRFC 10-2938] 'pm_rd_addr' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/decap/encrypt.v:488]
+WARNING: [VRFC 10-2938] 'pm_rd_en' is already implicitly declared on line 478 [C:/Users/THUAN/Downloads/decap/encrypt.v:489]
+WARNING: [VRFC 10-2938] 'add_out' is already implicitly declared on line 481 [C:/Users/THUAN/Downloads/decap/encrypt.v:491]
+WARNING: [VRFC 10-2938] 'add_out_addr' is already implicitly declared on line 482 [C:/Users/THUAN/Downloads/decap/encrypt.v:492]
+WARNING: [VRFC 10-2938] 'add_out_valid' is already implicitly declared on line 483 [C:/Users/THUAN/Downloads/decap/encrypt.v:493]
+WARNING: [VRFC 10-2938] 'xor_add_en' is already implicitly declared on line 353 [C:/Users/THUAN/Downloads/decap/encrypt.v:527]
+WARNING: [VRFC 10-2938] 'xor_add_addr' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/decap/encrypt.v:528]
+WARNING: [VRFC 10-2938] 'xor_add_out' is already implicitly declared on line 481 [C:/Users/THUAN/Downloads/decap/encrypt.v:530]
+WARNING: [VRFC 10-2938] 'xor_add_out_addr' is already implicitly declared on line 482 [C:/Users/THUAN/Downloads/decap/encrypt.v:531]
+WARNING: [VRFC 10-2938] 'xor_add_out_valid' is already implicitly declared on line 483 [C:/Users/THUAN/Downloads/decap/encrypt.v:532]
+WARNING: [VRFC 10-2938] 'en_r1' is already implicitly declared on line 364 [C:/Users/THUAN/Downloads/decap/encrypt.v:568]
+WARNING: [VRFC 10-2938] 'en_r2' is already implicitly declared on line 373 [C:/Users/THUAN/Downloads/decap/encrypt.v:569]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/THUAN/Downloads/decap/encrypt.v:742]
+WARNING: [VRFC 10-2938] 'wen_fw' is already implicitly declared on line 364 [C:/Users/THUAN/Downloads/decap/encrypt.v:924]
+WARNING: [VRFC 10-3248] data object 'sel_fw' is already declared [C:/Users/THUAN/Downloads/decap/encrypt.v:924]
+WARNING: [VRFC 10-9364] second declaration of 'sel_fw' is ignored [C:/Users/THUAN/Downloads/decap/encrypt.v:924]
+WARNING: [VRFC 10-2938] 'fw_addr_reg' is already implicitly declared on line 363 [C:/Users/THUAN/Downloads/decap/encrypt.v:931]
+WARNING: [VRFC 10-2938] 'u_cpy_addr' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/decap/encrypt.v:1030]
+WARNING: [VRFC 10-2938] 'wen_u' is already implicitly declared on line 383 [C:/Users/THUAN/Downloads/decap/encrypt.v:1031]
+WARNING: [VRFC 10-2938] 'copy_u' is already implicitly declared on line 477 [C:/Users/THUAN/Downloads/decap/encrypt.v:1032]
+WARNING: [VRFC 10-2938] 'sel_r1_hr2' is already implicitly declared on line 510 [C:/Users/THUAN/Downloads/decap/encrypt.v:1033]
+WARNING: [VRFC 10-3380] identifier 'rd_fw' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:212]
+WARNING: [VRFC 10-3380] identifier 'fw_addr' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:214]
+WARNING: [VRFC 10-3380] identifier 'sel_e' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:215]
+WARNING: [VRFC 10-3380] identifier 'pm_out' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:338]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:737]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:745]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:757]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:779]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:787]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:789]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:813]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:817]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:824]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:826]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:829]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:846]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:858]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:874]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:877]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:883]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:891]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:894]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:900]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:907]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt.v:917]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/encrypt_parallel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_parallel
+WARNING: [VRFC 10-2938] 'r1_internal' is already implicitly declared on line 362 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:406]
+WARNING: [VRFC 10-2938] 'r2_internal_hr2' is already implicitly declared on line 384 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:408]
+WARNING: [VRFC 10-2938] 'r2_internal_sr2' is already implicitly declared on line 385 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:409]
+WARNING: [VRFC 10-2938] 'loc_addr_hr2' is already implicitly declared on line 380 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:411]
+WARNING: [VRFC 10-2938] 'loc_addr_sr2' is already implicitly declared on line 381 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:412]
+WARNING: [VRFC 10-3248] data object 'pm_out' is already declared [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:549]
+WARNING: [VRFC 10-9364] second declaration of 'pm_out' is ignored [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:549]
+WARNING: [VRFC 10-2938] 'pm_rd_addr' is already implicitly declared on line 500 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:550]
+WARNING: [VRFC 10-2938] 'pm_rd_en' is already implicitly declared on line 501 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:551]
+WARNING: [VRFC 10-2938] 'add_out' is already implicitly declared on line 504 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:553]
+WARNING: [VRFC 10-2938] 'add_out_addr' is already implicitly declared on line 505 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:554]
+WARNING: [VRFC 10-2938] 'add_out_valid' is already implicitly declared on line 506 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:555]
+WARNING: [VRFC 10-2938] 'xor_add_en' is already implicitly declared on line 350 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:613]
+WARNING: [VRFC 10-2938] 'xor_add_addr' is already implicitly declared on line 539 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:614]
+WARNING: [VRFC 10-2938] 'xor_add_out' is already implicitly declared on line 543 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:616]
+WARNING: [VRFC 10-2938] 'xor_add_out_addr' is already implicitly declared on line 544 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:617]
+WARNING: [VRFC 10-2938] 'xor_add_out_valid' is already implicitly declared on line 545 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:618]
+WARNING: [VRFC 10-2938] 'en_r1' is already implicitly declared on line 361 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:654]
+WARNING: [VRFC 10-2938] 'en_r2' is already implicitly declared on line 382 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:655]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:673]
+WARNING: [VRFC 10-2938] 'wen_fw' is already implicitly declared on line 361 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:856]
+WARNING: [VRFC 10-3248] data object 'sel_fw' is already declared [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:856]
+WARNING: [VRFC 10-9364] second declaration of 'sel_fw' is ignored [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:856]
+WARNING: [VRFC 10-2938] 'fw_addr_reg' is already implicitly declared on line 360 [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:863]
+WARNING: [VRFC 10-3380] identifier 'rd_fw' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:209]
+WARNING: [VRFC 10-3380] identifier 'fw_addr' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:211]
+WARNING: [VRFC 10-3380] identifier 'sel_e' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:212]
+WARNING: [VRFC 10-3380] identifier 'pm_out_sr2' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:335]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:668]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:676]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:688]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:710]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:718]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:720]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:744]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:748]
+WARNING: [VRFC 10-3380] identifier 'done_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:755]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:757]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:760]
+WARNING: [VRFC 10-3380] identifier 'r2_done' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:777]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:789]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:805]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:808]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:814]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:822]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:825]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:831]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:838]
+WARNING: [VRFC 10-3380] identifier 'start_fw_transfer' is used before its declaration [C:/Users/THUAN/Downloads/decap/encrypt_parallel.v:848]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fft_leaves_butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_leaves_butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fft_part1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_part1
+WARNING: [VRFC 10-3380] identifier 'gf_out_d3' is used before its declaration [C:/Users/THUAN/Downloads/decap/fft_part1.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fft_part2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_part2
+INFO: [VRFC 10-311] analyzing module fft_part2_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fft_retrieve_error_poly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_retrieve_error_poly
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fixed_weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/decap/fixed_weight.v:161]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:233]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:234]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:235]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:506]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:518]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:529]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:540]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:546]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight.v:552]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight_ct
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:153]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:222]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:223]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:224]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:462]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:475]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:493]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:512]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:519]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:526]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_ct.v:533]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight_cww
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:141]
+WARNING: [VRFC 10-2938] 'dout_shake_reduced' is already implicitly declared on line 245 [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:270]
+WARNING: [VRFC 10-2938] 'n_minus_i' is already implicitly declared on line 244 [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:309]
+WARNING: [VRFC 10-2938] 'dout_reduced_valid' is already implicitly declared on line 241 [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:322]
+WARNING: [VRFC 10-3380] identifier 'n_minus_i' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:229]
+WARNING: [VRFC 10-3380] identifier 'n_minus_i' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:232]
+WARNING: [VRFC 10-3380] identifier 'count' is used before its declaration [C:/Users/THUAN/Downloads/decap/fixed_weight_cww.v:272]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/gf_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gf_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/gfmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gfmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_barrett_red.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_barrett_red
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_decod_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_decod_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rmdecod_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rmdecod_expnsum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_expnsum
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rmdecod_findpeaks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_findpeaks
+INFO: [VRFC 10-311] analyzing module findpeaks_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rmdecod_hadamard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_hadamard
+INFO: [VRFC 10-311] analyzing module hadamard_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rmdecod_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rsdecod_elp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_elp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rsdecod_err_val.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_err_val
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rsdecod_roots.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_roots
+WARNING: [VRFC 10-3248] data object 'fft_done' is already declared [C:/Users/THUAN/Downloads/decap/hqc_rsdecod_roots.v:47]
+WARNING: [VRFC 10-9364] second declaration of 'fft_done' is ignored [C:/Users/THUAN/Downloads/decap/hqc_rsdecod_roots.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rsdecod_syndromes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_syndromes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rsdecod_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/hqc_rsdecod_zpoly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_zpoly
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/karatsuba_small.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module karatsuba_small
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/loc_based_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_based_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/mod34.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod34
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/onegen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onegen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/onegen_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onegen_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'mux_word_0' is not allowed [C:/Users/THUAN/Downloads/decap/poly_mult.v:103]
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'mux_word_1' is not allowed [C:/Users/THUAN/Downloads/decap/poly_mult.v:104]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/decap/poly_mult.v:203]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/decap/poly_mult.v:212]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/decap/poly_mult.v:213]
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/THUAN/Downloads/decap/poly_mult.v:216]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/reed_muller_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reed_muller_encode
+WARNING: [VRFC 10-2938] 'wr_en' is already implicitly declared on line 93 [C:/Users/THUAN/Downloads/decap/reed_muller_encode.v:101]
+WARNING: [VRFC 10-3380] identifier 'init' is used before its declaration [C:/Users/THUAN/Downloads/decap/reed_muller_encode.v:67]
+WARNING: [VRFC 10-3380] identifier 'shift_cdw' is used before its declaration [C:/Users/THUAN/Downloads/decap/reed_muller_encode.v:70]
+WARNING: [VRFC 10-3380] identifier 'count_cdw_bytes' is used before its declaration [C:/Users/THUAN/Downloads/decap/reed_muller_encode.v:86]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/reed_solomon_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reed_solomon_encode
+WARNING: [VRFC 10-3380] identifier 'init_msg' is used before its declaration [C:/Users/THUAN/Downloads/decap/reed_solomon_encode.v:75]
+WARNING: [VRFC 10-3380] identifier 'shift_msg' is used before its declaration [C:/Users/THUAN/Downloads/decap/reed_solomon_encode.v:78]
+WARNING: [VRFC 10-3380] identifier 'init_msg' is used before its declaration [C:/Users/THUAN/Downloads/decap/reed_solomon_encode.v:88]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/rm_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rm_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/decap/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/decap/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/decap/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/decap/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/syncfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syncfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/v_minus_uy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_minus_uy
+WARNING: [VRFC 10-3248] data object 'pm_out' is already declared [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:219]
+WARNING: [VRFC 10-9364] second declaration of 'pm_out' is ignored [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:219]
+WARNING: [VRFC 10-3380] identifier 'xor_add_addr' is used before its declaration [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:145]
+WARNING: [VRFC 10-3380] identifier 'xor_add_en' is used before its declaration [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:168]
+WARNING: [VRFC 10-3380] identifier 'xor_add_addr' is used before its declaration [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:169]
+WARNING: [VRFC 10-3380] identifier 'xor_add_out_valid' is used before its declaration [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:170]
+WARNING: [VRFC 10-3380] identifier 'xor_add_out_addr' is used before its declaration [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:171]
+WARNING: [VRFC 10-3380] identifier 'xor_add_out' is used before its declaration [C:/Users/THUAN/Downloads/decap/v_minus_uy.v:172]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/xor_based_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_based_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/decap/decap_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decap_tb
+WARNING: [VRFC 10-3248] data object 'h_0' is already declared [C:/Users/THUAN/Downloads/decap/decap_tb.v:346]
+WARNING: [VRFC 10-9364] second declaration of 'h_0' is ignored [C:/Users/THUAN/Downloads/decap/decap_tb.v:346]
+WARNING: [VRFC 10-3248] data object 'h_1' is already declared [C:/Users/THUAN/Downloads/decap/decap_tb.v:347]
+WARNING: [VRFC 10-9364] second declaration of 'h_1' is ignored [C:/Users/THUAN/Downloads/decap/decap_tb.v:347]
+WARNING: [VRFC 10-3248] data object 's_0' is already declared [C:/Users/THUAN/Downloads/decap/decap_tb.v:371]
+WARNING: [VRFC 10-9364] second declaration of 's_0' is ignored [C:/Users/THUAN/Downloads/decap/decap_tb.v:371]
+WARNING: [VRFC 10-3248] data object 's_1' is already declared [C:/Users/THUAN/Downloads/decap/decap_tb.v:372]
+WARNING: [VRFC 10-9364] second declaration of 's_1' is ignored [C:/Users/THUAN/Downloads/decap/decap_tb.v:372]
+WARNING: [VRFC 10-2938] 'u_1' is already implicitly declared on line 214 [C:/Users/THUAN/Downloads/decap/decap_tb.v:400]
+WARNING: [VRFC 10-2938] 'u_addr_0' is already implicitly declared on line 215 [C:/Users/THUAN/Downloads/decap/decap_tb.v:401]
+WARNING: [VRFC 10-2938] 'v_1' is already implicitly declared on line 219 [C:/Users/THUAN/Downloads/decap/decap_tb.v:402]
+WARNING: [VRFC 10-2938] 'v_addr_0' is already implicitly declared on line 220 [C:/Users/THUAN/Downloads/decap/decap_tb.v:403]
+WARNING: [VRFC 10-3380] identifier 'd_out' is used before its declaration [C:/Users/THUAN/Downloads/decap/decap_tb.v:182]

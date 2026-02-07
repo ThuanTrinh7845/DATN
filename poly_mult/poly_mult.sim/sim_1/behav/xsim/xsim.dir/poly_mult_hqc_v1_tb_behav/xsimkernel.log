@@ -1,7 +1,7 @@
-Running: xsim.dir/poly_mult_hqc_v1_tb_behav/xsimk.exe -simmode gui -wdb poly_mult_hqc_v1_tb_behav.wdb -simrunnum 0 -socket 58362
+Running: xsim.dir/poly_mult_hqc_v1_tb_behav/xsimk.exe -simmode gui -wdb poly_mult_hqc_v1_tb_behav.wdb -simrunnum 0 -socket 51063
 Design successfully loaded
-Design Loading Memory Usage: 9156 KB (Peak: 9156 KB)
-Design Loading CPU Usage: 77 ms
+Design Loading Memory Usage: 9488 KB (Peak: 9488 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 18044 KB (Peak: 18044 KB)
-Simulation CPU Usage: 234 ms
+Simulation Memory Usage: 18360 KB (Peak: 18360 KB)
+Simulation CPU Usage: 109 ms

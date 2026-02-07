@@ -1,0 +1,334 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Feb  5 15:18:35 2026
+# Process ID: 6268
+# Current directory: D:/University/251/DA/wrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13008 D:\University\251\DA\wrapper\wrapper.xpr
+# Log file: D:/University/251/DA/wrapper/vivado.log
+# Journal file: D:/University/251/DA/wrapper\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/University/251/DA/wrapper/wrapper.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/University/251/DA/wrapper/wrapper.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1134.105 ; gain = 135.504
+update_compile_order -fileset sources_1
+set_property top keygen_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'keygen_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'keygen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim/barrett_hqc_128.mem'
+INFO: [SIM-utils-43] Exported 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim/barrett_hqc_192.mem'
+INFO: [SIM-utils-43] Exported 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim/barrett_hqc_256.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj keygen_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot keygen_tb_behav xil_defaultlib.keygen_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot keygen_tb_behav xil_defaultlib.keygen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:82]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:87]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:97]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:102]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:112]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:113]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:118]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:119]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'keygen_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:142]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'm_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:146]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 9 for port 'e_h_addr_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:153]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 9 for port 'e_s_addr_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:154]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 9 for port 'd_h_addr_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:156]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 9 for port 'd_s_addr_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:157]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'encap_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:162]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'decap_out' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:165]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'decap_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:172]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'decap_in' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:174]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:376]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/wrapper/vect_set_random.v:156]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'loc_addr' [C:/Users/THUAN/Downloads/wrapper/keygen.v:376]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/wrapper/keygen.v:378]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/poly_mult.v:247]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/poly_mult.v:248]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 24 for port 'data_1' [C:/Users/THUAN/Downloads/wrapper/fixed_weight_ct.v:242]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/wrapper/fixed_weight_ct.v:246]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:419]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'u_v_in_wen' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:443]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'u_v_in_addr' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:444]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'resume_encap' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:446]
+WARNING: [VRFC 10-3091] actual bit length 368 differs from formal bit length 240 for port 'cdw_in' [C:/Users/THUAN/Downloads/wrapper/reed_solomon_encode.v:121]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/reed_solomon_encode.v:108]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/reed_muller_encode.v:80]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/THUAN/Downloads/wrapper/encrypt.v:343]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'loc_addr' [C:/Users/THUAN/Downloads/wrapper/encrypt.v:426]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'weight' [C:/Users/THUAN/Downloads/wrapper/encrypt.v:428]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'add_wr_en' [C:/Users/THUAN/Downloads/wrapper/encrypt.v:443]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:487]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dout_ready_i' [C:/Users/THUAN/Downloads/wrapper/hqc_rmdecod_top.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_elp.v:92]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_elp.v:156]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_zpoly.v:101]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'dout_o' [C:/Users/THUAN/Downloads/wrapper/add_fft.v:81]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/fft_part1.v:143]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/fft_leaves_butterfly.v:70]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/fft_part2.v:147]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_err_val.v:176]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_rsdecod_err_val.v:187]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'encap_out_type' [C:/Users/THUAN/Downloads/wrapper/decap.v:528]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'encap_out_en' [C:/Users/THUAN/Downloads/wrapper/decap.v:530]
+WARNING: [VRFC 10-3091] actual bit length 40 differs from formal bit length 8 for port 'encap_out_addr' [C:/Users/THUAN/Downloads/wrapper/decap.v:531]
+WARNING: [VRFC 10-5021] port 'y' is not connected on this instance [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:130]
+WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:414]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/wrapper/encap.v:249]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/wrapper/encap.v:250]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/wrapper/encap.v:546]
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/THUAN/Downloads/wrapper/reed_muller_encode.v:77]
+WARNING: [VRFC 10-8864] concatenation with an unsized literal will be treated as 32 bits [C:/Users/THUAN/Downloads/wrapper/decap.v:531]
+WARNING: [VRFC 10-5021] port 'shake_force_done_ack' is not connected on this instance [C:/Users/THUAN/Downloads/wrapper/decap.v:502]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139)
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=10)
+Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=264)
+Compiling module xil_defaultlib.hqc_barrett_red_default
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.mem_dual(WIDTH=32,DEPTH=553)
+Compiling module xil_defaultlib.onegen_ct(E0_DEPTH=553,DEPTH=553...
+Compiling module xil_defaultlib.fixed_weight_ct(N=17669,M=15,WEI...
+Compiling module xil_defaultlib.vect_set_random(N=17669)
+Compiling module xil_defaultlib.poly_mult(MAX_WEIGHT=75,N=17669,...
+Compiling module xil_defaultlib.loc_based_adder(WIDTH=128)
+Compiling module xil_defaultlib.keygen(N=17669,CT_DESIGN=2'b01)
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=4)
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=16)
+Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=450)
+Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=75)
+Compiling module xil_defaultlib.onegen_ct(E0_DEPTH=553,DEPTH=553...
+Compiling module xil_defaultlib.fixed_weight_ct(N=17669,M=15,WEI...
+Compiling module xil_defaultlib.gf_mul_default
+Compiling module xil_defaultlib.cdw_xor_tmp_default
+Compiling module xil_defaultlib.reed_solomon_encode_default
+Compiling module xil_defaultlib.rm_encoder
+Compiling module xil_defaultlib.mem_single(WIDTH=128,DEPTH=46)
+Compiling module xil_defaultlib.reed_muller_encode_default
+Compiling module xil_defaultlib.concat_code(parameter_set="hqc12...
+Compiling module xil_defaultlib.mem_single(WIDTH=128,DEPTH=139)
+Compiling module xil_defaultlib.loc_based_adder(N=17669,WEIGHT=7...
+Compiling module xil_defaultlib.xor_based_adder(parameter_set="h...
+Compiling module xil_defaultlib.encrypt(parameter_set="hqc128",C...
+Compiling module xil_defaultlib.mod34
+Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=1143)
+Compiling module xil_defaultlib.encap_default
+Compiling module xil_defaultlib.v_minus_uy(parameter_set="hqc128...
+Compiling module xil_defaultlib.hqc_rmdecod_expnsum_default
+Compiling module xil_defaultlib.syncfifo(DW=4,AW=5)
+Compiling module xil_defaultlib.hadamard_layer_default
+Compiling module xil_defaultlib.syncfifo(DW=5,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=4)
+Compiling module xil_defaultlib.syncfifo(DW=6,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=5)
+Compiling module xil_defaultlib.syncfifo(DW=7,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=6)
+Compiling module xil_defaultlib.syncfifo(DW=8,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=7)
+Compiling module xil_defaultlib.syncfifo(DW=9,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=8)
+Compiling module xil_defaultlib.syncfifo(DW=10,AW=5)
+Compiling module xil_defaultlib.hadamard_layer(NN=9)
+Compiling module xil_defaultlib.hqc_rmdecod_hadamard_default
+Compiling module xil_defaultlib.findpeaks_core(DOUT_W=7)
+Compiling module xil_defaultlib.hqc_rmdecod_findpeaks_default
+Compiling module xil_defaultlib.hqc_rmdecod_ctrl_default
+Compiling module xil_defaultlib.hqc_rmdecod_top_default
+Compiling module xil_defaultlib.gfmul(REG_IN=0)
+Compiling module xil_defaultlib.hqc_rsdecod_syndromes_default
+Compiling module xil_defaultlib.gfmul(REG_IN=0,REG_OUT=0)
+Compiling module xil_defaultlib.hqc_rsdecod_elp_default
+Compiling module xil_defaultlib.hqc_rsdecod_zpoly_default
+Compiling module xil_defaultlib.fft_part1(DIN_W=256)
+Compiling module xil_defaultlib.fft_leaves_butterfly
+Compiling module xil_defaultlib.syncfifo(DW=8,AW=4)
+Compiling module xil_defaultlib.fft_part2_round_default
+Compiling module xil_defaultlib.fft_part2_round(ROUND=1)
+Compiling module xil_defaultlib.syncfifo(DW=8,AW=6)
+Compiling module xil_defaultlib.fft_part2_round(ROUND=2)
+Compiling module xil_defaultlib.syncfifo(DW=8)
+Compiling module xil_defaultlib.fft_part2_round(ROUND=3)
+Compiling module xil_defaultlib.fft_part2_default
+Compiling module xil_defaultlib.add_fft
+Compiling module xil_defaultlib.fft_retrieve_error_poly_default
+Compiling module xil_defaultlib.hqc_rsdecod_roots_default
+Compiling module xil_defaultlib.hqc_rsdecod_err_val_default
+Compiling module xil_defaultlib.hqc_rsdecod_top_default
+Compiling module xil_defaultlib.hqc_decod_top_default
+Compiling module xil_defaultlib.decrypt_default
+Compiling module xil_defaultlib.decap_default
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.hqc_kem_joint_design_default
+Compiling module xil_defaultlib.HQC_wrapper
+Compiling module xil_defaultlib.keygen_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keygen_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1185.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/wrapper/wrapper.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "keygen_tb_behav -key {Behavioral:sim_1:Functional:keygen_tb} -tclbatch {keygen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source keygen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+=== STARTING TESTBENCH (SEQUENTIAL MODE) ===
+DEBUG: First Line of Seed = 10101101110101010000000011011111
+--- [TB] Step 1: Resetting Core ---
+--- [TB] Step 2: Loading Seeds ---
+--- [TB] Loading SK & PK Seeds ---
+--- [TB] SK Seed Loaded. Loading PK Seed... ---
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1228.816 ; gain = 39.699
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'keygen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1228.816 ; gain = 42.867
+run all
+--- [TB] Step 3: Triggering Start ---
+--- [TB] Step 4: Polling for Done Status ---
+--- [TB] Waiting... Current Status = 0 (Time:            101040000)
+--- [TB] CORE DONE DETECTED! (After 1387 checks) ---
+--- [TB] Step 5: Reading Public Key S (Type 11) ---
+Addr 0: 8cec4000019d5dfa9e5ac3bfd626e10c
+Addr 1: a76337c7f831f8d4f0792083b077ce6b
+Addr 2: 4006a200c73d330a6f216b76ebd401c7
+Addr 3: 290193eb707377901121387746c2d26c
+Addr 4: 874f053b64da1ac07cbd22136cab5aca
+--- [TB] Step 6: Reading Random Vector H (Type 10) ---
+Addr 0: b65f6a111595a2e8bd07a1c5edd3f277
+Addr 1: a66c0dd4562c715d0fbf34942532085e
+Addr 2: fe792387f8747b443f5450e6f25d9dff
+--- [TB] Step 7: Reading Secret Key X (Type 00) ---
+Addr 0: 00000000000000000000000000001cd5
+Addr 1: 00000000000000000000000000000470
+Addr 2: 000000000000000000000000000016e6
+Addr 3: 000000000000000000000000000037b3
+Addr 4: 00000000000000000000000000002904
+--- [TB] Step 8: Reading Secret Key Y (Type 01) ---
+Addr 0: 00000000000000000000000000001a43
+Addr 1: 000000000000000000000000000036ad
+Addr 2: 000000000000000000000000000006c6
+Addr 3: 00000000000000000000000000000590
+Addr 4: 00000000000000000000000000003d84
+=== TEST FINISHED SUCCESSFULY ===
+$finish called at time : 144340 ns : File "C:/Users/THUAN/Downloads/wrapper/keygen_tb.v" Line 190
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  5 15:20:13 2026...

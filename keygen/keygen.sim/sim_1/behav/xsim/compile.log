@@ -1,0 +1,88 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/fixed_weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:161]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:233]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:234]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:235]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:506]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:518]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:529]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:540]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:546]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight.v:552]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight_ct
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'din_shake' is not allowed [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:153]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:222]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:223]
+WARNING: [VRFC 10-3380] identifier 'sel_ctx' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:224]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:462]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:475]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:493]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:512]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:519]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:526]
+WARNING: [VRFC 10-3380] identifier 'start_red' is used before its declaration [C:/Users/THUAN/Downloads/keygen/fixed_weight_ct.v:533]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/hqc_barrett_red.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_barrett_red
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/keygen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keygen
+WARNING: [VRFC 10-2938] 'pm_out' is already implicitly declared on line 388 [C:/Users/THUAN/Downloads/keygen/keygen.v:396]
+WARNING: [VRFC 10-2938] 'pm_rd_addr' is already implicitly declared on line 385 [C:/Users/THUAN/Downloads/keygen/keygen.v:397]
+WARNING: [VRFC 10-2938] 'pm_rd_en' is already implicitly declared on line 386 [C:/Users/THUAN/Downloads/keygen/keygen.v:398]
+WARNING: [VRFC 10-2938] 'add_out' is already implicitly declared on line 390 [C:/Users/THUAN/Downloads/keygen/keygen.v:400]
+WARNING: [VRFC 10-2938] 'add_out_addr' is already implicitly declared on line 391 [C:/Users/THUAN/Downloads/keygen/keygen.v:401]
+WARNING: [VRFC 10-2938] 'add_out_valid' is already implicitly declared on line 392 [C:/Users/THUAN/Downloads/keygen/keygen.v:402]
+WARNING: [VRFC 10-2938] 'x_addr_reg' is already implicitly declared on line 315 [C:/Users/THUAN/Downloads/keygen/keygen.v:700]
+WARNING: [VRFC 10-3380] identifier 'pm_out' is used before its declaration [C:/Users/THUAN/Downloads/keygen/keygen.v:191]
+WARNING: [VRFC 10-3380] identifier 'x_addr' is used before its declaration [C:/Users/THUAN/Downloads/keygen/keygen.v:219]
+WARNING: [VRFC 10-3380] identifier 'x_transfer_done' is used before its declaration [C:/Users/THUAN/Downloads/keygen/keygen.v:488]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/loc_based_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_based_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/onegen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onegen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/onegen_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onegen_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'mux_word_0' is not allowed [C:/Users/THUAN/Downloads/keygen/poly_mult.v:103]
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'mux_word_1' is not allowed [C:/Users/THUAN/Downloads/keygen/poly_mult.v:104]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/keygen/poly_mult.v:203]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/keygen/poly_mult.v:212]
+WARNING: [VRFC 10-3380] identifier 'addr_0_intermediate' is used before its declaration [C:/Users/THUAN/Downloads/keygen/poly_mult.v:213]
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/THUAN/Downloads/keygen/poly_mult.v:216]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/keygen/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/keygen/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/keygen/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/keygen/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/vect_set_random.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vect_set_random
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'shake_din' is not allowed [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:104]
+WARNING: [VRFC 10-2938] 'rand_mem_in' is already implicitly declared on line 151 [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:167]
+WARNING: [VRFC 10-2938] 'wr_en_rand' is already implicitly declared on line 155 [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:168]
+WARNING: [VRFC 10-3380] identifier 'pk_rand_addr' is used before its declaration [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:146]
+WARNING: [VRFC 10-3380] identifier 'pk_rand_addr' is used before its declaration [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:174]
+WARNING: [VRFC 10-3380] identifier 'pk_rand_addr_reg' is used before its declaration [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:200]
+WARNING: [VRFC 10-3380] identifier 'pk_rand_addr' is used before its declaration [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:201]
+WARNING: [VRFC 10-3380] identifier 'pk_rand_addr' is used before its declaration [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:208]
+WARNING: [VRFC 10-3380] identifier 'pk_rand_addr_reg' is used before its declaration [C:/Users/THUAN/Downloads/keygen/vect_set_random.v:219]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/keygen/keygen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keygen_tb

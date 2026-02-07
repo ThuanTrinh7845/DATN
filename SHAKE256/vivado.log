@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Jan  9 18:29:53 2026
-# Process ID: 17104
+# Start of session at: Tue Jan 20 16:39:24 2026
+# Process ID: 21372
 # Current directory: D:/University/251/DA/SHAKE256
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12104 D:\University\251\DA\SHAKE256\SHAKE256.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15392 D:\University\251\DA\SHAKE256\SHAKE256.xpr
 # Log file: D:/University/251/DA/SHAKE256/vivado.log
 # Journal file: D:/University/251/DA/SHAKE256\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
@@ -63,7 +63,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1164.254 ; gain = 167.500
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 1129.027 ; gain = 311.047
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
@@ -79,26 +79,6 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj cshake_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module control_path
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module data_path
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rc
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module state_ram
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module stateram_inference
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module transform
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cshake_tb
 INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
@@ -110,47 +90,8 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.control_path
-Compiling module xil_defaultlib.rc
-Compiling module xil_defaultlib.transform
-Compiling module xil_defaultlib.stateram_inference_default
-Compiling module xil_defaultlib.stateram_inference(i=1)
-Compiling module xil_defaultlib.stateram_inference(i=2)
-Compiling module xil_defaultlib.stateram_inference(i=3)
-Compiling module xil_defaultlib.stateram_inference(i=4)
-Compiling module xil_defaultlib.stateram_inference(i=5)
-Compiling module xil_defaultlib.stateram_inference(i=6)
-Compiling module xil_defaultlib.stateram_inference(i=7)
-Compiling module xil_defaultlib.stateram_inference(i=8)
-Compiling module xil_defaultlib.stateram_inference(i=9)
-Compiling module xil_defaultlib.stateram_inference(i=10)
-Compiling module xil_defaultlib.stateram_inference(i=11)
-Compiling module xil_defaultlib.stateram_inference(i=12)
-Compiling module xil_defaultlib.stateram_inference(i=13)
-Compiling module xil_defaultlib.stateram_inference(i=14)
-Compiling module xil_defaultlib.stateram_inference(i=15)
-Compiling module xil_defaultlib.stateram_inference(i=16)
-Compiling module xil_defaultlib.stateram_inference(i=17)
-Compiling module xil_defaultlib.stateram_inference(i=18)
-Compiling module xil_defaultlib.stateram_inference(i=19)
-Compiling module xil_defaultlib.stateram_inference(i=20)
-Compiling module xil_defaultlib.stateram_inference(i=21)
-Compiling module xil_defaultlib.stateram_inference(i=22)
-Compiling module xil_defaultlib.stateram_inference(i=23)
-Compiling module xil_defaultlib.stateram_inference(i=24)
-Compiling module xil_defaultlib.state_ram_default
-Compiling module xil_defaultlib.data_path_default
-Compiling module xil_defaultlib.keccak_top
-Compiling module xil_defaultlib.cshake_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot cshake_tb_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1164.254 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -169,25 +110,15 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== BAT DAU TESTCASE PHUC T?P ===
+=== DIEN TAP CUONG BUC (FORCE PUSH) ===
+[He thong] Da cuong buc nap xong. Dang doi ket qua...
+[Out 0] Raw: 68e60e22
 
-[Thong bao] Da bat dau nhan ket qua...
-[Out 0] Raw: 4277a4a8
-[Out 1] Raw: 4a2bd36e
-[Out 2] Raw: 18cb332b
-[Out 3] Raw: 31b2b2fc
-[Out 4] Raw: 0b784cd8
-[Out 5] Raw: b2f8c47c
-[Out 6] Raw: 9b0b9cd1
-[Out 7] Raw: 0a15d453
-[Out 8] Raw: 3b280724
-[Out 9] Raw: 914ae2ca
-
-=== HOAN THANH DIEN TAP ===
-$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 83
+=== KET THUC MO PHONG ===
+$finish called at time : 10230 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 70
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1169.906 ; gain = 5.652
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1177.953 ; gain = 26.668
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
@@ -224,7 +155,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/t
 INFO: [VRFC 10-311] analyzing module transform
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cshake_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
@@ -274,7 +205,124 @@ Compiling module xil_defaultlib.keccak_top
 Compiling module xil_defaultlib.cshake_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cshake_tb_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1169.906 ; gain = 0.000
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1177.953 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== DIEN TAP CUONG BUC (FORCE PUSH) ===
+[He thong] Da cuong buc nap xong. Dang doi ket qua...
+[Out 0] Raw: 68e60e22
+
+=== KET THUC MO PHONG ===
+$finish called at time : 10270 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1208.617 ; gain = 30.664
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1208.617 ; gain = 0.000
 INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
@@ -294,31 +342,20 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== BAT DAU TESTCASE PHUC T?P ===
+=== DIEN TAP MOI: NAP 5 WORDS DU LIEU ===
+[He thong] Da nap xong 160 bits. Dang doi ket qua...
 
-[Thong bao] Da bat dau nhan ket qua...
-[Out 0] Raw: 73f027cf
-[Out 1] Raw: b2205365
-[Out 2] Raw: 9b4c0bea
-[Out 3] Raw: 5b4d3f08
-[Out 4] Raw: 685ce106
-[Out 5] Raw: 2231c95e
-[Out 6] Raw: 9b7bfda7
-[Out 7] Raw: 27f78464
-[Out 8] Raw: 806d6773
-[Out 9] Raw: e7a05846
-
-=== HOAN THANH DIEN TAP ===
-$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 83
+=== KET THUC MO PHONG ===
+$finish called at time : 10270 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 61
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1179.816 ; gain = 9.910
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1208.617 ; gain = 0.000
 run all
 INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1179.816 ; gain = 0.000
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1208.617 ; gain = 0.000
 INFO: [Common 17-344] 'run' was cancelled
 close_sim
-INFO: xsimkernel Simulation Memory Usage: 19096 KB (Peak: 19096 KB), Simulation CPU Usage: 14140 ms
+INFO: xsimkernel Simulation Memory Usage: 18896 KB (Peak: 18896 KB), Simulation CPU Usage: 10874 ms
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
@@ -404,7 +441,375 @@ Compiling module xil_defaultlib.keccak_top
 Compiling module xil_defaultlib.cshake_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cshake_tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1194.809 ; gain = 0.000
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1208.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== DIEN TAP MOI: DUNG FORCE_DONE DE CHOT KET QUA ===
+[He thong] Da kich hoat force_done. Dang doi dout_valid...
+
+=== KET THUC MO PHONG ===
+$finish called at time : 10270 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 63
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1208.617 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1208.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== DIEN TAP TONG LUC: EP MACH NHU KET QUA ===
+[He thong] Da nap xong va bat force_done. Dang quet tin hieu...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1208.617 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1208.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1208.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== DIEN TAP TONG LUC: EP MACH NHU KET QUA ===
+[He thong] Da nap xong va bat force_done. Dang quet tin hieu...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1208.617 ; gain = 0.000
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'keccak_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'keccak_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj keccak_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot keccak_top_behav xil_defaultlib.keccak_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot keccak_top_behav xil_defaultlib.keccak_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keccak_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1225.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "keccak_top_behav -key {Behavioral:sim_1:Functional:keccak_top} -tclbatch {keccak_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source keccak_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'keccak_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1225.988 ; gain = 0.000
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1225.988 ; gain = 0.000
 INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
@@ -442,7 +847,7 @@ source cshake_tb.tcl
 $finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 83
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1194.809 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1225.988 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
@@ -479,7 +884,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/t
 INFO: [VRFC 10-311] analyzing module transform
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cshake_tb
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
@@ -529,8 +934,7 @@ Compiling module xil_defaultlib.keccak_top
 Compiling module xil_defaultlib.cshake_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cshake_tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1194.809 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -549,26 +953,20 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== BAT DAU TESTCASE PHUC T?P ===
+=== DIEN TAP MOI: NAP 5 WORDS DU LIEU ===
+[He thong] Da nap xong 160 bits. Dang doi ket qua...
 
-[Thong bao] Da bat dau nhan ket qua...
-[Out 0] Raw: 322428b9
-[Out 1] Raw: 589b21bd
-[Out 2] Raw: 68f3c2b7
-[Out 3] Raw: e6ae8cfc
-[Out 4] Raw: 60e9c0a3
-[Out 5] Raw: 3ca1f987
-[Out 6] Raw: 34a0f6eb
-[Out 7] Raw: 2444f313
-[Out 8] Raw: 868f6f98
-[Out 9] Raw: 4bf29d57
-
-=== HOAN THANH DIEN TAP ===
-$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 88
+=== KET THUC MO PHONG ===
+$finish called at time : 10270 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 61
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1194.809 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1225.988 ; gain = 0.000
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1225.988 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
 close_sim
+INFO: xsimkernel Simulation Memory Usage: 18908 KB (Peak: 18908 KB), Simulation CPU Usage: 10030 ms
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
@@ -584,26 +982,6 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj cshake_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module control_path
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module data_path
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module keccak_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rc
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module state_ram
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
-WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module stateram_inference
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module transform
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cshake_tb
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
@@ -615,47 +993,8 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.control_path
-Compiling module xil_defaultlib.rc
-Compiling module xil_defaultlib.transform
-Compiling module xil_defaultlib.stateram_inference_default
-Compiling module xil_defaultlib.stateram_inference(i=1)
-Compiling module xil_defaultlib.stateram_inference(i=2)
-Compiling module xil_defaultlib.stateram_inference(i=3)
-Compiling module xil_defaultlib.stateram_inference(i=4)
-Compiling module xil_defaultlib.stateram_inference(i=5)
-Compiling module xil_defaultlib.stateram_inference(i=6)
-Compiling module xil_defaultlib.stateram_inference(i=7)
-Compiling module xil_defaultlib.stateram_inference(i=8)
-Compiling module xil_defaultlib.stateram_inference(i=9)
-Compiling module xil_defaultlib.stateram_inference(i=10)
-Compiling module xil_defaultlib.stateram_inference(i=11)
-Compiling module xil_defaultlib.stateram_inference(i=12)
-Compiling module xil_defaultlib.stateram_inference(i=13)
-Compiling module xil_defaultlib.stateram_inference(i=14)
-Compiling module xil_defaultlib.stateram_inference(i=15)
-Compiling module xil_defaultlib.stateram_inference(i=16)
-Compiling module xil_defaultlib.stateram_inference(i=17)
-Compiling module xil_defaultlib.stateram_inference(i=18)
-Compiling module xil_defaultlib.stateram_inference(i=19)
-Compiling module xil_defaultlib.stateram_inference(i=20)
-Compiling module xil_defaultlib.stateram_inference(i=21)
-Compiling module xil_defaultlib.stateram_inference(i=22)
-Compiling module xil_defaultlib.stateram_inference(i=23)
-Compiling module xil_defaultlib.stateram_inference(i=24)
-Compiling module xil_defaultlib.state_ram_default
-Compiling module xil_defaultlib.data_path_default
-Compiling module xil_defaultlib.keccak_top
-Compiling module xil_defaultlib.cshake_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot cshake_tb_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.809 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -674,10 +1013,14 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== BAT DAU TESTCASE PHUC T?P ===
+=== DIEN TAP MOI: NAP 5 WORDS DU LIEU ===
+[He thong] Da nap xong 160 bits. Dang doi ket qua...
+
+=== KET THUC MO PHONG ===
+$finish called at time : 10270 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 61
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1194.809 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1225.988 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
@@ -783,16 +1126,26 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== BAT DAU DIEN TAP: KIEM TRA DO TREO ===
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 4277a4a8
+[Out 1] Raw: 4a2bd36e
+[Out 2] Raw: 18cb332b
+[Out 3] Raw: 31b2b2fc
+[Out 4] Raw: 0b784cd8
+[Out 5] Raw: b2f8c47c
+[Out 6] Raw: 9b0b9cd1
+[Out 7] Raw: 0a15d453
+[Out 8] Raw: 3b280724
+[Out 9] Raw: 914ae2ca
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 83
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1197.297 ; gain = 2.488
-run all
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1197.297 ; gain = 0.000
-INFO: [Common 17-344] 'run' was cancelled
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1225.988 ; gain = 0.000
 close_sim
-INFO: xsimkernel Simulation Memory Usage: 18992 KB (Peak: 18992 KB), Simulation CPU Usage: 16140 ms
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
@@ -828,7 +1181,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/t
 INFO: [VRFC 10-311] analyzing module transform
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cshake_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
@@ -878,7 +1231,7 @@ Compiling module xil_defaultlib.keccak_top
 Compiling module xil_defaultlib.cshake_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cshake_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -897,24 +1250,14 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== DIEN TAP CUONG BUC (FORCE PUSH) ===
-[He thong] Da cuong buc nap xong. Dang doi ket qua...
-[Out 0] Raw: addb3cc7
-[Out 1] Raw: ec95ec91
-[Out 2] Raw: d7d9dd36
-[Out 3] Raw: b2517c8b
-[Out 4] Raw: bc64d85f
-[Out 5] Raw: 205b65be
-[Out 6] Raw: 77ccb4ce
-[Out 7] Raw: edbb12d2
-[Out 8] Raw: bedbbd81
-[Out 9] Raw: f7724939
+=== DIEN TAP MOI: NAP 5 WORDS DU LIEU ===
+[He thong] Da nap xong 160 bits. Dang doi ket qua...
 
 === KET THUC MO PHONG ===
-$finish called at time : 10310 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 72
+$finish called at time : 10270 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 61
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1197.297 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.988 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
@@ -1001,7 +1344,400 @@ Compiling module xil_defaultlib.keccak_top
 Compiling module xil_defaultlib.cshake_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cshake_tb_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1197.297 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1225.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 4277a4a8
+[Out 1] Raw: 4a2bd36e
+[Out 2] Raw: 18cb332b
+[Out 3] Raw: 31b2b2fc
+[Out 4] Raw: 0b784cd8
+[Out 5] Raw: b2f8c47c
+[Out 6] Raw: 9b0b9cd1
+[Out 7] Raw: 0a15d453
+[Out 8] Raw: 3b280724
+[Out 9] Raw: 914ae2ca
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 83
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1225.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1225.988 ; gain = 0.000
 INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
@@ -1021,16 +1757,936 @@ source cshake_tb.tcl
 # }
 # run 50000ns
 
-=== DIEN TAP CUONG BUC (FORCE PUSH) ===
-[He thong] Da cuong buc nap xong. Dang doi ket qua...
-[Out 0] Raw: 68e60e22
+=== BAT DAU TESTCASE PHUC T?P ===
 
-=== KET THUC MO PHONG ===
-$finish called at time : 10230 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 70
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 4277a4a8
+[Out 1] Raw: 4a2bd36e
+[Out 2] Raw: 18cb332b
+[Out 3] Raw: 31b2b2fc
+[Out 4] Raw: 0b784cd8
+[Out 5] Raw: b2f8c47c
+[Out 6] Raw: 9b0b9cd1
+[Out 7] Raw: 0a15d453
+[Out 8] Raw: 3b280724
+[Out 9] Raw: 914ae2ca
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 82
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 50000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1202.105 ; gain = 4.809
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1225.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1225.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1225.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: d6174aa9
+[Out 1] Raw: 8f4f3918
+[Out 2] Raw: 9f40f87d
+[Out 3] Raw: 4548809a
+[Out 4] Raw: 92b6a8df
+[Out 5] Raw: 4db12139
+[Out 6] Raw: a2ee9e44
+[Out 7] Raw: 54741f79
+[Out 8] Raw: d162b6a8
+[Out 9] Raw: 9f809b0a
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 82
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.691 ; gain = 0.703
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1226.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.262 ; gain = 0.570
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1227.566 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 478d2f0b
+[Out 1] Raw: a9e1fe72
+[Out 2] Raw: 16ae7407
+[Out 3] Raw: b4f42890
+[Out 4] Raw: b618cb2a
+[Out 5] Raw: f076d740
+[Out 6] Raw: 079b3c30
+[Out 7] Raw: 78354896
+[Out 8] Raw: e846aceb
+[Out 9] Raw: 9fe2d1d2
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 82
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1228.020 ; gain = 0.453
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 478d2f0b
+[Out 1] Raw: a9e1fe72
+[Out 2] Raw: 16ae7407
+[Out 3] Raw: b4f42890
+[Out 4] Raw: b618cb2a
+[Out 5] Raw: f076d740
+[Out 6] Raw: 079b3c30
+[Out 7] Raw: 78354896
+[Out 8] Raw: e846aceb
+[Out 9] Raw: 9fe2d1d2
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 82
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1228.172 ; gain = 0.152
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1228.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 478d2f0b
+[Out 1] Raw: a9e1fe72
+[Out 2] Raw: 16ae7407
+[Out 3] Raw: b4f42890
+[Out 4] Raw: b618cb2a
+[Out 5] Raw: f076d740
+[Out 6] Raw: 079b3c30
+[Out 7] Raw: 78354896
+[Out 8] Raw: e846aceb
+[Out 9] Raw: 9fe2d1d2
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 74
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1230.105 ; gain = 1.934
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1230.105 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1230.105 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: 68e60e22
+[Out 1] Raw: 7d45eac9
+[Out 2] Raw: 15c23003
+[Out 3] Raw: 119eda54
+[Out 4] Raw: 9c744710
+[Out 5] Raw: 2dbad896
+[Out 6] Raw: e274167a
+[Out 7] Raw: d93b3d52
+[Out 8] Raw: 7f6fdbb5
+[Out 9] Raw: 8bc8a367
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 77
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1232.016 ; gain = 1.910
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cshake_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Apps/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cshake_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cshake_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:122]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:228]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:278]
+WARNING: [VRFC 10-634] event expressions must result in a singular type [C:/Users/THUAN/Downloads/shake256/state_ram.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/shake256/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cshake_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cshake_tb_behav xil_defaultlib.cshake_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.rc
+Compiling module xil_defaultlib.transform
+Compiling module xil_defaultlib.stateram_inference_default
+Compiling module xil_defaultlib.stateram_inference(i=1)
+Compiling module xil_defaultlib.stateram_inference(i=2)
+Compiling module xil_defaultlib.stateram_inference(i=3)
+Compiling module xil_defaultlib.stateram_inference(i=4)
+Compiling module xil_defaultlib.stateram_inference(i=5)
+Compiling module xil_defaultlib.stateram_inference(i=6)
+Compiling module xil_defaultlib.stateram_inference(i=7)
+Compiling module xil_defaultlib.stateram_inference(i=8)
+Compiling module xil_defaultlib.stateram_inference(i=9)
+Compiling module xil_defaultlib.stateram_inference(i=10)
+Compiling module xil_defaultlib.stateram_inference(i=11)
+Compiling module xil_defaultlib.stateram_inference(i=12)
+Compiling module xil_defaultlib.stateram_inference(i=13)
+Compiling module xil_defaultlib.stateram_inference(i=14)
+Compiling module xil_defaultlib.stateram_inference(i=15)
+Compiling module xil_defaultlib.stateram_inference(i=16)
+Compiling module xil_defaultlib.stateram_inference(i=17)
+Compiling module xil_defaultlib.stateram_inference(i=18)
+Compiling module xil_defaultlib.stateram_inference(i=19)
+Compiling module xil_defaultlib.stateram_inference(i=20)
+Compiling module xil_defaultlib.stateram_inference(i=21)
+Compiling module xil_defaultlib.stateram_inference(i=22)
+Compiling module xil_defaultlib.stateram_inference(i=23)
+Compiling module xil_defaultlib.stateram_inference(i=24)
+Compiling module xil_defaultlib.state_ram_default
+Compiling module xil_defaultlib.data_path_default
+Compiling module xil_defaultlib.keccak_top
+Compiling module xil_defaultlib.cshake_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cshake_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cshake_tb_behav -key {Behavioral:sim_1:Functional:cshake_tb} -tclbatch {cshake_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cshake_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+
+=== BAT DAU TESTCASE PHUC T?P ===
+
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: b19416cb
+[Out 1] Raw: cc46e0bc
+[Out 2] Raw: 8e80751a
+[Out 3] Raw: 08c3c585
+[Out 4] Raw: 79535ea5
+[Out 5] Raw: a10b9093
+[Out 6] Raw: c692e181
+[Out 7] Raw: 60602ed4
+[Out 8] Raw: 21eb78b6
+[Out 9] Raw: 6c596e14
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 77
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cshake_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1232.605 ; gain = 0.590
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 19:36:43 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 20 19:38:35 2026...

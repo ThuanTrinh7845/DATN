@@ -1,8 +1,18 @@
 Time resolution is 1 ps
 
-=== DIEN TAP CUONG BUC (FORCE PUSH) ===
-[He thong] Da cuong buc nap xong. Dang doi ket qua...
-[Out 0] Raw: 68e60e22
+=== BAT DAU TESTCASE PHUC T?P ===
 
-=== KET THUC MO PHONG ===
-$finish called at time : 10230 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 70
+[Thong bao] Da bat dau nhan ket qua...
+[Out 0] Raw: b19416cb
+[Out 1] Raw: cc46e0bc
+[Out 2] Raw: 8e80751a
+[Out 3] Raw: 08c3c585
+[Out 4] Raw: 79535ea5
+[Out 5] Raw: a10b9093
+[Out 6] Raw: c692e181
+[Out 7] Raw: 60602ed4
+[Out 8] Raw: 21eb78b6
+[Out 9] Raw: 6c596e14
+
+=== HOAN THANH DIEN TAP ===
+$finish called at time : 5975 ns : File "C:/Users/THUAN/Downloads/shake256/tb.v" Line 77

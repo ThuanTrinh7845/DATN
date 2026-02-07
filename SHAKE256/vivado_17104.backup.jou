@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jan  9 18:29:53 2026
+# Process ID: 17104
+# Current directory: D:/University/251/DA/SHAKE256
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12104 D:\University\251\DA\SHAKE256\SHAKE256.xpr
+# Log file: D:/University/251/DA/SHAKE256/vivado.log
+# Journal file: D:/University/251/DA/SHAKE256\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/University/251/DA/SHAKE256/SHAKE256.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cshake_tb.tcl
+close_sim
+launch_simulation
+source cshake_tb.tcl
+run all
+close_sim
+launch_simulation
+source cshake_tb.tcl
+close_sim
+launch_simulation
+source cshake_tb.tcl
+close_sim
+launch_simulation
+source cshake_tb.tcl
+close_sim
+launch_simulation
+source cshake_tb.tcl
+run all
+close_sim
+launch_simulation
+source cshake_tb.tcl
+close_sim
+launch_simulation
+source cshake_tb.tcl
+close_sim

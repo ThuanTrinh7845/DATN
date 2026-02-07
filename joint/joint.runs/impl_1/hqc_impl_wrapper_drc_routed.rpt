@@ -1,0 +1,357 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Jan 26 20:42:17 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_drc -file hqc_impl_wrapper_drc_routed.rpt -pb hqc_impl_wrapper_drc_routed.pb -rpx hqc_impl_wrapper_drc_routed.rpx
+| Design       : hqc_impl_wrapper
+| Device       : xc7k70tfbv676-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 62
++----------+------------------+-----------------------------------------------------+------------+
+| Rule     | Severity         | Description                                         | Violations |
++----------+------------------+-----------------------------------------------------+------------+
+| NSTD-1   | Critical Warning | Unspecified I/O Standard                            | 1          |
+| UCIO-1   | Critical Warning | Unconstrained Logical Port                          | 1          |
+| CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning          | Gated clock check                                   | 59         |
++----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+3 out of 3 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: done_led, rst_n, sys_clk_p.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+3 out of 3 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: done_led, rst_n, sys_clk_p.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw__0 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__1_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/init_mem_onegen__0 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__1_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__1_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__1_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__1_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/sel_ctx__0 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/shake_input_type__0 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__2/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__1_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__1/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/block_capture_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/block_capture_reg_i_2__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/block_capture_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/cap_uv_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/cap_uv_reg_i_2__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/cap_uv_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/d_wen_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/d_wen_reg_i_2/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/d_wen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_mem_wen_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_mem_wen_reg_i_2__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_mem_wen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/init_msg_in_reg_i_1__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/init_msg_in_reg_i_1__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/init_msg_in_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/last_block_capture_reg_i_1__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/last_block_capture_reg_i_1__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/last_block_capture_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/shake_in_type_reg[2]_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/shake_in_type_reg[2]_i_2__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/shake_in_type_reg[2]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_encrypt_reg_i_1__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_encrypt_reg_i_1__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_encrypt_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_hash_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_hash_reg_i_2__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_hash_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_wen_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_wen_reg_i_2__0/O, cell dut/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_wen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw__0 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1/O, cell dut/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/init_mem_onegen__0 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/sel_ctx__0 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_input_type__0 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__1/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__0/O, cell dut/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/block_capture_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/block_capture_reg_i_2/O, cell dut/ENCAP_MODULE/block_capture_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/cap_uv_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/cap_uv_reg_i_2/O, cell dut/ENCAP_MODULE/cap_uv_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/hash_mem_wen_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/hash_mem_wen_reg_i_2/O, cell dut/ENCAP_MODULE/hash_mem_wen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/init_msg_in_reg_i_1_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/init_msg_in_reg_i_1/O, cell dut/ENCAP_MODULE/init_msg_in_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/last_block_capture_reg_i_1_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/last_block_capture_reg_i_1/O, cell dut/ENCAP_MODULE/last_block_capture_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/shake_in_type_reg[2]_i_2_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/shake_in_type_reg[2]_i_2/O, cell dut/ENCAP_MODULE/shake_in_type_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/start_encrypt_reg_i_1_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/start_encrypt_reg_i_1/O, cell dut/ENCAP_MODULE/start_encrypt_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/start_hash_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/start_hash_reg_i_2/O, cell dut/ENCAP_MODULE/start_hash_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net dut/ENCAP_MODULE/theta_wen_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/ENCAP_MODULE/theta_wen_reg_i_2/O, cell dut/ENCAP_MODULE/theta_wen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/decrease_weight_count_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/decrease_weight_count_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/decrease_weight_count_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/init_mem_onegen__0 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/init_mem_onegen_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/init_mem_onegen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/FSM_onehot_state_reg[3] is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/start_fw_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/start_fw_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/init_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/init_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/init_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/sel_ctx__0 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/sel_ctx_reg[1]_i_1/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/sel_ctx_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/shake_input_type__0 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/shake_input_type_reg[1]_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/shake_input_type_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/FIXEDWEIGHT/squeeze_ctrl_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/FIXEDWEIGHT/squeeze_ctrl_reg_i_2/O, cell dut/KEYGEN_MODULE/FIXEDWEIGHT/squeeze_ctrl_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/VECTSETRAND/shake_input_type_reg[1]_i_2__0_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/VECTSETRAND/shake_input_type_reg[1]_i_2__0/O, cell dut/KEYGEN_MODULE/VECTSETRAND/shake_input_type_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/sel_x_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/sel_x_reg_i_2/O, cell dut/KEYGEN_MODULE/sel_x_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/start_adder_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/start_adder_reg_i_2/O, cell dut/KEYGEN_MODULE/start_adder_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/start_poly_mult_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/start_poly_mult_reg_i_2/O, cell dut/KEYGEN_MODULE/start_poly_mult_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net dut/KEYGEN_MODULE/start_x_transfer_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/KEYGEN_MODULE/start_x_transfer_reg_i_2/O, cell dut/KEYGEN_MODULE/start_x_transfer_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net dut/SHAKE256/control_path_instance/din_ready_internal_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/SHAKE256/control_path_instance/din_ready_internal_reg_i_2/O, cell dut/SHAKE256/control_path_instance/din_ready_internal_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net dut/SHAKE256/control_path_instance/dout_valid_reg_i_2_n_2 is a gated clock net sourced by a combinational pin dut/SHAKE256/control_path_instance/dout_valid_reg_i_2/O, cell dut/SHAKE256/control_path_instance/dout_valid_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net dut/SHAKE256/control_path_instance/prev_start_addr_reg[5]_i_1_n_2 is a gated clock net sourced by a combinational pin dut/SHAKE256/control_path_instance/prev_start_addr_reg[5]_i_1/O, cell dut/SHAKE256/control_path_instance/prev_start_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net dut/SHAKE256/control_path_instance/start_addr_reg[5]_i_2_n_2 is a gated clock net sourced by a combinational pin dut/SHAKE256/control_path_instance/start_addr_reg[5]_i_2/O, cell dut/SHAKE256/control_path_instance/start_addr_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+
