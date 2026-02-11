@@ -1,0 +1,46 @@
+Time resolution is 1 ps
+[MEM CHECK] File 'y_128.in' da duoc load. Gia tri tai [0] = 1a43
+[MEM CHECK] File 'd_128.in' da duoc load. Gia tri tai [0] = f7a74267
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[MEM CHECK] File ' ' da duoc load. Gia tri tai [0] = xxxxxxxx
+=== KHOI DONG HE THONG DECAP TESTBENCH (FINAL) ===
+--- [TB] Dang nap Public Key H (RAM H)... ---
+--- [TB] Dang nap Secret Key (RAM S)... ---
+--- [TB] Dang nap Ciphertext U (RAM U)... ---
+--- [TB] Dang nap Ciphertext V (RAM V)... ---
+--- [TB] Dang nap D Data (Type=1) ---
+--- [DEBUG] Kiem tra RAM U[0] ---
+RAM U[0] thuc te: 88ee20d9c0d307c04619ff979ef8cfd5
+--- [TB] Bat dau Decap (Op=2) ---
+--- [TB] Dang cho tin hieu DONE... ---
+--- [TB] DECAP DONE! (Cycles: 4561) ---
+--- [TB] Saving SS ---
+
+SS_Decap[0-3]: 248c0bf5 4ddbd148 76618c11 396b1739 
+SS_Decap[4-7]: 45a0f399 cdb8d901 dcd17410 a39d32d9 
+SS_Decap[8-11]: ec149a61 0abc0940 c37140da 24684ad3 
+SS_Decap[12-15]: f91f54e0 eed95ce2 c19a2e56 192481fc 
+
+=== FINISHED ===
+$finish called at time : 491710 ns : File "C:/Users/THUAN/Downloads/wrapper/decap_tb.v" Line 182

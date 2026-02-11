@@ -1,7 +1,0 @@
-Running: xsim.dir/HQC_wrapper_behav/xsimk.exe -simmode gui -wdb HQC_wrapper_behav.wdb -simrunnum 0 -socket 55072
-Design successfully loaded
-Design Loading Memory Usage: 13428 KB (Peak: 13428 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 17300 KB (Peak: 17300 KB)
-Simulation CPU Usage: 31 ms
