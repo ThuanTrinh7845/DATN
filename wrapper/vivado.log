@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Feb 11 18:54:53 2026
-# Process ID: 5756
+# Start of session at: Thu Mar 26 19:22:53 2026
+# Process ID: 10572
 # Current directory: D:/University/251/DA/wrapper
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6244 D:\University\251\DA\wrapper\wrapper.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12360 D:\University\251\DA\wrapper\wrapper.xpr
 # Log file: D:/University/251/DA/wrapper/vivado.log
 # Journal file: D:/University/251/DA/wrapper\vivado.jou
 # Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
@@ -57,13 +57,12 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Apps/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/University/251/DA/wrapper/wrapper.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/University/251/DA/wrapper'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 1156.172 ; gain = 370.188
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1249.770 ; gain = 318.270
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 19:05:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 26 19:31:20 2026...

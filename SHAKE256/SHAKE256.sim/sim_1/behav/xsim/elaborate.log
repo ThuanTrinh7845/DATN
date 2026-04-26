@@ -4,6 +4,7 @@ Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --d
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'rst' is not connected on this instance [C:/Users/THUAN/Downloads/shake256/data_path.v:63]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "D:/University/251/DA/SHAKE256/SHAKE256.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.

@@ -1,0 +1,1160 @@
+
+*** Running vivado
+    with args -log hqc_accelerator_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hqc_accelerator_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source hqc_accelerator_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 394.945 ; gain = 69.410
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/University/251/DA/ILA/project_1'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/University/251/DA/ILA/project_1' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/University/251/DA/ILA/project_1/project_1.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 474.492 ; gain = 37.781
+Command: read_checkpoint -auto_incremental -incremental D:/University/251/DA/ILA/project_1/project_1.srcs/utils_1/imports/synth_1/hqc_accelerator_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/University/251/DA/ILA/project_1/project_1.srcs/utils_1/imports/synth_1/hqc_accelerator_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top hqc_accelerator_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13832
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Apps/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:2470]
+INFO: [Synth 8-11241] undeclared symbol 'error_1', assumed default net type 'wire' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/onegen.v:143]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1808.449 ; gain = 341.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hqc_accelerator_wrapper' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/hdl/hqc_accelerator_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'hqc_accelerator' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:12]
+INFO: [Synth 8-6157] synthesizing module 'hqc_accelerator_axi_wrapper_0_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_axi_wrapper_0_0/synth/hqc_accelerator_axi_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrapper' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrapper_slave_lite_v1_0_S00_AXI' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper_slave_lite_v1_0_S00_AXI.v:156]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper_slave_lite_v1_0_S00_AXI.v:230]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper_slave_lite_v1_0_S00_AXI.v:283]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrapper_slave_lite_v1_0_S00_AXI' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper_slave_lite_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-689] width (16) of port connection 'ctrl_out' does not match port width (32) of module 'axi_wrapper_slave_lite_v1_0_S00_AXI' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:77]
+WARNING: [Synth 8-7071] port 'S_AXI_AWPROT' of module 'axi_wrapper_slave_lite_v1_0_S00_AXI' is unconnected for instance 'axi_wrapper_slave_lite_v1_0_S00_AXI_inst' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:54]
+WARNING: [Synth 8-7071] port 'S_AXI_ARPROT' of module 'axi_wrapper_slave_lite_v1_0_S00_AXI' is unconnected for instance 'axi_wrapper_slave_lite_v1_0_S00_AXI_inst' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:54]
+WARNING: [Synth 8-7023] instance 'axi_wrapper_slave_lite_v1_0_S00_AXI_inst' of module 'axi_wrapper_slave_lite_v1_0_S00_AXI' has 25 connections declared, but only 23 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:54]
+INFO: [Synth 8-6157] synthesizing module 'HQC_wrapper' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/HQC_wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mem_dual' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dual' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_dual__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dual__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_dual__parameterized1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dual__parameterized1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hqc_kem_joint_design' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_kem_joint_design.v:25]
+INFO: [Synth 8-6157] synthesizing module 'keygen' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/keygen.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fixed_weight_ct' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_single' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_dual__parameterized2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dual__parameterized2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hqc_barrett_red' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_barrett_red.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_barrett_red' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_barrett_red.v:48]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'onegen_ct' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/onegen_ct.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_dual__parameterized3' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dual__parameterized3' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'onegen_ct' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/onegen_ct.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fixed_weight_ct' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vect_set_random' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/vect_set_random.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'vect_set_random' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/vect_set_random.v:28]
+INFO: [Synth 8-6157] synthesizing module 'loc_based_adder' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/loc_based_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'loc_based_adder' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/loc_based_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'keygen' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/keygen.v:25]
+INFO: [Synth 8-6157] synthesizing module 'encap' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/encap.v:24]
+INFO: [Synth 8-6157] synthesizing module 'encrypt' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/encrypt.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fixed_weight_ct__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_dual__parameterized4' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_dual__parameterized4' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_dual.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'onegen_ct__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/onegen_ct.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'onegen_ct__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/onegen_ct.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fixed_weight_ct__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:3]
+INFO: [Synth 8-6157] synthesizing module 'concat_code' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/concat_code.v:25]
+INFO: [Synth 8-6157] synthesizing module 'reed_solomon_encode' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/reed_solomon_encode.v:25]
+INFO: [Synth 8-6157] synthesizing module 'gf_mul' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/gf_mul.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'gf_mul' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/gf_mul.v:25]
+INFO: [Synth 8-6157] synthesizing module 'cdw_xor_tmp' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/cdw_xor_tmp.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'cdw_xor_tmp' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/cdw_xor_tmp.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'reed_solomon_encode' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/reed_solomon_encode.v:25]
+INFO: [Synth 8-6157] synthesizing module 'reed_muller_encode' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/reed_muller_encode.v:25]
+INFO: [Synth 8-6157] synthesizing module 'rm_encoder' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/rm_encoder.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'rm_encoder' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/rm_encoder.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reed_muller_encode' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/reed_muller_encode.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'concat_code' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/concat_code.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized3' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized3' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'loc_based_adder__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/loc_based_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'loc_based_adder__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/loc_based_adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'xor_based_adder' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/xor_based_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xor_based_adder' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/xor_based_adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'encrypt' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/encrypt.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized4' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized4' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized5' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized5' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mod34' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mod34.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'mod34' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mod34.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mem_single__parameterized6' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mem_single__parameterized6' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/mem_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'encap' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/encap.v:24]
+INFO: [Synth 8-6157] synthesizing module 'decap' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/decap.v:25]
+INFO: [Synth 8-6157] synthesizing module 'decrypt' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/decrypt.v:25]
+INFO: [Synth 8-6157] synthesizing module 'v_minus_uy' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/v_minus_uy.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'v_minus_uy' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/v_minus_uy.v:25]
+INFO: [Synth 8-6157] synthesizing module 'hqc_decod_top' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_decod_top.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rmdecod_top' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_top.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rmdecod_expnsum' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_expnsum.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rmdecod_expnsum' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_expnsum.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rmdecod_hadamard' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:15]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer__parameterized1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer__parameterized1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer__parameterized2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer__parameterized2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer__parameterized3' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized3' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized3' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer__parameterized3' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer__parameterized4' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized4' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized4' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer__parameterized4' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'hadamard_layer__parameterized5' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized5' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized5' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hadamard_layer__parameterized5' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rmdecod_hadamard' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_hadamard.v:15]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rmdecod_findpeaks' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_findpeaks.v:14]
+INFO: [Synth 8-6157] synthesizing module 'findpeaks_core' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_findpeaks.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'findpeaks_core' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_findpeaks.v:102]
+INFO: [Synth 8-6157] synthesizing module 'findpeaks_core__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_findpeaks.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'findpeaks_core__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_findpeaks.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rmdecod_findpeaks' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_findpeaks.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rmdecod_ctrl' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_ctrl.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rmdecod_ctrl' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_ctrl.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rmdecod_top' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rmdecod_top.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rsdecod_top' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_top.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rsdecod_syndromes' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_syndromes.v:14]
+INFO: [Synth 8-6157] synthesizing module 'gfmul_01' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/gfmul_01.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'gfmul_01' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/gfmul_01.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rsdecod_syndromes' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_syndromes.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rsdecod_elp' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_elp.v:14]
+INFO: [Synth 8-6157] synthesizing module 'gfmul_00' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/gfmul_00.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'gfmul_00' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/gfmul_00.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rsdecod_elp' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_elp.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rsdecod_zpoly' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_zploly.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rsdecod_zpoly' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_zploly.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rsdecod_roots' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_roots.v:14]
+INFO: [Synth 8-6157] synthesizing module 'add_fft' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/add_fft.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fft_part1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part1.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'fft_part1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part1.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fft_leaves_butterfly' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_leaves_butterfly.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'fft_leaves_butterfly' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_leaves_butterfly.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fft_part2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fft_part2_round' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:246]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized6' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized6' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fft_part2_round' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-6157] synthesizing module 'fft_part2_round__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:259]
+INFO: [Synth 8-6155] done synthesizing module 'fft_part2_round__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-6157] synthesizing module 'fft_part2_round__parameterized1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:276]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized7' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized7' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fft_part2_round__parameterized1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-6157] synthesizing module 'fft_part2_round__parameterized2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:301]
+INFO: [Synth 8-6157] synthesizing module 'syncfifo__parameterized8' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'syncfifo__parameterized8' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/syncfifo.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fft_part2_round__parameterized2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'fft_part2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_part2.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'add_fft' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/add_fft.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fft_retrieve_error_poly' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_retrieve_error_poly.v:15]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_retrieve_error_poly.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'fft_retrieve_error_poly' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fft_retrieve_error_poly.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rsdecod_roots' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_roots.v:14]
+INFO: [Synth 8-6157] synthesizing module 'hqc_rsdecod_err_val' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_err_val.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rsdecod_err_val' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_err_val.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_rsdecod_top' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_rsdecod_top.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'hqc_decod_top' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_decod_top.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'decrypt' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/decrypt.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'decap' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/decap.v:25]
+INFO: [Synth 8-6157] synthesizing module 'keccak_top' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/keccak_top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'control_path' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/control_path.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'control_path' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/control_path.v:7]
+INFO: [Synth 8-6157] synthesizing module 'data_path' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/data_path.v:36]
+INFO: [Synth 8-6157] synthesizing module 'rc' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/rc.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rc' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/rc.v:6]
+INFO: [Synth 8-6157] synthesizing module 'transform' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/transform.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'transform' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/transform.v:32]
+INFO: [Synth 8-6157] synthesizing module 'state_ram' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/state_ram.v:8]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized1' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized1' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized2' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized2' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized3' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized3' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized4' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized4' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized5' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized5' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized6' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized6' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6157] synthesizing module 'stateram_inference__parameterized7' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized7' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized8' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized9' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized10' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized11' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized12' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized13' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized14' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized15' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'stateram_inference__parameterized16' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/stateram_inference.v:39]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7071] port 'rst_n' of module 'HQC_wrapper' is unconnected for instance 'DUT' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:87]
+WARNING: [Synth 8-7023] instance 'DUT' of module 'HQC_wrapper' has 6 connections declared, but only 5 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/axi_wrapper.v:87]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-226] default block is never used [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'SI_REG' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'MI_REG' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'hqc_accelerator_xbar_0' is unconnected for instance 'xbar' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:923]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'hqc_accelerator_xbar_0' is unconnected for instance 'xbar' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:923]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'hqc_accelerator_xbar_0' has 40 connections declared, but only 38 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:923]
+INFO: [Synth 8-638] synthesizing module 'hqc_accelerator_rst_ps8_0_99M_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/synth/hqc_accelerator_rst_ps8_0_99M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/synth/hqc_accelerator_rst_ps8_0_99M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/Apps/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'hqc_accelerator_rst_ps8_0_99M_0' (0#1) [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/synth/hqc_accelerator_rst_ps8_0_99M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'hqc_accelerator_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:231]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'hqc_accelerator_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:231]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'hqc_accelerator_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:231]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'hqc_accelerator_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:231]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'hqc_accelerator_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:231]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO0DATAOUT' does not match port width (8) of module 'PS8' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:4655]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO0DATAENA' does not match port width (8) of module 'PS8' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:4656]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO1DATAOUT' does not match port width (8) of module 'PS8' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:4668]
+WARNING: [Synth 8-689] width (5) of port connection 'EMIOSDIO1DATAENA' does not match port width (8) of module 'PS8' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:4669]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXN3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP0OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP1OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP2OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTTXP3OUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADO' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_BOOTMODE' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_CLK' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DONEB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMA' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMACTN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMALERTN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBA' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMBG' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCK' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKE' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCKN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMCSN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDM' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQ' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQS' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMDQSN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMODT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMPARITY' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_DRAMRAMRSTN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERROROUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ERRORSTATUS' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_INITB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTCK' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDI' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTDO' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_JTAGTMS' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MIO' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PORB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PROGB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_RCALIBINOUT' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_SRSTB' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_ZQ' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_MGTRXP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_PADI' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFN3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP0IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP1IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP2IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7023] instance 'PS8_i' of module 'PS8' has 1015 connections declared, but only 957 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:3845]
+WARNING: [Synth 8-7071] port 'emio_enet0_signal_detect' of module 'zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/synth/hqc_accelerator_zynq_ultra_ps_e_0_0.v:363]
+WARNING: [Synth 8-7071] port 'emio_enet1_signal_detect' of module 'zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/synth/hqc_accelerator_zynq_ultra_ps_e_0_0.v:363]
+WARNING: [Synth 8-7071] port 'emio_enet2_signal_detect' of module 'zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/synth/hqc_accelerator_zynq_ultra_ps_e_0_0.v:363]
+WARNING: [Synth 8-7071] port 'emio_enet3_signal_detect' of module 'zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e' is unconnected for instance 'inst' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/synth/hqc_accelerator_zynq_ultra_ps_e_0_0.v:363]
+WARNING: [Synth 8-7023] instance 'inst' of module 'zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e' has 1491 connections declared, but only 1487 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/synth/hqc_accelerator_zynq_ultra_ps_e_0_0.v:363]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'hqc_accelerator_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:238]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'hqc_accelerator_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:238]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'hqc_accelerator_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:238]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'hqc_accelerator_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:238]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'hqc_accelerator_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:238]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'hqc_accelerator_zynq_ultra_ps_e_0_0' has 84 connections declared, but only 79 given [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/synth/hqc_accelerator.v:238]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'onegen_instance'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:281]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mem_dual_A'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/onegen_ct.v:126]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'shake_ctx'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:217]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'reduction'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:239]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'KEYGEN_MODULE'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/hqc_kem_joint_design.v:359]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'FIXEDWEIGHT'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/keygen.v:257]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'x_mem'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/keygen.v:316]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'onegen_instance'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:281]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'shake_ctx'. This will prevent further optimization [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src/fixed_weight_ct.v:217]
+WARNING: [Synth 8-6014] Unused sequential element cmd_empty_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1053]
+WARNING: [Synth 8-6014] Unused sequential element cmd_depth_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-6014] Unused sequential element cmd_b_push_block_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:976]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+WARNING: [Synth 8-3848] Net dp_audio_ref_clk in module/entity zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e does not have driver. [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:344]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_0 in module/entity zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e does not have driver. [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:1364]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_1 in module/entity zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e does not have driver. [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:1365]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_2 in module/entity zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e does not have driver. [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:1366]
+WARNING: [Synth 8-3848] Net irq_ipi_pl_3 in module/entity zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e does not have driver. [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:1367]
+WARNING: [Synth 8-7129] Port dp_audio_ref_clk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_0 in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_1 in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_2 in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port irq_ipi_pl_3 in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc0_fpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc0_fpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc1_fpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihpc1_fpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp0_fpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp0_fpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp1_fpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp1_fpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp2_fpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp2_fpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp3_fpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxihp3_fpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxi_lpd_rclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port saxi_lpd_wclk in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[15] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[14] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[13] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[12] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[11] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[10] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[9] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[8] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[7] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_awuser[6] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[15] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[14] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[13] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[12] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[11] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[10] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[9] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[8] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[7] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sacefpd_aruser[6] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[3] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[2] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[1] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_clk[0] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[31] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[30] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[29] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[28] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[27] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[26] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[25] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[24] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[23] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[22] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[21] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[20] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[19] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[18] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[17] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[16] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[15] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[14] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[13] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[12] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[11] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[10] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[9] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[8] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[7] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[6] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[5] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[4] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[3] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[2] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[1] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc_in[0] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[31] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[30] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[29] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[28] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[27] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[26] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[25] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[24] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[23] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[22] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[21] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[20] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[19] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[18] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[17] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[16] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[15] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[14] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[13] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[12] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[11] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[10] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[9] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2262.020 ; gain = 794.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2262.020 ; gain = 794.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2262.020 ; gain = 794.984
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.565 . Memory (MB): peak = 2266.105 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hqc_accelerator_zynq_ultra_ps_e_0_0.xdc] for cell 'hqc_accelerator_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hqc_accelerator_zynq_ultra_ps_e_0_0.xdc] for cell 'hqc_accelerator_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0_board.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0_board.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Parsing XDC File [D:/University/251/DA/ILA/project_1/project_1.srcs/constrs_1/new/ila_debug.xdc]
+Finished Parsing XDC File [D:/University/251/DA/ILA/project_1/project_1.srcs/constrs_1/new/ila_debug.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/University/251/DA/ILA/project_1/project_1.srcs/constrs_1/new/ila_debug.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hqc_accelerator_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hqc_accelerator_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hqc_accelerator_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hqc_accelerator_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2410.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 2410.090 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Apps/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for hqc_accelerator_i/zynq_ultra_ps_e_0/inst/PS8_i. (constraint file  d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hqc_accelerator_zynq_ultra_ps_e_0_0.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/zynq_ultra_ps_e_0/inst. (constraint file  D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc, line 39).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/rst_ps8_0_99M/U0. (constraint file  D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc, line 42).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc, line 48).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst. (constraint file  D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/dont_touch.xdc, line 55).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/axi_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /\USE_B_CHANNEL.cmd_b_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_READ.read_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /\USE_B_CHANNEL.cmd_b_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_READ.read_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+hqc_kem_joint_design__GCB0HQC_wrapper__GC0poly_mult__GB3encapaxi_wrapper_slave_lite_v1_0_S00_AXIpoly_mult__GB0poly_mult__GB1hqc_accelerator__GC0keccak_toppoly_mult__GB2---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 168382
+   Resynthesis Design Size (number of cells) : 0
+   Resynth % : 0.0000,  Reuse % : 100.0000
+
+3. Reference Checkpoint Information
+
++------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | D:/University/251/DA/ILA/project_1/project_1.srcs/utils_1/imports/synth_1/hqc_accelerator_wrapper.dcp |
++------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2022.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+--------------------------------------------+------------+----------+
+|      |RTL Partition                               |Replication |Instances |
++------+--------------------------------------------+------------+----------+
+|1     |axi_wrapper_slave_lite_v1_0_S00_AXI_#REUSE# |           1|         0|
+|2     |encap_#REUSE#                               |           1|         0|
+|3     |keccak_top_#REUSE#                          |           1|         0|
+|4     |poly_mult__GB0_#REUSE#                      |           1|         0|
+|5     |poly_mult__GB1_#REUSE#                      |           1|         0|
+|6     |poly_mult__GB2_#REUSE#                      |           1|         0|
+|7     |poly_mult__GB3_#REUSE#                      |           1|         0|
+|8     |hqc_kem_joint_design__GCB0_#REUSE#          |           1|         0|
+|9     |HQC_wrapper__GC0_#REUSE#                    |           1|         0|
+|10    |hqc_accelerator__GC0_#REUSE#                |           1|         0|
++------+--------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 2410.090 ; gain = 943.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 3772.273 ; gain = 2305.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 3772.395 ; gain = 2305.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 3792.250 ; gain = 2325.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 3797.707 ; gain = 2330.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_ctx/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/mem_dual_A/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/shake_ctx/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/mem_dual_A/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/mem_single_seed/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/mem_single_seed/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/loca_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/x_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/mem_pk_seed/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/mem_pk_seed/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/rand_mem/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/mem_single_seed/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/mem_single_seed/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/loca_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_MULLER_ENCODE/CODEWORD/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_MULLER_ENCODE/CODEWORD/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_MULLER_ENCODE/CODEWORD/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_MULLER_ENCODE/CODEWORD/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/r1_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/r2_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/u_mem/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/u_mem/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/u_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/u_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/MSG_MEM/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/MSG_MEM/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/D_MEM/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/D_MEM/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/HASH_MEM/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/HASH_MEM/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/POLY_MULT/INTERLEAVED_RED_MEM/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/POLY_MULT/INTERLEAVED_RED_MEM/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/POLY_MULT/INTERLEAVED_RED_MEM/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/POLY_MULT/INTERLEAVED_RED_MEM/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ELP/inv_dp_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ERRVALS/inv_buf_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/MEM_Y_INST/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/MEM_Y_INST/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/MEM_D_INST/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_H/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_S/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_U/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance hqc_accelerator_i/axi_wrapper_0/inst/DUT/RAM_V/mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[0]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[0]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[7]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[6]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[5]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[4]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[3]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[2]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_ctl_pipe[1]_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[7]_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trace_data_pipe[6]_inferred:in0[4] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1812]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1133]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1133]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1133]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1133]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1133]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1133]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1443]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:684]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:2257]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1894]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1894]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
+INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------------+-----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                     | RTL Name                                                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------------+-----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|keygen                          | LOC_BASED_ADDER/done_reg                                                                            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|hqc_accelerator_axi_wrapper_0_0 | inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/LOC_BASED_ADDER/done_reg                                          | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|hqc_accelerator_axi_wrapper_0_0 | inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ZPOLY/syndrome_buf2_reg[7]                | 15     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|hqc_accelerator_axi_wrapper_0_0 | inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ROOTS/ADD_FFT/FFT_PART1/bm_pow_R_reg[153] | 5      | 5     | YES          | NO                 | YES               | 5      | 0       | 
+|hqc_accelerator_axi_wrapper_0_0 | inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ROOTS/ADD_FFT/FFT_PART1/bm_pow_R_reg[122] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|hqc_accelerator_axi_wrapper_0_0 | inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ROOTS/ADD_FFT/FFT_PART1/bm_pow_R_reg[116] | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|hqc_accelerator_axi_wrapper_0_0 | inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_ROOTS/ADD_FFT/FFT_PART1/bm_pow_R_reg[70]  | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------------------------+-----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG_PS   |     2|
+|2     |CARRY8    |   142|
+|3     |LUT1      |   798|
+|4     |LUT2      |  2078|
+|5     |LUT3      |  3511|
+|6     |LUT4      |  3455|
+|7     |LUT5      |  4492|
+|8     |LUT6      |  8493|
+|9     |MUXF7     |   407|
+|10    |MUXF8     |   134|
+|11    |PS8       |     1|
+|12    |RAM16X1S  |   816|
+|13    |RAM256X1S |     8|
+|14    |RAM32M    |    12|
+|15    |RAM32M16  |    28|
+|16    |RAM32X1D  |     4|
+|17    |RAM64M8   |     3|
+|18    |RAM64X1D  |     3|
+|19    |RAMB18E2  |    16|
+|20    |RAMB36E2  |    38|
+|21    |SRL16     |     1|
+|22    |SRL16E    |    39|
+|23    |SRLC32E   |    70|
+|24    |FDCE      |   138|
+|25    |FDPE      |    66|
+|26    |FDR       |     4|
+|27    |FDRE      | 11283|
+|28    |FDSE      |   249|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1560 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 3826.031 ; gain = 2210.926
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 3826.031 ; gain = 2358.996
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.411 . Memory (MB): peak = 3852.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1562 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/DECRYPT/DECODE/RS_DECOD/COMPUTE_SYNDROMES/alpha_rom_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/D_MEM/mem_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_MULLER_ENCODE/CODEWORD/mem_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_MULLER_ENCODE/CODEWORD/mem_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/mem_single_seed/mem_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/u_mem/mem_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/u_mem/mem_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/MSG_MEM/mem_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/mem_single_seed/mem_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell hqc_accelerator_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/mem_pk_seed/mem_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3885.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 879 instances were transformed.
+  FDR => FDRE: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 816 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 28 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 3 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 3 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: 9fa364ef
+INFO: [Common 17-83] Releasing license: Synthesis
+374 Infos, 411 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:31 . Memory (MB): peak = 3885.254 ; gain = 3410.762
+INFO: [Common 17-1381] The checkpoint 'D:/University/251/DA/ILA/project_1/project_1.runs/synth_1/hqc_accelerator_wrapper.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3885.254 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file hqc_accelerator_wrapper_utilization_synth.rpt -pb hqc_accelerator_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 20:43:00 2026...

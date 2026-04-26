@@ -1,22 +1,22 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decap_tb_behav xil_defaultlib.decap_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Apps/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encap_tb_fd_behav xil_defaultlib.encap_tb_fd xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:146]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:144]
 WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:147]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:150]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:151]
 WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:154]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:155]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:158]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:159]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'keygen_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:174]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'm_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:177]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'encap_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:185]
-WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'decap_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:188]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'decap_in_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:192]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:157]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:163]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:166]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_0' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:172]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'address_1' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:175]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'keygen_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:196]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'm_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:201]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'encap_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:221]
+WARNING: [VRFC 10-3091] actual bit length 13 differs from formal bit length 8 for port 'decap_out_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:227]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'decap_in_addr' [C:/Users/THUAN/Downloads/wrapper/HQC_wrapper.v:231]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start' [C:/Users/THUAN/Downloads/wrapper/hqc_kem_joint_design.v:376]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wren_1' [C:/Users/THUAN/Downloads/wrapper/vect_set_random.v:156]
 WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 16 for port 'loc_addr' [C:/Users/THUAN/Downloads/wrapper/keygen.v:376]
@@ -61,8 +61,8 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mem_single(WIDTH=15,DEPTH=66,FIL...
-Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=16,FIL...
+Compiling module xil_defaultlib.mem_dual(WIDTH=15,DEPTH=66)
+Compiling module xil_defaultlib.mem_dual(WIDTH=32,DEPTH=16)
 Compiling module xil_defaultlib.mem_dual(WIDTH=128,DEPTH=139)
 Compiling module xil_defaultlib.mem_single(WIDTH=32,DEPTH=10)
 Compiling module xil_defaultlib.mem_dual(WIDTH=24,DEPTH=264)
@@ -172,6 +172,6 @@ Compiling module xil_defaultlib.data_path_default
 Compiling module xil_defaultlib.keccak_top
 Compiling module xil_defaultlib.hqc_kem_joint_design_default
 Compiling module xil_defaultlib.HQC_wrapper
-Compiling module xil_defaultlib.decap_tb
+Compiling module xil_defaultlib.encap_tb_fd
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot decap_tb_behav
+Built simulation snapshot encap_tb_fd_behav

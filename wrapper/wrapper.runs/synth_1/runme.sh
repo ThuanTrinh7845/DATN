@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log HQC_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HQC_wrapper.tcl
+EAStep vivado -log SoC_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SoC_wrapper.tcl

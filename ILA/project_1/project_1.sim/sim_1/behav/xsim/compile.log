@@ -1,0 +1,119 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/HQC_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HQC_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/add_fft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_fft
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/barrett_red_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrett_red_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/cdw_xor_tmp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdw_xor_tmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/concat_code.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concat_code
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/control_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/data_path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/decap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/decrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/encap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/encrypt_parallel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encrypt_parallel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fft_leaves_butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_leaves_butterfly
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fft_part1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_part1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fft_part2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_part2
+INFO: [VRFC 10-311] analyzing module fft_part2_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fft_retrieve_error_poly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_retrieve_error_poly
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fixed_weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fixed_weight_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/fixed_weight_cww.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixed_weight_cww
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/gf_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gf_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/gfmul_00.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gfmul_00
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/gfmul_01.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gfmul_01
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_barrett_red.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_barrett_red
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_decod_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_decod_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_kem_joint_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_kem_joint_design
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_expnsum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_expnsum
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_findpeaks.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_findpeaks
+INFO: [VRFC 10-311] analyzing module findpeaks_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_hadamard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_hadamard
+INFO: [VRFC 10-311] analyzing module hadamard_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rmdecod_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_elp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_elp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_err_val.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_err_val
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_roots.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_roots
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_syndromes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_syndromes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_zploly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hqc_rsdecod_zpoly
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/karatsuba_small.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module karatsuba_small
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/keccak_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/keygen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keygen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/loc_based_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loc_based_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/mem_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/mem_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/mod34.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod34
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/onegen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onegen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/onegen_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onegen_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/poly_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poly_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/rc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/reed_muller_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reed_muller_encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/reed_solomon_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reed_solomon_encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/rm_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rm_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/state_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/stateram_inference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stateram_inference
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/syncfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syncfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/v_minus_uy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_minus_uy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/vect_set_random.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vect_set_random
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/xor_based_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_based_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/THUAN/Downloads/ILA/keygen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keygen_tb

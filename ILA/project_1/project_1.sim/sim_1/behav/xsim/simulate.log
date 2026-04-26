@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+=== STARTING TESTBENCH (INTERNAL DUMP MODE) ===
+--- [TB] Step 1: Resetting Core ---
+--- [TB] Step 2: Loading Seeds via AXI ---
+--- [TB] Loading SK & PK Seeds ---
+--- [TB] SK Seed Loaded. Loading PK Seed... ---
+--- [TB] Step 3: Triggering Start ---
+--- [TB] Step 4: Polling for Done Status ---
+INFO: xsimkernel Simulation Memory Usage: 23908 KB (Peak: 23908 KB), Simulation CPU Usage: 17749 ms

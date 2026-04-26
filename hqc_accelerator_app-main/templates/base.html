@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}HQC Post-Quantum Accelerator{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="circuit-bg" aria-hidden="true">
+        <img class="circuit-svg" src="{{ url_for('static', filename='circuit.svg') }}" alt="">
+    </div>
+    <div class="circuit-corners" aria-hidden="true">
+        <span class="cc cc-tl"></span>
+        <span class="cc cc-tr"></span>
+        <span class="cc cc-bl"></span>
+        <span class="cc cc-br"></span>
+    </div>
+
+    <div class="page-shell">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="app-footer">
+        <span class="footer-item">HQC-128 LIGHTWEIGHT</span>
+        <span class="footer-divider">·</span>
+        <span class="footer-item">FPGA HARDWARE ACCELERATOR</span>
+        <span class="footer-divider">·</span>
+        <span class="footer-item">XILINX KRIA KV260</span>
+    </footer>
+</body>
+</html>

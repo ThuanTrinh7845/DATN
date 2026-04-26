@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Apr  2 20:43:09 2026
+# Process ID: 21552
+# Current directory: D:/University/251/DA/ILA/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log hqc_accelerator_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hqc_accelerator_wrapper.tcl -notrace
+# Log file: D:/University/251/DA/ILA/project_1/project_1.runs/impl_1/hqc_accelerator_wrapper.vdi
+# Journal file: D:/University/251/DA/ILA/project_1/project_1.runs/impl_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
+#-----------------------------------------------------------
+source hqc_accelerator_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/University/251/DA/ILA/project_1'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/University/251/DA/ILA/project_1' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/University/251/DA/ILA/project_1/project_1.runs/impl_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top hqc_accelerator_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.323 . Memory (MB): peak = 1469.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hqc_accelerator_zynq_ultra_ps_e_0_0.xdc] for cell 'hqc_accelerator_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_zynq_ultra_ps_e_0_0/hqc_accelerator_zynq_ultra_ps_e_0_0.xdc] for cell 'hqc_accelerator_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0_board.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0_board.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_rst_ps8_0_99M_0/hqc_accelerator_rst_ps8_0_99M_0.xdc] for cell 'hqc_accelerator_i/rst_ps8_0_99M/U0'
+Parsing XDC File [D:/University/251/DA/ILA/project_1/project_1.srcs/constrs_1/new/ila_debug.xdc]
+Finished Parsing XDC File [D:/University/251/DA/ILA/project_1/project_1.srcs/constrs_1/new/ila_debug.xdc]
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_auto_ds_0/hqc_accelerator_auto_ds_0_clocks.xdc] for cell 'hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_auto_ds_0/hqc_accelerator_auto_ds_0_clocks.xdc] for cell 'hqc_accelerator_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_auto_ds_1/hqc_accelerator_auto_ds_1_clocks.xdc] for cell 'hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Finished Parsing XDC File [d:/University/251/DA/ILA/project_1/project_1.gen/sources_1/bd/hqc_accelerator/ip/hqc_accelerator_auto_ds_1/hqc_accelerator_auto_ds_1_clocks.xdc] for cell 'hqc_accelerator_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2132.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 874 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 816 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 28 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 3 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 3 instances
+
+11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2132.039 ; gain = 1656.355
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2157.422 ; gain = 25.383
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: fc8721ce
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2505.930 ; gain = 348.508
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+The following Error logs belongs to u_ila_0
+ERROR: [Synth 8-5833] Design has more instantiated block-RAMs than device capacity. Consider targetting to a different part. 
+ERROR: [Common 17-39] 'synth_design' failed due to earlier errors.
+ERROR: [IP_Flow 19-3805] Failed to generate and synthesize debug IPs. 
+ error copying "d:/University/251/DA/ILA/project_1/project_1.runs/impl_1/.Xil/Vivado-21552-MSI/dc_drv.0/dc/prj_ip.runs/u_ila_0_synth_1/u_ila_0.dcp": no such file or directory
+ERROR: [Chipscope 16-330] Synthesis of Debug Cores has failed 
+ERROR: [Chipscope 16-578] Check "d:/University/251/DA/ILA/project_1/project_1.runs/impl_1/.Xil/Vivado-21552-MSI/dc_drv.0/vivado.log" file for more details.
+Phase 1 Generate And Synthesize Debug Cores | Checksum: fc8721ce
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:03:48 . Memory (MB): peak = 2869.168 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+opt_design failed
+ERROR: [Chipscope 16-338] Implementing debug Cores failed due to earlier errors
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 20:47:36 2026...

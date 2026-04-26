@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{ console_name }} — Coming Soon{% endblock %}
+
+{% block content %}
+<section class="under-construction">
+    <div class="uc-card">
+        <svg class="uc-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="8" y="20" width="48" height="36" rx="3"/>
+            <path d="M20 20 V12 H44 V20"/>
+            <line x1="16" y1="32" x2="48" y2="32" stroke-dasharray="4 2"/>
+            <line x1="16" y1="42" x2="48" y2="42" stroke-dasharray="4 2"/>
+        </svg>
+        <h2 class="uc-title">{{ console_name }} CONSOLE</h2>
+        <p class="uc-status">[ UNDER CONSTRUCTION ]</p>
+        <p class="uc-description">
+            This console will be wired up in the next development sprint.
+            Hardware backend already validated on Kria KV260.
+        </p>
+        <a class="uc-back" href="{{ url_for('index') }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12 H5 M11 6 L5 12 L11 18"/>
+            </svg>
+            <span>BACK TO ROLE SELECT</span>
+        </a>
+    </div>
+</section>
+{% endblock %}

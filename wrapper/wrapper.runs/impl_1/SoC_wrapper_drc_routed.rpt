@@ -1,0 +1,418 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Mar 25 18:42:30 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_drc -file SoC_wrapper_drc_routed.rpt -pb SoC_wrapper_drc_routed.pb -rpx SoC_wrapper_drc_routed.rpx
+| Design       : SoC_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 73
++-----------+----------+-------------------------+------------+
+| Rule      | Severity | Description             | Violations |
++-----------+----------+-------------------------+------------+
+| PDCN-1569 | Warning  | LUT equation term check | 9          |
+| PDRC-153  | Warning  | Gated clock check       | 63         |
+| RTSTAT-10 | Warning  | No routable loads       | 1          |
++-----------+----------+-------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A5)+((~A5)*(~A3)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A1)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A5)+((~A5)*(~A1)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A1)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A1*A3)+(A1*(~A3)*(~A4))+((~A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A2)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A1)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A1*A3)+(A1*(~A3)*(~A4))+((~A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/init_mem_onegen__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/sel_ctx__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/shake_input_type__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/sel_fw_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/sel_fw_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/ENCRYPT/sel_fw_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/block_capture_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/block_capture_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/block_capture_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/cap_uv_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/cap_uv_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/cap_uv_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/d_wen_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/d_wen_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/d_wen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_mem_wen_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_mem_wen_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/hash_mem_wen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/init_msg_in_reg_i_1__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/init_msg_in_reg_i_1__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/init_msg_in_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/last_block_capture_reg_i_1__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/last_block_capture_reg_i_1__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/last_block_capture_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/shake_in_type_reg[2]_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/shake_in_type_reg[2]_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/shake_in_type_reg[2]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_encrypt_reg_i_1__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_encrypt_reg_i_1__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_encrypt_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_hash_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_hash_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/start_hash_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_wen_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_wen_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/DECAP_MODULE/ENCAP_FOR_RENCRYPT/theta_wen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/ENCODE/REED_SOLOMON_CODE/capture_cdw_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/decrease_weight_count_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/init_mem_onegen__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/init_mem_onegen_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/init_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/sel_ctx__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/sel_ctx_reg[1]_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_input_type__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/shake_input_type_reg[1]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/FIXEDWEIGHT/squeeze_ctrl_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/sel_fw_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/sel_fw_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/ENCRYPT/sel_fw_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/block_capture_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/block_capture_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/block_capture_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/cap_uv_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/cap_uv_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/cap_uv_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/d_wen_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/d_wen_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/d_wen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/hash_mem_wen_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/hash_mem_wen_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/hash_mem_wen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/init_msg_in_reg_i_1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/init_msg_in_reg_i_1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/init_msg_in_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/last_block_capture_reg_i_1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/last_block_capture_reg_i_1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/last_block_capture_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/shake_in_type_reg[2]_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/shake_in_type_reg[2]_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/shake_in_type_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/start_encrypt_reg_i_1_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/start_encrypt_reg_i_1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/start_encrypt_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/start_hash_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/start_hash_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/start_hash_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/theta_wen_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/theta_wen_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/ENCAP_MODULE/theta_wen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/decrease_weight_count_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/decrease_weight_count_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/decrease_weight_count_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/init_mem_onegen__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/init_mem_onegen_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/init_mem_onegen_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/done_s_reg_1 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/start_fw_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/start_fw_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/init_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/init_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/init_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/rd_en_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/reading_out_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_0_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/onegen_instance/wren_1_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/sel_ctx__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/sel_ctx_reg[1]_i_1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/sel_ctx_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/shake_input_type__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/shake_input_type_reg[1]_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/shake_input_type_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/squeeze_ctrl_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/squeeze_ctrl_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/FIXEDWEIGHT/squeeze_ctrl_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/shake_input_type_reg[1]_i_2__0_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/shake_input_type_reg[1]_i_2__0/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/VECTSETRAND/shake_input_type_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/sel_x_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/sel_x_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/sel_x_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_adder_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_adder_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_adder_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_poly_mult_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_poly_mult_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_poly_mult_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_x_transfer_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_x_transfer_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/KEYGEN_MODULE/start_x_transfer_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/din_ready_internal_reg_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/din_ready_internal_reg_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/din_ready_internal_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/prev_start_addr__0 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/prev_start_addr_reg[5]_i_1/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/prev_start_addr_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/start_addr_reg[5]_i_2_n_3 is a gated clock net sourced by a combinational pin SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/start_addr_reg[5]_i_2/O, cell SoC_i/axi_wrapper_0/inst/DUT/DUT/SHAKE256/control_path_instance/start_addr_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+91 net(s) have no routable loads. The problem bus(es) and/or net(s) are SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+SoC_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+SoC_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS,
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0]
+ (the first 15 of 65 listed).
+Related violations: <none>
+
+

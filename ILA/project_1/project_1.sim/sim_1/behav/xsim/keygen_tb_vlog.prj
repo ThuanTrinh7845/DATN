@@ -1,0 +1,66 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1.gen/sources_1/bd/hqc_accelerator/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/hqc_accelerator/ipshared/abef/hdl" --include "../../../../project_1.gen/sources_1/bd/hqc_accelerator/ipshared/362a/src" --include "D:/Apps/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"C:/Users/THUAN/Downloads/ILA/HQC_wrapper.v" \
+"C:/Users/THUAN/Downloads/ILA/add_fft.v" \
+"C:/Users/THUAN/Downloads/ILA/barrett_red_gen.v" \
+"C:/Users/THUAN/Downloads/ILA/cdw_xor_tmp.v" \
+"C:/Users/THUAN/Downloads/ILA/concat_code.v" \
+"C:/Users/THUAN/Downloads/ILA/control_path.v" \
+"C:/Users/THUAN/Downloads/ILA/data_path.v" \
+"C:/Users/THUAN/Downloads/ILA/decap.v" \
+"C:/Users/THUAN/Downloads/ILA/decrypt.v" \
+"C:/Users/THUAN/Downloads/ILA/encap.v" \
+"C:/Users/THUAN/Downloads/ILA/encrypt.v" \
+"C:/Users/THUAN/Downloads/ILA/encrypt_parallel.v" \
+"C:/Users/THUAN/Downloads/ILA/fft_leaves_butterfly.v" \
+"C:/Users/THUAN/Downloads/ILA/fft_part1.v" \
+"C:/Users/THUAN/Downloads/ILA/fft_part2.v" \
+"C:/Users/THUAN/Downloads/ILA/fft_retrieve_error_poly.v" \
+"C:/Users/THUAN/Downloads/ILA/fixed_weight.v" \
+"C:/Users/THUAN/Downloads/ILA/fixed_weight_ct.v" \
+"C:/Users/THUAN/Downloads/ILA/fixed_weight_cww.v" \
+"C:/Users/THUAN/Downloads/ILA/gf_mul.v" \
+"C:/Users/THUAN/Downloads/ILA/gfmul_00.v" \
+"C:/Users/THUAN/Downloads/ILA/gfmul_01.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_barrett_red.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_decod_top.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_kem_joint_design.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_ctrl.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_expnsum.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_findpeaks.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_hadamard.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rmdecod_top.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_elp.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_err_val.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_roots.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_syndromes.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_top.v" \
+"C:/Users/THUAN/Downloads/ILA/hqc_rsdecod_zploly.v" \
+"C:/Users/THUAN/Downloads/ILA/karatsuba_small.v" \
+"C:/Users/THUAN/Downloads/ILA/keccak_top.v" \
+"C:/Users/THUAN/Downloads/ILA/keygen.v" \
+"C:/Users/THUAN/Downloads/ILA/loc_based_adder.v" \
+"C:/Users/THUAN/Downloads/ILA/mem_dual.v" \
+"C:/Users/THUAN/Downloads/ILA/mem_single.v" \
+"C:/Users/THUAN/Downloads/ILA/mod34.v" \
+"C:/Users/THUAN/Downloads/ILA/onegen.v" \
+"C:/Users/THUAN/Downloads/ILA/onegen_ct.v" \
+"C:/Users/THUAN/Downloads/ILA/poly_mult.v" \
+"C:/Users/THUAN/Downloads/ILA/rc.v" \
+"C:/Users/THUAN/Downloads/ILA/reed_muller_encode.v" \
+"C:/Users/THUAN/Downloads/ILA/reed_solomon_encode.v" \
+"C:/Users/THUAN/Downloads/ILA/rm_encoder.v" \
+"C:/Users/THUAN/Downloads/ILA/state_ram.v" \
+"C:/Users/THUAN/Downloads/ILA/stateram_inference.v" \
+"C:/Users/THUAN/Downloads/ILA/syncfifo.v" \
+"C:/Users/THUAN/Downloads/ILA/transform.v" \
+"C:/Users/THUAN/Downloads/ILA/v_minus_uy.v" \
+"C:/Users/THUAN/Downloads/ILA/vect_set_random.v" \
+"C:/Users/THUAN/Downloads/ILA/xor_based_adder.v" \
+"C:/Users/THUAN/Downloads/ILA/keygen_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

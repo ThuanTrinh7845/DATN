@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Mar  3 07:54:50 2026
+# Process ID: 7600
+# Current directory: D:/University/251/DA/wrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12920 D:\University\251\DA\wrapper\wrapper.xpr
+# Log file: D:/University/251/DA/wrapper/vivado.log
+# Journal file: D:/University/251/DA/wrapper\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 10, Host memory: 8276 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/University/251/DA/wrapper/wrapper.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/University/251/DA/wrapper/wrapper.srcs/sources_1/bd/SoC/SoC.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.4 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:axi_wrapper:1.0 axi_wrapper_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_wrapper_0/s00_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_wrapper_0/s00_axi]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_wrapper_0/s00_axi} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+regenerate_bd_layout
+set_property synth_checkpoint_mode None [get_files  D:/University/251/DA/wrapper/wrapper.srcs/sources_1/bd/SoC/SoC.bd]
+generate_target all [get_files  D:/University/251/DA/wrapper/wrapper.srcs/sources_1/bd/SoC/SoC.bd]
+export_ip_user_files -of_objects [get_files D:/University/251/DA/wrapper/wrapper.srcs/sources_1/bd/SoC/SoC.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/University/251/DA/wrapper/wrapper.srcs/sources_1/bd/SoC/SoC.bd] -directory D:/University/251/DA/wrapper/wrapper.ip_user_files/sim_scripts -ip_user_files_dir D:/University/251/DA/wrapper/wrapper.ip_user_files -ipstatic_source_dir D:/University/251/DA/wrapper/wrapper.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/University/251/DA/wrapper/wrapper.cache/compile_simlib/modelsim} {questa=D:/University/251/DA/wrapper/wrapper.cache/compile_simlib/questa} {riviera=D:/University/251/DA/wrapper/wrapper.cache/compile_simlib/riviera} {activehdl=D:/University/251/DA/wrapper/wrapper.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/University/251/DA/wrapper/wrapper.srcs/sources_1/bd/SoC/SoC.bd] -top
+add_files -norecurse d:/University/251/DA/wrapper/wrapper.gen/sources_1/bd/SoC/hdl/SoC_wrapper.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SoC_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

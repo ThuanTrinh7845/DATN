@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <style>
+      .trace-main { fill: none; stroke: #1e6478; stroke-width: 1.6; opacity: 0.7;  stroke-linecap: round; stroke-linejoin: round; }
+      .trace-sub  { fill: none; stroke: #143f55; stroke-width: 1.4; opacity: 0.55; stroke-linecap: round; stroke-linejoin: round; }
+      .pad-hole    { fill: #050d18; stroke: #1e6478; stroke-width: 1.4; opacity: 0.85; }
+      .pad-hole-sm { fill: #050d18; stroke: #143f55; stroke-width: 1.2; opacity: 0.7; }
+    </style>
+  </defs>
+
+  <!-- ============================================================
+       LEFT EDGE BUS
+       ============================================================ -->
+  <g>
+    <path class="trace-main" d="M 0,80   L 180,80   L 220,120  L 320,120"/>
+    <path class="trace-sub"  d="M 0,140  L 130,140  L 170,180  L 240,180"/>
+    <path class="trace-main" d="M 0,210  L 200,210  L 240,170  L 300,170"/>
+    <path class="trace-sub"  d="M 0,280  L 100,280  L 140,320  L 220,320"/>
+    <path class="trace-main" d="M 0,360  L 160,360  L 200,400  L 280,400"/>
+    <path class="trace-sub"  d="M 0,440  L 120,440  L 160,400  L 200,400"/>
+    <path class="trace-main" d="M 0,520  L 200,520  L 240,560  L 320,560"/>
+    <path class="trace-sub"  d="M 0,600  L 140,600  L 180,640  L 250,640"/>
+    <path class="trace-main" d="M 0,680  L 180,680  L 220,720  L 300,720"/>
+    <path class="trace-sub"  d="M 0,760  L 110,760  L 150,800  L 220,800"/>
+    <path class="trace-main" d="M 0,840  L 190,840  L 230,880  L 320,880"/>
+
+    <circle class="pad-hole" cx="320" cy="120" r="3.5"/>
+    <circle class="pad-hole" cx="300" cy="170" r="3.5"/>
+    <circle class="pad-hole" cx="280" cy="400" r="3.5"/>
+    <circle class="pad-hole" cx="320" cy="560" r="3.5"/>
+    <circle class="pad-hole" cx="300" cy="720" r="3.5"/>
+    <circle class="pad-hole" cx="320" cy="880" r="3.5"/>
+
+    <circle class="pad-hole-sm" cx="240" cy="180" r="2.6"/>
+    <circle class="pad-hole-sm" cx="220" cy="320" r="2.6"/>
+    <circle class="pad-hole-sm" cx="200" cy="400" r="2.6"/>
+    <circle class="pad-hole-sm" cx="250" cy="640" r="2.6"/>
+    <circle class="pad-hole-sm" cx="220" cy="800" r="2.6"/>
+  </g>
+
+  <!-- ============================================================
+       RIGHT EDGE BUS (mirror)
+       ============================================================ -->
+  <g>
+    <path class="trace-main" d="M 1600,80   L 1420,80   L 1380,120  L 1280,120"/>
+    <path class="trace-sub"  d="M 1600,140  L 1470,140  L 1430,180  L 1360,180"/>
+    <path class="trace-main" d="M 1600,210  L 1400,210  L 1360,170  L 1300,170"/>
+    <path class="trace-sub"  d="M 1600,280  L 1500,280  L 1460,320  L 1380,320"/>
+    <path class="trace-main" d="M 1600,360  L 1440,360  L 1400,400  L 1320,400"/>
+    <path class="trace-sub"  d="M 1600,440  L 1480,440  L 1440,400  L 1400,400"/>
+    <path class="trace-main" d="M 1600,520  L 1400,520  L 1360,560  L 1280,560"/>
+    <path class="trace-sub"  d="M 1600,600  L 1460,600  L 1420,640  L 1350,640"/>
+    <path class="trace-main" d="M 1600,680  L 1420,680  L 1380,720  L 1300,720"/>
+    <path class="trace-sub"  d="M 1600,760  L 1490,760  L 1450,800  L 1380,800"/>
+    <path class="trace-main" d="M 1600,840  L 1410,840  L 1370,880  L 1280,880"/>
+
+    <circle class="pad-hole" cx="1280" cy="120" r="3.5"/>
+    <circle class="pad-hole" cx="1300" cy="170" r="3.5"/>
+    <circle class="pad-hole" cx="1320" cy="400" r="3.5"/>
+    <circle class="pad-hole" cx="1280" cy="560" r="3.5"/>
+    <circle class="pad-hole" cx="1300" cy="720" r="3.5"/>
+    <circle class="pad-hole" cx="1280" cy="880" r="3.5"/>
+
+    <circle class="pad-hole-sm" cx="1360" cy="180" r="2.6"/>
+    <circle class="pad-hole-sm" cx="1380" cy="320" r="2.6"/>
+    <circle class="pad-hole-sm" cx="1400" cy="400" r="2.6"/>
+    <circle class="pad-hole-sm" cx="1350" cy="640" r="2.6"/>
+    <circle class="pad-hole-sm" cx="1380" cy="800" r="2.6"/>
+  </g>
+
+  <!-- ============================================================
+       TOP EDGE
+       ============================================================ -->
+  <g>
+    <path class="trace-sub"  d="M 200,0   L 200,40   L 240,80"/>
+    <path class="trace-main" d="M 360,0   L 360,30   L 400,70   L 460,70"/>
+    <path class="trace-sub"  d="M 540,0   L 540,50   L 580,90"/>
+    <path class="trace-main" d="M 760,0   L 760,40   L 800,80"/>
+    <path class="trace-sub"  d="M 1060,0  L 1060,50  L 1020,90"/>
+    <path class="trace-main" d="M 1240,0  L 1240,30  L 1200,70   L 1140,70"/>
+    <path class="trace-sub"  d="M 1400,0  L 1400,40  L 1360,80"/>
+
+    <circle class="pad-hole-sm" cx="240" cy="80"  r="2.6"/>
+    <circle class="pad-hole"    cx="460" cy="70"  r="3.5"/>
+    <circle class="pad-hole-sm" cx="580" cy="90"  r="2.6"/>
+    <circle class="pad-hole"    cx="800" cy="80"  r="3.5"/>
+    <circle class="pad-hole-sm" cx="1020" cy="90" r="2.6"/>
+    <circle class="pad-hole"    cx="1140" cy="70" r="3.5"/>
+    <circle class="pad-hole-sm" cx="1360" cy="80" r="2.6"/>
+  </g>
+
+  <!-- ============================================================
+       BOTTOM EDGE
+       ============================================================ -->
+  <g>
+    <path class="trace-sub"  d="M 200,900 L 200,860 L 240,820"/>
+    <path class="trace-main" d="M 360,900 L 360,870 L 400,830  L 460,830"/>
+    <path class="trace-sub"  d="M 540,900 L 540,850 L 580,810"/>
+    <path class="trace-main" d="M 760,900 L 760,860 L 800,820"/>
+    <path class="trace-sub"  d="M 1060,900 L 1060,850 L 1020,810"/>
+    <path class="trace-main" d="M 1240,900 L 1240,870 L 1200,830 L 1140,830"/>
+    <path class="trace-sub"  d="M 1400,900 L 1400,860 L 1360,820"/>
+
+    <circle class="pad-hole-sm" cx="240" cy="820"  r="2.6"/>
+    <circle class="pad-hole"    cx="460" cy="830"  r="3.5"/>
+    <circle class="pad-hole-sm" cx="580" cy="810"  r="2.6"/>
+    <circle class="pad-hole"    cx="800" cy="820"  r="3.5"/>
+    <circle class="pad-hole-sm" cx="1020" cy="810" r="2.6"/>
+    <circle class="pad-hole"    cx="1140" cy="830" r="3.5"/>
+    <circle class="pad-hole-sm" cx="1360" cy="820" r="2.6"/>
+  </g>
+
+</svg>
